@@ -13,6 +13,7 @@ const LABELS = {
   unmatched: "Unnamed",
 };
 const OWNER_ORDER = ["us", "prc", "mexico", "other", "unmatched"];
+const CARTO_BASEMAP_KEY = "cb1_32m3_1_44dc754e68375e8ab5208497";
 
 let DATA = null;
 let ROWS = null;
@@ -207,14 +208,100 @@ function radiusFor(mw) {
   return 6 + Math.sqrt(Math.max(mw, 0)) * 0.55;
 }
 
+const FS_EXPAND =
+  '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5M16 3h5v5M8 21H3v-5M16 21h5v-5"/></svg>';
+const FS_COLLAPSE =
+  '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3v5H3M16 3v5h5M8 21v-5H3M16 21v-5h5"/></svg>';
+
+function mapIsFullscreen(el) {
+  const fs = document.fullscreenElement || document.webkitFullscreenElement;
+  return fs === el || el.classList.contains("map-windowed-full");
+}
+
+function updateFullscreenButton(el, btn) {
+  const on = mapIsFullscreen(el);
+  btn.innerHTML = on ? FS_COLLAPSE : FS_EXPAND;
+  btn.title = on ? "Exit full screen" : "Full screen";
+  btn.setAttribute("aria-label", btn.title);
+  btn.setAttribute("aria-pressed", on ? "true" : "false");
+}
+
+function enterMapFullscreen(el) {
+  const req = el.requestFullscreen || el.webkitRequestFullscreen;
+  if (req) {
+    const p = req.call(el);
+    if (p && typeof p.catch === "function") {
+      p.catch(() => el.classList.add("map-windowed-full"));
+    }
+    return;
+  }
+  el.classList.add("map-windowed-full");
+}
+
+function exitMapFullscreen(el) {
+  const cur = document.fullscreenElement || document.webkitFullscreenElement;
+  if (cur === el) {
+    const exit = document.exitFullscreen || document.webkitExitFullscreen;
+    if (exit) exit.call(document);
+    return;
+  }
+  el.classList.remove("map-windowed-full");
+}
+
+function addFullscreenControl(leafletMap) {
+  const Fullscreen = L.Control.extend({
+    options: { position: "topleft" },
+    onAdd: function () {
+      const bar = L.DomUtil.create("div", "leaflet-bar leaflet-control");
+      const btn = L.DomUtil.create("a", "map-fs-btn", bar);
+      btn.href = "#";
+      btn.innerHTML = FS_EXPAND;
+      btn.title = "Full screen";
+      btn.setAttribute("role", "button");
+      btn.setAttribute("aria-label", "Full screen");
+      btn.setAttribute("aria-pressed", "false");
+      L.DomEvent.disableClickPropagation(bar);
+      L.DomEvent.disableScrollPropagation(bar);
+      L.DomEvent.on(btn, "click", L.DomEvent.stop).on(btn, "click", function () {
+        const el = leafletMap.getContainer();
+        if (mapIsFullscreen(el)) exitMapFullscreen(el);
+        else enterMapFullscreen(el);
+      });
+      const sync = function () {
+        updateFullscreenButton(leafletMap.getContainer(), btn);
+        setTimeout(function () {
+          leafletMap.invalidateSize();
+        }, 80);
+      };
+      document.addEventListener("fullscreenchange", sync);
+      document.addEventListener("webkitfullscreenchange", sync);
+      window.addEventListener("keydown", function (e) {
+        if (e.key === "Escape" && leafletMap.getContainer().classList.contains("map-windowed-full")) {
+          exitMapFullscreen(leafletMap.getContainer());
+          sync();
+        }
+      });
+      const mo = new MutationObserver(sync);
+      mo.observe(leafletMap.getContainer(), { attributes: true, attributeFilter: ["class"] });
+      return bar;
+    },
+  });
+  leafletMap.addControl(new Fullscreen());
+}
+
 function renderMap(rows) {
   if (!map) {
     map = L.map("map").setView([23.6, -102.5], 5);
-    L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
-      attribution: "&copy; OpenStreetMap &copy; CARTO",
+    const tiles =
+      "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png?key=" +
+      encodeURIComponent(CARTO_BASEMAP_KEY);
+    L.tileLayer(tiles, {
+      attribution:
+        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attributions">CARTO</a>',
       subdomains: "abcd",
-      maxZoom: 18,
+      maxZoom: 20,
     }).addTo(map);
+    addFullscreenControl(map);
   }
   if (layer) {
     layer.remove();

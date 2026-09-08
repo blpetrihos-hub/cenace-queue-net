@@ -97,35 +97,6 @@
     (for example 28 February 2026), not from file mtime. Rows with MW ≥ 5,000 are dropped
     from totals as unit or digit errors.
   </p>
-
-  <h2>Geography</h2>
-  <p>
-    Municipal seats are a checked-in gazetteer. Remaining rows fall back to the state centroid.
-    Rows whose state cannot be parsed stay off the map and in the unnamed-location count.
-  </p>
-
-  <h2>What would falsify the claim</h2>
-  <ul>
-    <li>The queue does not bind: studies are not the constraint on who energizes, so place in line is the wrong clock.</li>
-    <li>The unique fingerprint is too strict or too loose: if CNE MW and queue MW are not comparable, the named scoreboard is a small non-random slice.</li>
-    <li>Mexican special-purpose vehicles hide the real country of origin at scale; the Mexico and unnamed bars then mix U.S. and PRC capital.</li>
-    <li>Off-list CFE or private deals energize without appearing in these workbooks.</li>
-  </ul>
-
-  <h2>Rebuild</h2>
-  <p>
-    <code>python scrape/fetch_colas.py</code> then
-    <code>python scrape/fetch_cne_permits.py</code>,
-    <code>python process/normalize.py</code>,
-    <code>python process/geocode_nodes.py</code>,
-    <code>python process/join_cne.py</code>,
-    <code>python process/build_site_data.py</code>,
-    <code>python process/render_bibliography.py</code>.
-    Raw CENACE and CNE files are committed under <code>data/raw</code>.
-  </p>
 </main>
-<footer class="site-footer">
-  <p>No policy recommendations. Unnamed megawatts stay unnamed. Map: Carto / OpenStreetMap.</p>
-</footer>
 </body>
 </html>

@@ -31,11 +31,7 @@ NAV = """
 </header>
 """
 
-FOOT = """
-<footer class="site-footer">
-  <p>No policy recommendations. Unnamed megawatts stay unnamed. Map: Carto / OpenStreetMap.</p>
-</footer>
-"""
+FOOT = ""
 
 
 def page(body: str, title: str) -> str:
