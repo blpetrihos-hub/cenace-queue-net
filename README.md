@@ -4,7 +4,13 @@ Diagnostic dashboard of Mexico’s public CENACE interconnection and connection 
 
 No policy recommendations. Unmatched rows stay unmatched. Ownership is assigned only when a cited, reputable source ties a queue row to a named project.
 
-Live site (GitHub Pages): after first push, `https://blpetrihos-hub.github.io/cenace-queue-net/`
+Live site (GitHub Pages): `https://blpetrihos-hub.github.io/cenace-queue-net/` once Pages is enabled. The repo is **private**; GitHub’s free plan does not allow Pages on private repositories (API 422). Preview locally from `docs/`:
+
+```
+python -m http.server 8765
+```
+
+Then open `http://127.0.0.1:8765/`. To publish, either make the repo public or use a GitHub plan that includes Pages on private repos, then set Pages source to `/docs` on `main`.
 
 ## What the public files actually contain
 
