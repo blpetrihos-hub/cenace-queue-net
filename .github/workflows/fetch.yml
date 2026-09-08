@@ -1,0 +1,40 @@
+# Fetch CENACE colas and rebuild GitHub Pages JSON.
+# If CENACE blocks GitHub Actions, run scrape/fetch_colas.py locally; committed
+# data/raw keeps the site reproducible.
+
+name: fetch-colas
+
+on:
+  schedule:
+    - cron: "0 14 1,15 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install
+        run: pip install -r requirements.txt
+      - name: Fetch
+        run: python scrape/fetch_colas.py
+        continue-on-error: true
+      - name: Process
+        run: |
+          python process/normalize.py
+          python process/geocode_nodes.py
+          python process/build_site_data.py
+          python process/render_bibliography.py
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/raw docs/data docs/bibliography.html data/gazetteer
+          git diff --cached --quiet || git commit -m "Refresh CENACE cola snapshots and site JSON."
+          git push

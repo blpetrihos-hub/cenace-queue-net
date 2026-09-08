@@ -1,0 +1,973 @@
+municipio,municipio_key,estado,lat,lon,geo_source
+Aguascalientes,aguascalientes,Aguascalientes,21.8853,-102.2916,municipio_seat
+ASIENTOS,asientos,Aguascalientes,21.8853,-102.2916,state_centroid
+El Llano,el llano,Aguascalientes,21.8853,-102.2916,state_centroid
+Jesús María,jesus maria,Aguascalientes,21.8853,-102.2916,state_centroid
+Pabellon De Arteaga,pabellon de arteaga,Aguascalientes,21.8853,-102.2916,state_centroid
+Rincon De Romos,rincon de romos,Aguascalientes,21.8853,-102.2916,state_centroid
+San Antonio De Los Horcones,san antonio de los horcones,Aguascalientes,21.8853,-102.2916,state_centroid
+San Francisco De Los Romo,san francisco de los romo,Aguascalientes,21.8853,-102.2916,state_centroid
+San Francisco De Los Romos,san francisco de los romos,Aguascalientes,21.8853,-102.2916,state_centroid
+Tepezalá,tepezala,Aguascalientes,21.8853,-102.2916,state_centroid
+Comondú,comondu,Baja California,30.8406,-115.2838,state_centroid
+Ejido General Heriberto Jara,ejido general heriberto jara,Baja California,30.8406,-115.2838,state_centroid
+Ensenada,ensenada,Baja California,31.8667,-116.5967,municipio_seat
+"Ensenada, Baja California",ensenada baja california,Baja California,30.8406,-115.2838,state_centroid
+La Joya,la joya,Baja California,30.8406,-115.2838,state_centroid
+Mexicali,mexicali,Baja California,32.6245,-115.4523,municipio_seat
+Mexicalli,mexicalli,Baja California,30.8406,-115.2838,state_centroid
+Playas De Rosarito,playas de rosarito,Baja California,32.3649,-117.0553,municipio_seat
+Rosarito,rosarito,Baja California,30.8406,-115.2838,state_centroid
+San José Del Cabo,san jose del cabo,Baja California,30.8406,-115.2838,state_centroid
+San Quintín,san quintin,Baja California,30.8406,-115.2838,state_centroid
+Tecate,tecate,Baja California,32.5656,-116.6325,municipio_seat
+Tijuana,tijuana,Baja California,32.5149,-117.0382,municipio_seat
+Cabo San Lucas,cabo san lucas,Baja California Sur,22.8909,-109.9124,municipio_seat
+Comondú,comondu,Baja California Sur,26.0444,-111.6661,state_centroid
+Conmondú,conmondu,Baja California Sur,26.0444,-111.6661,state_centroid
+El Triunfo,el triunfo,Baja California Sur,26.0444,-111.6661,state_centroid
+La Paz,la paz,Baja California Sur,24.1426,-110.3128,municipio_seat
+Loreto,loreto,Baja California Sur,26.0444,-111.6661,state_centroid
+Los Cabos,los cabos,Baja California Sur,23.0636,-109.702,municipio_seat
+Mulegé,mulege,Baja California Sur,26.0444,-111.6661,state_centroid
+Municipio De Los Cabos,municipio de los cabos,Baja California Sur,26.0444,-111.6661,state_centroid
+San José Del Cabo,san jose del cabo,Baja California Sur,26.0444,-111.6661,state_centroid
+Campeche,campeche,Campeche,19.8301,-90.5349,municipio_seat
+Carmen,carmen,Campeche,18.6517,-91.807,municipio_seat
+Champotón,champoton,Campeche,19.8301,-90.5349,state_centroid
+Del Carmen,del carmen,Campeche,19.8301,-90.5349,state_centroid
+Escarcega,escarcega,Campeche,19.8301,-90.5349,state_centroid
+HECELCHAKÁN,hecelchakan,Campeche,19.8301,-90.5349,state_centroid
+Hopelchén,hopelchen,Campeche,19.8301,-90.5349,state_centroid
+PALIZADA,palizada,Campeche,19.8301,-90.5349,state_centroid
+Pocyaxum,pocyaxum,Campeche,19.8301,-90.5349,state_centroid
+Seybaplaya,seybaplaya,Campeche,19.8301,-90.5349,state_centroid
+Tenabo,tenabo,Campeche,19.8301,-90.5349,state_centroid
+ACAPETAHUA,acapetahua,Chiapas,16.7569,-93.1292,state_centroid
+Arriaga,arriaga,Chiapas,16.7569,-93.1292,state_centroid
+Berriozabal,berriozabal,Chiapas,16.7569,-93.1292,state_centroid
+CATAZAJÁ,catazaja,Chiapas,16.7569,-93.1292,state_centroid
+Chicoasén,chicoasen,Chiapas,16.965,-93.103,municipio_seat
+"Ciudad Hidalgo, Tapachula",ciudad hidalgo tapachula,Chiapas,16.7569,-93.1292,state_centroid
+COMITÁN DE DOMÍNGUEZ,comitan de dominguez,Chiapas,16.7569,-93.1292,state_centroid
+Huixtla,huixtla,Chiapas,16.7569,-93.1292,state_centroid
+JIQUIPILAS,jiquipilas,Chiapas,16.7569,-93.1292,state_centroid
+MAPASTEPEC,mapastepec,Chiapas,16.7569,-93.1292,state_centroid
+MAZATÁN,mazatan,Chiapas,16.7569,-93.1292,state_centroid
+MEZCALAPA,mezcalapa,Chiapas,16.7569,-93.1292,state_centroid
+Ocozocoautla De Espinosa,ocozocoautla de espinosa,Chiapas,16.7569,-93.1292,state_centroid
+Palenque,palenque,Chiapas,16.7569,-93.1292,state_centroid
+Pijijiapan,pijijiapan,Chiapas,16.7569,-93.1292,state_centroid
+Puerto Madero,puerto madero,Chiapas,16.7569,-93.1292,state_centroid
+Reforma,reforma,Chiapas,16.7569,-93.1292,state_centroid
+San Lucas,san lucas,Chiapas,16.7569,-93.1292,state_centroid
+Suchiate,suchiate,Chiapas,16.7569,-93.1292,state_centroid
+TAPACHULA,tapachula,Chiapas,14.9056,-92.2634,municipio_seat
+Tuxtla Gutiérrez,tuxtla gutierrez,Chiapas,16.7516,-93.1026,municipio_seat
+VENUSTIANO CARRANZA,venustiano carranza,Chiapas,16.7569,-93.1292,state_centroid
+Villa Comaltitlán,villa comaltitlan,Chiapas,16.7569,-93.1292,state_centroid
+Ahumada,ahumada,Chihuahua,28.633,-106.0691,state_centroid
+Allende,allende,Chihuahua,28.633,-106.0691,state_centroid
+Aquiles Serdán,aquiles serdan,Chihuahua,28.633,-106.0691,state_centroid
+Ascension,ascension,Chihuahua,28.633,-106.0691,state_centroid
+Camargo,camargo,Chihuahua,28.633,-106.0691,state_centroid
+Cd. Juarez,cd juarez,Chihuahua,28.633,-106.0691,state_centroid
+Chihuahua,chihuahua,Chihuahua,28.635,-106.089,municipio_seat
+Chínipas,chinipas,Chihuahua,28.633,-106.0691,state_centroid
+Ciudad Delicias,ciudad delicias,Chihuahua,28.633,-106.0691,state_centroid
+Ciudad Jimenez,ciudad jimenez,Chihuahua,28.633,-106.0691,state_centroid
+Ciudad Juarez,ciudad juarez,Chihuahua,28.633,-106.0691,state_centroid
+Cuauhtémoc,cuauhtemoc,Chihuahua,28.633,-106.0691,state_centroid
+Cusihuriachi,cusihuriachi,Chihuahua,28.633,-106.0691,state_centroid
+Delicias,delicias,Chihuahua,28.19,-105.47,municipio_seat
+Galeana,galeana,Chihuahua,28.633,-106.0691,state_centroid
+Guerrero,guerrero,Chihuahua,28.633,-106.0691,state_centroid
+Hidalgo Del Parral,hidalgo del parral,Chihuahua,28.633,-106.0691,state_centroid
+JANOS,janos,Chihuahua,28.633,-106.0691,state_centroid
+Jimenez,jimenez,Chihuahua,28.633,-106.0691,state_centroid
+Juarez,juarez,Chihuahua,31.6904,-106.4245,municipio_seat
+Madera,madera,Chihuahua,28.633,-106.0691,state_centroid
+Meoqui,meoqui,Chihuahua,28.633,-106.0691,state_centroid
+Miguel Ahumada,miguel ahumada,Chihuahua,28.633,-106.0691,state_centroid
+"Municipalidad De Villa Ahumada, Distrito Bravos",municipalidad de villa ahumada distrito bravos,Chihuahua,28.633,-106.0691,state_centroid
+Namiquipa,namiquipa,Chihuahua,28.633,-106.0691,state_centroid
+Nuevo Casas Grandes,nuevo casas grandes,Chihuahua,28.633,-106.0691,state_centroid
+Ocampo,ocampo,Chihuahua,28.633,-106.0691,state_centroid
+Ojinaga,ojinaga,Chihuahua,28.633,-106.0691,state_centroid
+Parral,parral,Chihuahua,28.633,-106.0691,state_centroid
+Samalayuca,samalayuca,Chihuahua,28.633,-106.0691,state_centroid
+SAN FRANCISCO DEL ORO,san francisco del oro,Chihuahua,28.633,-106.0691,state_centroid
+Santa Bárbara,santa barbara,Chihuahua,28.633,-106.0691,state_centroid
+Satevo,satevo,Chihuahua,28.633,-106.0691,state_centroid
+URIQUE,urique,Chihuahua,28.633,-106.0691,state_centroid
+Uruachi,uruachi,Chihuahua,28.633,-106.0691,state_centroid
+Villa Ahumada,villa ahumada,Chihuahua,28.633,-106.0691,state_centroid
+Álvaro Obregón,alvaro obregon,Ciudad de México,19.4326,-99.1332,state_centroid
+Azcapotzalco,azcapotzalco,Ciudad de México,19.4326,-99.1332,state_centroid
+Aztcapotzalco,aztcapotzalco,Ciudad de México,19.4326,-99.1332,state_centroid
+Benito Juarez,benito juarez,Ciudad de México,19.4326,-99.1332,state_centroid
+Cdmx,cdmx,Ciudad de México,19.4326,-99.1332,state_centroid
+Chalco,chalco,Ciudad de México,19.4326,-99.1332,state_centroid
+Ciudad De Mexico,ciudad de mexico,Ciudad de México,19.4326,-99.1332,state_centroid
+Coyoacan,coyoacan,Ciudad de México,19.4326,-99.1332,state_centroid
+Cuahutemoc,cuahutemoc,Ciudad de México,19.4326,-99.1332,state_centroid
+Cuajimalpa,cuajimalpa,Ciudad de México,19.4326,-99.1332,state_centroid
+Cuajimalpa De Morelos,cuajimalpa de morelos,Ciudad de México,19.4326,-99.1332,state_centroid
+Cuauhtémoc,cuauhtemoc,Ciudad de México,19.4326,-99.1332,state_centroid
+Del. Alvaro Obregón,del alvaro obregon,Ciudad de México,19.4326,-99.1332,state_centroid
+Delegacion Miguel Hidalgo,delegacion miguel hidalgo,Ciudad de México,19.4326,-99.1332,state_centroid
+Gustavo A. Madero,gustavo a madero,Ciudad de México,19.4326,-99.1332,state_centroid
+Iztacalco,iztacalco,Ciudad de México,19.4326,-99.1332,state_centroid
+Iztapalapa,iztapalapa,Ciudad de México,19.4326,-99.1332,state_centroid
+Magdalena Contreras,magdalena contreras,Ciudad de México,19.4326,-99.1332,state_centroid
+Miguel Hidalgo,miguel hidalgo,Ciudad de México,19.4326,-99.1332,state_centroid
+Napoles,napoles,Ciudad de México,19.4326,-99.1332,state_centroid
+San Miguel De Allende,san miguel de allende,Ciudad de México,19.4326,-99.1332,state_centroid
+Tlahuac,tlahuac,Ciudad de México,19.4326,-99.1332,state_centroid
+Tlalpan,tlalpan,Ciudad de México,19.4326,-99.1332,state_centroid
+Venustiano Carranza,venustiano carranza,Ciudad de México,19.4326,-99.1332,state_centroid
+Acuña,acuna,Coahuila,29.3232,-100.9522,municipio_seat
+Ag. Ramos Arzipe,ag ramos arzipe,Coahuila,27.0587,-101.7068,state_centroid
+Arteaga,arteaga,Coahuila,27.0587,-101.7068,state_centroid
+Castaños,castanos,Coahuila,27.0587,-101.7068,state_centroid
+Cd. Acuña,cd acuna,Coahuila,27.0587,-101.7068,state_centroid
+Cd. Frontera,cd frontera,Coahuila,27.0587,-101.7068,state_centroid
+Ejido El Calabacillal,ejido el calabacillal,Coahuila,27.0587,-101.7068,state_centroid
+Escobedo,escobedo,Coahuila,27.0587,-101.7068,state_centroid
+Francisco I. Madero,francisco i madero,Coahuila,27.0587,-101.7068,state_centroid
+Frontera,frontera,Coahuila,26.928,-101.452,municipio_seat
+General Cepeda,general cepeda,Coahuila,27.0587,-101.7068,state_centroid
+Hidalgo,hidalgo,Coahuila,27.0587,-101.7068,state_centroid
+Matamoros,matamoros,Coahuila,27.0587,-101.7068,state_centroid
+Monclova,monclova,Coahuila,26.9103,-101.429,municipio_seat
+Nadadores,nadadores,Coahuila,27.0587,-101.7068,state_centroid
+Nava,nava,Coahuila,27.0587,-101.7068,state_centroid
+Ocampo,ocampo,Coahuila,27.0587,-101.7068,state_centroid
+Palau,palau,Coahuila,27.0587,-101.7068,state_centroid
+Parras,parras,Coahuila,27.0587,-101.7068,state_centroid
+Parras De La Fuente,parras de la fuente,Coahuila,27.0587,-101.7068,state_centroid
+Parras De La Fuente Coahuila,parras de la fuente coahuila,Coahuila,27.0587,-101.7068,state_centroid
+Piedras Negras,piedras negras,Coahuila,28.7,-100.523,municipio_seat
+Piedras Negras/Zaragoza,piedras negras zaragoza,Coahuila,27.0587,-101.7068,state_centroid
+Progreso,progreso,Coahuila,27.0587,-101.7068,state_centroid
+Ramos,ramos,Coahuila,27.0587,-101.7068,state_centroid
+Ramos Arizpe,ramos arizpe,Coahuila,25.5392,-100.9475,municipio_seat
+Sabinas,sabinas,Coahuila,27.0587,-101.7068,state_centroid
+Salitllo,salitllo,Coahuila,27.0587,-101.7068,state_centroid
+Saltillo,saltillo,Coahuila,25.4232,-101.0053,municipio_seat
+"Saltillo, Coahuila.",saltillo coahuila,Coahuila,27.0587,-101.7068,state_centroid
+Saltillo Oriente,saltillo oriente,Coahuila,27.0587,-101.7068,state_centroid
+San Buenaventura,san buenaventura,Coahuila,27.0587,-101.7068,state_centroid
+San Pedro,san pedro,Coahuila,27.0587,-101.7068,state_centroid
+San Pedro De Las Colonias,san pedro de las colonias,Coahuila,27.0587,-101.7068,state_centroid
+Sierra Mojada,sierra mojada,Coahuila,27.0587,-101.7068,state_centroid
+Terrón,terron,Coahuila,27.0587,-101.7068,state_centroid
+Torreón,torreon,Coahuila,25.5428,-103.4068,municipio_seat
+Viesca,viesca,Coahuila,27.0587,-101.7068,state_centroid
+Villa Union,villa union,Coahuila,27.0587,-101.7068,state_centroid
+Zaragoza,zaragoza,Coahuila,27.0587,-101.7068,state_centroid
+Colima,colima,Colima,19.2433,-103.725,municipio_seat
+CUAUHTÉMOC,cuauhtemoc,Colima,19.2452,-103.7242,state_centroid
+Manzanillo,manzanillo,Colima,19.1136,-104.3421,municipio_seat
+Minatitlán,minatitlan,Colima,19.2452,-103.7242,state_centroid
+Tecomán,tecoman,Colima,19.2452,-103.7242,state_centroid
+Canatlan,canatlan,Durango,24.0277,-104.6532,state_centroid
+Carretera Federal 40 Durango-Torreón,carretera federal 40 durango torreon,Durango,24.0277,-104.6532,state_centroid
+Cuencame,cuencame,Durango,24.0277,-104.6532,state_centroid
+Durango,durango,Durango,24.0277,-104.6532,municipio_seat
+"Ejido Picardías, Lerdo",ejido picardias lerdo,Durango,24.0277,-104.6532,state_centroid
+General Simon Bolivar,general simon bolivar,Durango,24.0277,-104.6532,state_centroid
+Gomez Palacio,gomez palacio,Durango,24.0277,-104.6532,state_centroid
+Gómez Palacios,gomez palacios,Durango,24.0277,-104.6532,state_centroid
+GUANACEVÍ,guanacevi,Durango,24.0277,-104.6532,state_centroid
+Lerdo,lerdo,Durango,25.536,-103.525,municipio_seat
+Mapimí,mapimi,Durango,24.0277,-104.6532,state_centroid
+Municipio De Durango,municipio de durango,Durango,24.0277,-104.6532,state_centroid
+Nombre De Dios,nombre de dios,Durango,24.0277,-104.6532,state_centroid
+OTÁEZ,otaez,Durango,24.0277,-104.6532,state_centroid
+Panuco De Coronado,panuco de coronado,Durango,24.0277,-104.6532,state_centroid
+Rodeo,rodeo,Durango,24.0277,-104.6532,state_centroid
+SANTIAGO PAPASQUIARO,santiago papasquiaro,Durango,24.0277,-104.6532,state_centroid
+Tlahualilo,tlahualilo,Durango,24.0277,-104.6532,state_centroid
+TOPIA,topia,Durango,24.0277,-104.6532,state_centroid
+Vicente Guerrero,vicente guerrero,Durango,24.0277,-104.6532,state_centroid
+Victoria De Durango,victoria de durango,Durango,24.0277,-104.6532,state_centroid
+Abasolo,abasolo,Guanajuato,21.019,-101.2574,state_centroid
+Abasolo/El Tule,abasolo el tule,Guanajuato,21.019,-101.2574,state_centroid
+Acámbaro,acambaro,Guanajuato,21.019,-101.2574,state_centroid
+Allende,allende,Guanajuato,21.019,-101.2574,state_centroid
+APASEO,apaseo,Guanajuato,21.019,-101.2574,state_centroid
+Apaseo El Alto,apaseo el alto,Guanajuato,21.019,-101.2574,state_centroid
+Apaseo El Grande,apaseo el grande,Guanajuato,21.019,-101.2574,state_centroid
+Celaya,celaya,Guanajuato,20.528,-100.815,municipio_seat
+Cortazar,cortazar,Guanajuato,21.019,-101.2574,state_centroid
+Cuerámaro,cueramaro,Guanajuato,21.019,-101.2574,state_centroid
+Doctor Mora,doctor mora,Guanajuato,21.019,-101.2574,state_centroid
+DOLORES HIDALGO CUNA DE LA INDEPENDENCIA NACIONAL,dolores hidalgo cuna de la independencia nacional,Guanajuato,21.019,-101.2574,state_centroid
+Guanajuato,guanajuato,Guanajuato,21.019,-101.2574,municipio_seat
+Irapuato,irapuato,Guanajuato,20.6767,-101.3563,municipio_seat
+Jaral del Progreso,jaral del progreso,Guanajuato,21.019,-101.2574,state_centroid
+Jerecuaro,jerecuaro,Guanajuato,21.019,-101.2574,state_centroid
+Leon,leon,Guanajuato,21.125,-101.686,municipio_seat
+MANUEL DOBLADO,manuel doblado,Guanajuato,21.019,-101.2574,state_centroid
+Maria Del Granjero,maria del granjero,Guanajuato,21.019,-101.2574,state_centroid
+Pénjamo,penjamo,Guanajuato,21.019,-101.2574,state_centroid
+Poblado Guadalupe Victoria,poblado guadalupe victoria,Guanajuato,21.019,-101.2574,state_centroid
+PURISIMA DEL RINCON,purisima del rincon,Guanajuato,21.019,-101.2574,state_centroid
+Romita,romita,Guanajuato,21.019,-101.2574,state_centroid
+Salamanca,salamanca,Guanajuato,20.5714,-101.1917,municipio_seat
+Salvatierra,salvatierra,Guanajuato,21.019,-101.2574,state_centroid
+San Diego De La Union,san diego de la union,Guanajuato,21.019,-101.2574,state_centroid
+San Felipe,san felipe,Guanajuato,21.019,-101.2574,state_centroid
+San Francisco,san francisco,Guanajuato,21.019,-101.2574,state_centroid
+San Francisco Del Rincón,san francisco del rincon,Guanajuato,21.019,-101.2574,state_centroid
+San Ignacio De La Luz,san ignacio de la luz,Guanajuato,21.019,-101.2574,state_centroid
+San Jose Iturbide,san jose iturbide,Guanajuato,21.019,-101.2574,state_centroid
+San Luis De La Paz,san luis de la paz,Guanajuato,21.2978,-100.517,municipio_seat
+San Luis De Paz,san luis de paz,Guanajuato,21.019,-101.2574,state_centroid
+San Miguel De Alende,san miguel de alende,Guanajuato,21.019,-101.2574,state_centroid
+San Miguel De Allende,san miguel de allende,Guanajuato,21.019,-101.2574,state_centroid
+San Vicente,san vicente,Guanajuato,21.019,-101.2574,state_centroid
+Santa Cruz,santa cruz,Guanajuato,21.019,-101.2574,state_centroid
+Santa Cruz De Juventino Rosas,santa cruz de juventino rosas,Guanajuato,21.019,-101.2574,state_centroid
+Santa Cruz De Juventino Rosas Y Villagrán,santa cruz de juventino rosas y villagran,Guanajuato,21.019,-101.2574,state_centroid
+Silao,silao,Guanajuato,20.9437,-101.427,municipio_seat
+Silao De La Victoria,silao de la victoria,Guanajuato,21.019,-101.2574,state_centroid
+Valle De Santiago,valle de santiago,Guanajuato,21.019,-101.2574,state_centroid
+Villagrán,villagran,Guanajuato,21.019,-101.2574,state_centroid
+Acapulco,acapulco,Guerrero,17.4392,-99.5451,state_centroid
+Acapulco De Juarez,acapulco de juarez,Guerrero,16.8531,-99.8237,municipio_seat
+Ajuchitlán Del Progreso,ajuchitlan del progreso,Guerrero,17.4392,-99.5451,state_centroid
+Cd Altamirano,cd altamirano,Guerrero,17.4392,-99.5451,state_centroid
+Chilpancingo,chilpancingo,Guerrero,17.4392,-99.5451,state_centroid
+Chilpancingo De Los Bravo,chilpancingo de los bravo,Guerrero,17.4392,-99.5451,state_centroid
+Cocula,cocula,Guerrero,17.4392,-99.5451,state_centroid
+Cuetzala Del Progreso,cuetzala del progreso,Guerrero,17.4392,-99.5451,state_centroid
+Cuetzala Delprogreso,cuetzala delprogreso,Guerrero,17.4392,-99.5451,state_centroid
+Cutzamala De Pinzón,cutzamala de pinzon,Guerrero,17.4392,-99.5451,state_centroid
+Eduardo Neri,eduardo neri,Guerrero,17.4392,-99.5451,state_centroid
+GENERAL HELIODORO CASTILLO,general heliodoro castillo,Guerrero,17.4392,-99.5451,state_centroid
+IGUALA DE LA INDEPENDENCIA,iguala de la independencia,Guerrero,17.4392,-99.5451,state_centroid
+Juchitán,juchitan,Guerrero,17.4392,-99.5451,state_centroid
+La Unión De Isidoro Montes De Oca,la union de isidoro montes de oca,Guerrero,17.4392,-99.5451,state_centroid
+Nuevo Balsas,nuevo balsas,Guerrero,17.4392,-99.5451,state_centroid
+Pungarabato,pungarabato,Guerrero,17.4392,-99.5451,state_centroid
+Teloloapan,teloloapan,Guerrero,17.4392,-99.5451,state_centroid
+Tixtla De Guerrero,tixtla de guerrero,Guerrero,17.4392,-99.5451,state_centroid
+Tlatzala,tlatzala,Guerrero,17.4392,-99.5451,state_centroid
+Apan,apan,Hidalgo,20.0911,-98.7624,state_centroid
+Atitalaquia,atitalaquia,Hidalgo,20.0911,-98.7624,state_centroid
+Atotonilco De Tula,atotonilco de tula,Hidalgo,20.0911,-98.7624,state_centroid
+Cuautepec De Hinojosa,cuautepec de hinojosa,Hidalgo,20.0911,-98.7624,state_centroid
+Emiliano Zapata,emiliano zapata,Hidalgo,20.0911,-98.7624,state_centroid
+Epazoyucan,epazoyucan,Hidalgo,20.0911,-98.7624,state_centroid
+"Epazoyucan, Singuilucan Y Zempoala",epazoyucan singuilucan y zempoala,Hidalgo,20.0911,-98.7624,state_centroid
+Epazoyucan Y Singuilucan,epazoyucan y singuilucan,Hidalgo,20.0911,-98.7624,state_centroid
+Fracc Industrial Reforma,fracc industrial reforma,Hidalgo,20.0911,-98.7624,state_centroid
+Huichapan,huichapan,Hidalgo,20.0911,-98.7624,state_centroid
+Mineral De La Reforma,mineral de la reforma,Hidalgo,20.0911,-98.7624,state_centroid
+Mixquiahuala,mixquiahuala,Hidalgo,20.0911,-98.7624,state_centroid
+Mixquiahuala De Juárez,mixquiahuala de juarez,Hidalgo,20.0911,-98.7624,state_centroid
+Nopala De Villagran,nopala de villagran,Hidalgo,20.0911,-98.7624,state_centroid
+Pachuca De Soto,pachuca de soto,Hidalgo,20.1011,-98.7591,municipio_seat
+San Lorenzo,san lorenzo,Hidalgo,20.0911,-98.7624,state_centroid
+Santiago De Anaya,santiago de anaya,Hidalgo,20.0911,-98.7624,state_centroid
+Singuilucan,singuilucan,Hidalgo,20.0911,-98.7624,state_centroid
+Singuilucan Y Epazoyucan,singuilucan y epazoyucan,Hidalgo,20.0911,-98.7624,state_centroid
+TECOZAUTLA,tecozautla,Hidalgo,20.0911,-98.7624,state_centroid
+Tepeapulco,tepeapulco,Hidalgo,20.0911,-98.7624,state_centroid
+Tepeji Del Río,tepeji del rio,Hidalgo,20.0911,-98.7624,state_centroid
+Tepeji Del Rio De Ocampo,tepeji del rio de ocampo,Hidalgo,20.0911,-98.7624,state_centroid
+Tetepango,tetepango,Hidalgo,20.0911,-98.7624,state_centroid
+Tizayuca,tizayuca,Hidalgo,20.0911,-98.7624,state_centroid
+Tlanalapa,tlanalapa,Hidalgo,20.0911,-98.7624,state_centroid
+Tlaxinacalpan,tlaxinacalpan,Hidalgo,20.0911,-98.7624,state_centroid
+Tula,tula,Hidalgo,20.0911,-98.7624,state_centroid
+Tula De Allende,tula de allende,Hidalgo,20.0514,-99.3431,municipio_seat
+Tula De Allende Hidalgo,tula de allende hidalgo,Hidalgo,20.0911,-98.7624,state_centroid
+Tulancingo De Bravo,tulancingo de bravo,Hidalgo,20.0833,-98.3667,municipio_seat
+Villa De Tezontepec,villa de tezontepec,Hidalgo,20.0911,-98.7624,state_centroid
+Zapotlán De Juárez,zapotlan de juarez,Hidalgo,20.0911,-98.7624,state_centroid
+Zempoala,zempoala,Hidalgo,20.0911,-98.7624,state_centroid
+Zimapan,zimapan,Hidalgo,20.0911,-98.7624,state_centroid
+Acatic,acatic,Jalisco,20.6595,-103.3494,state_centroid
+Acatlán,acatlan,Jalisco,20.6595,-103.3494,state_centroid
+Acatlan De Juarez,acatlan de juarez,Jalisco,20.6595,-103.3494,state_centroid
+Ameca,ameca,Jalisco,20.6595,-103.3494,state_centroid
+Arandas,arandas,Jalisco,20.6595,-103.3494,state_centroid
+ATEQUIZA,atequiza,Jalisco,20.6595,-103.3494,state_centroid
+ATOTONILCO EL ALTO,atotonilco el alto,Jalisco,20.6595,-103.3494,state_centroid
+Autlán De Navarro,autlan de navarro,Jalisco,20.6595,-103.3494,state_centroid
+AYOTLÁN,ayotlan,Jalisco,20.6595,-103.3494,state_centroid
+Cabo Corrientes,cabo corrientes,Jalisco,20.6595,-103.3494,state_centroid
+CAÑADAS DE OBREGÓN,canadas de obregon,Jalisco,20.6595,-103.3494,state_centroid
+Chapala,chapala,Jalisco,20.6595,-103.3494,state_centroid
+Cuquío,cuquio,Jalisco,20.6595,-103.3494,state_centroid
+Degollado,degollado,Jalisco,20.6595,-103.3494,state_centroid
+El Salto,el salto,Jalisco,20.5197,-103.1794,municipio_seat
+El Salto Jalisco,el salto jalisco,Jalisco,20.6595,-103.3494,state_centroid
+Encarnacion De Diaz,encarnacion de diaz,Jalisco,20.6595,-103.3494,state_centroid
+Encarnación Díaz,encarnacion diaz,Jalisco,20.6595,-103.3494,state_centroid
+Guadalajara,guadalajara,Jalisco,20.6597,-103.3496,municipio_seat
+Huescalapa,huescalapa,Jalisco,20.6595,-103.3494,state_centroid
+Ixtlahuacan De Los Membrillos,ixtlahuacan de los membrillos,Jalisco,20.6595,-103.3494,state_centroid
+Jalostotitlán,jalostotitlan,Jalisco,20.6595,-103.3494,state_centroid
+JILOTLÁN DE LOS DOLORES,jilotlan de los dolores,Jalisco,20.6595,-103.3494,state_centroid
+Jocotepec,jocotepec,Jalisco,20.6595,-103.3494,state_centroid
+Juanacatlan,juanacatlan,Jalisco,20.6595,-103.3494,state_centroid
+La Barca,la barca,Jalisco,20.6595,-103.3494,state_centroid
+La Capilla,la capilla,Jalisco,20.6595,-103.3494,state_centroid
+Lagos De Moreno,lagos de moreno,Jalisco,20.6595,-103.3494,state_centroid
+Magdalena,magdalena,Jalisco,20.6595,-103.3494,state_centroid
+Mazapil,mazapil,Jalisco,20.6595,-103.3494,state_centroid
+Mexticacan,mexticacan,Jalisco,20.6595,-103.3494,state_centroid
+Municipio De Cuquío,municipio de cuquio,Jalisco,20.6595,-103.3494,state_centroid
+Municipio De La Barca,municipio de la barca,Jalisco,20.6595,-103.3494,state_centroid
+NUEVO FUERTE,nuevo fuerte,Jalisco,20.6595,-103.3494,state_centroid
+OCOTLAN,ocotlan,Jalisco,20.6595,-103.3494,state_centroid
+Ojuelos,ojuelos,Jalisco,20.6595,-103.3494,state_centroid
+Ojuelos De Jalisco,ojuelos de jalisco,Jalisco,20.6595,-103.3494,state_centroid
+Ojuelos De Jalisco Y Lagos De Moreno,ojuelos de jalisco y lagos de moreno,Jalisco,20.6595,-103.3494,state_centroid
+Ojuleos,ojuleos,Jalisco,20.6595,-103.3494,state_centroid
+Ojulos De Jalisco,ojulos de jalisco,Jalisco,20.6595,-103.3494,state_centroid
+Pihuamo,pihuamo,Jalisco,20.6595,-103.3494,state_centroid
+Puerto Vallarta,puerto vallarta,Jalisco,20.6534,-105.2253,municipio_seat
+San Juan De Los Lagos,san juan de los lagos,Jalisco,20.6595,-103.3494,state_centroid
+San Julián,san julian,Jalisco,20.6595,-103.3494,state_centroid
+San Martín Hidalgo,san martin hidalgo,Jalisco,20.6595,-103.3494,state_centroid
+San Miguel,san miguel,Jalisco,20.6595,-103.3494,state_centroid
+San Miguel El Alto,san miguel el alto,Jalisco,20.6595,-103.3494,state_centroid
+San Pedro Tlaquepaque,san pedro tlaquepaque,Jalisco,20.6595,-103.3494,state_centroid
+San Sebastian Del Oeste,san sebastian del oeste,Jalisco,20.6595,-103.3494,state_centroid
+Santa Cruz De Las Flores,santa cruz de las flores,Jalisco,20.6595,-103.3494,state_centroid
+Santa Maria De Los Angeles,santa maria de los angeles,Jalisco,20.6595,-103.3494,state_centroid
+TALA,tala,Jalisco,20.6595,-103.3494,state_centroid
+Tecolotlán,tecolotlan,Jalisco,20.6595,-103.3494,state_centroid
+TEPATITLAN,tepatitlan,Jalisco,20.6595,-103.3494,state_centroid
+TEPATITLÁN DE MORELOS,tepatitlan de morelos,Jalisco,20.6595,-103.3494,state_centroid
+Tequila,tequila,Jalisco,20.6595,-103.3494,state_centroid
+Tlacomulco De Zúñiga,tlacomulco de zuniga,Jalisco,20.6595,-103.3494,state_centroid
+Tlajomulco,tlajomulco,Jalisco,20.6595,-103.3494,state_centroid
+Tlajomulco De Zúñiga,tlajomulco de zuniga,Jalisco,20.6595,-103.3494,state_centroid
+Tlaquepaque,tlaquepaque,Jalisco,20.6595,-103.3494,state_centroid
+Tomatlán,tomatlan,Jalisco,20.6595,-103.3494,state_centroid
+TONALÁ,tonala,Jalisco,20.6595,-103.3494,state_centroid
+Unión De San Antonio,union de san antonio,Jalisco,20.6595,-103.3494,state_centroid
+Valle De Guadalupe,valle de guadalupe,Jalisco,20.6595,-103.3494,state_centroid
+Zacoalco De Torres,zacoalco de torres,Jalisco,20.6595,-103.3494,state_centroid
+Zapopan,zapopan,Jalisco,20.7214,-103.3918,municipio_seat
+"Zapopan, Guadalajara Y Tlaquepaque",zapopan guadalajara y tlaquepaque,Jalisco,20.6595,-103.3494,state_centroid
+ZAPOTILTIC,zapotiltic,Jalisco,20.6595,-103.3494,state_centroid
+Zapotlanejo,zapotlanejo,Jalisco,20.6595,-103.3494,state_centroid
+Zocoalco De Torres,zocoalco de torres,Jalisco,20.6595,-103.3494,state_centroid
+Ciudad Hidalgo,ciudad hidalgo,Michoacán,19.5665,-101.7068,state_centroid
+Contepec,contepec,Michoacán,19.5665,-101.7068,state_centroid
+EPITACIO HUERTA,epitacio huerta,Michoacán,19.5665,-101.7068,state_centroid
+Jacona,jacona,Michoacán,19.5665,-101.7068,state_centroid
+Jiquilpan,jiquilpan,Michoacán,19.5665,-101.7068,state_centroid
+La Piedad,la piedad,Michoacán,19.5665,-101.7068,state_centroid
+La Piedad Michoacan,la piedad michoacan,Michoacán,19.5665,-101.7068,state_centroid
+Lazaro Cardenas,lazaro cardenas,Michoacán,17.9583,-102.192,municipio_seat
+Mexico,mexico,Michoacán,19.5665,-101.7068,state_centroid
+Morelia,morelia,Michoacán,19.706,-101.195,municipio_seat
+Panindicuaro,panindicuaro,Michoacán,19.5665,-101.7068,state_centroid
+Tarimbaro,tarimbaro,Michoacán,19.5665,-101.7068,state_centroid
+Uruapan,uruapan,Michoacán,19.5665,-101.7068,state_centroid
+Zacapu,zacapu,Michoacán,19.5665,-101.7068,state_centroid
+Zamora,zamora,Michoacán,19.5665,-101.7068,state_centroid
+Zamora De Hidalgo,zamora de hidalgo,Michoacán,19.5665,-101.7068,state_centroid
+Zitacuaro,zitacuaro,Michoacán,19.5665,-101.7068,state_centroid
+Ayala,ayala,Morelos,18.6813,-99.1013,state_centroid
+Cd Ayala,cd ayala,Morelos,18.6813,-99.1013,state_centroid
+Cuautla,cuautla,Morelos,18.6813,-99.1013,state_centroid
+Cuernavaca,cuernavaca,Morelos,18.9242,-99.2216,municipio_seat
+EMILIANO ZAPATA,emiliano zapata,Morelos,18.6813,-99.1013,state_centroid
+Huitzilac,huitzilac,Morelos,18.6813,-99.1013,state_centroid
+Jiutepec,jiutepec,Morelos,18.6813,-99.1013,state_centroid
+Jojutla,jojutla,Morelos,18.6813,-99.1013,state_centroid
+Puente De Ixtla,puente de ixtla,Morelos,18.6813,-99.1013,state_centroid
+Temixco,temixco,Morelos,18.6813,-99.1013,state_centroid
+Temixco Acatlipa,temixco acatlipa,Morelos,18.6813,-99.1013,state_centroid
+Yacapixtla,yacapixtla,Morelos,18.6813,-99.1013,state_centroid
+YAUTEPEC,yautepec,Morelos,18.6813,-99.1013,state_centroid
+Yautepec de Zaragoza,yautepec de zaragoza,Morelos,18.6813,-99.1013,state_centroid
+Yecapixtla,yecapixtla,Morelos,18.6813,-99.1013,state_centroid
+Acolman,acolman,México,19.4969,-99.7233,state_centroid
+Almoloya De Juárez,almoloya de juarez,México,19.4969,-99.7233,state_centroid
+Apaxco,apaxco,México,19.4969,-99.7233,state_centroid
+Atizapán,atizapan,México,19.4969,-99.7233,state_centroid
+Atizapan De Zaragoza,atizapan de zaragoza,México,19.4969,-99.7233,state_centroid
+Atlacomulco,atlacomulco,México,19.4969,-99.7233,state_centroid
+Atlacomulco De Fabela,atlacomulco de fabela,México,19.4969,-99.7233,state_centroid
+Axapusco,axapusco,México,19.4969,-99.7233,state_centroid
+Ayapango,ayapango,México,19.4969,-99.7233,state_centroid
+Capulhuac,capulhuac,México,19.4969,-99.7233,state_centroid
+Chalco,chalco,México,19.4969,-99.7233,state_centroid
+Chalco De Diaz Covarrubias,chalco de diaz covarrubias,México,19.4969,-99.7233,state_centroid
+Coacalco De Berriozabal,coacalco de berriozabal,México,19.4969,-99.7233,state_centroid
+Cuatitlan Izcalli,cuatitlan izcalli,México,19.4969,-99.7233,state_centroid
+Cuautitlan,cuautitlan,México,19.4969,-99.7233,state_centroid
+Cuautitlan Izcalli,cuautitlan izcalli,México,19.6469,-99.2119,municipio_seat
+Ecatepec,ecatepec,México,19.4969,-99.7233,state_centroid
+Ecatepec De Morelos,ecatepec de morelos,México,19.6019,-99.0506,municipio_seat
+Huehuetoca,huehuetoca,México,19.4969,-99.7233,state_centroid
+Hueypoxtla,hueypoxtla,México,19.4969,-99.7233,state_centroid
+Ixtapaluca,ixtapaluca,México,19.4969,-99.7233,state_centroid
+Ixtlahuaca,ixtlahuaca,México,19.4969,-99.7233,state_centroid
+Ixtlahuaca De Rayón,ixtlahuaca de rayon,México,19.4969,-99.7233,state_centroid
+Iztapalapa,iztapalapa,México,19.4969,-99.7233,state_centroid
+Jilotepec,jilotepec,México,19.4969,-99.7233,state_centroid
+Jocotitlán,jocotitlan,México,19.707,-99.788,municipio_seat
+Lerma,lerma,México,19.4969,-99.7233,state_centroid
+Lerma De Villada,lerma de villada,México,19.4969,-99.7233,state_centroid
+Malinalco,malinalco,México,19.4969,-99.7233,state_centroid
+Metepec,metepec,México,19.4969,-99.7233,state_centroid
+Mexicaltzingo,mexicaltzingo,México,19.4969,-99.7233,state_centroid
+Naucalpan,naucalpan,México,19.4969,-99.7233,state_centroid
+Naucalpan De Juarez,naucalpan de juarez,México,19.4785,-99.2327,municipio_seat
+Nezahualcoyotl,nezahualcoyotl,México,19.4969,-99.7233,state_centroid
+Nezahualcoyotl Y Texcoco,nezahualcoyotl y texcoco,México,19.4969,-99.7233,state_centroid
+Nuacalpan,nuacalpan,México,19.4969,-99.7233,state_centroid
+Ocoyoacac,ocoyoacac,México,19.4969,-99.7233,state_centroid
+OTUMBA,otumba,México,19.4969,-99.7233,state_centroid
+"Población Tepexpan, Acolman",poblacion tepexpan acolman,México,19.4969,-99.7233,state_centroid
+San Antonio La Isla,san antonio la isla,México,19.4969,-99.7233,state_centroid
+San Francisco Coacalco,san francisco coacalco,México,19.4969,-99.7233,state_centroid
+San Francisco Soyaniquilpan,san francisco soyaniquilpan,México,19.4969,-99.7233,state_centroid
+San Mateo Atenco,san mateo atenco,México,19.4969,-99.7233,state_centroid
+"San Mateo De Atenco, Valle De Toluca",san mateo de atenco valle de toluca,México,19.4969,-99.7233,state_centroid
+San Miguel Chapultepec,san miguel chapultepec,México,19.4969,-99.7233,state_centroid
+Santa Maria Rayon,santa maria rayon,México,19.4969,-99.7233,state_centroid
+Santiago Tianguistenco,santiago tianguistenco,México,19.4969,-99.7233,state_centroid
+Soyaniquilpan,soyaniquilpan,México,19.4969,-99.7233,state_centroid
+SOYANIQUILPAN DE JUÁREZ,soyaniquilpan de juarez,México,19.4969,-99.7233,state_centroid
+Tecamac,tecamac,México,19.4969,-99.7233,state_centroid
+Teecámac,teecamac,México,19.4969,-99.7233,state_centroid
+Temascaltepec,temascaltepec,México,19.4969,-99.7233,state_centroid
+Tenango Del Valle,tenango del valle,México,19.4969,-99.7233,state_centroid
+Teoloyucan,teoloyucan,México,19.4969,-99.7233,state_centroid
+Teotihuacan,teotihuacan,México,19.4969,-99.7233,state_centroid
+Tepetlaoxtoc,tepetlaoxtoc,México,19.4969,-99.7233,state_centroid
+Tepotzotlan,tepotzotlan,México,19.4969,-99.7233,state_centroid
+Tequixquiac,tequixquiac,México,19.4969,-99.7233,state_centroid
+Texcoco,texcoco,México,19.4969,-99.7233,state_centroid
+Tianguistenco,tianguistenco,México,19.4969,-99.7233,state_centroid
+Tlalnepantla,tlalnepantla,México,19.4969,-99.7233,state_centroid
+Tlalnepantla De Baz,tlalnepantla de baz,México,19.4969,-99.7233,state_centroid
+Tlalnepantla De Baz Mex,tlalnepantla de baz mex,México,19.4969,-99.7233,state_centroid
+Tlanepantla,tlanepantla,México,19.4969,-99.7233,state_centroid
+Tlanepantla De Baz,tlanepantla de baz,México,19.4969,-99.7233,state_centroid
+Toluca,toluca,México,19.2826,-99.6557,municipio_seat
+Toluca De Lerdo,toluca de lerdo,México,19.4969,-99.7233,state_centroid
+Tultitlan,tultitlan,México,19.645,-99.1681,municipio_seat
+Villa Guerrero,villa guerrero,México,19.4969,-99.7233,state_centroid
+ZACAZONAPAN,zacazonapan,México,19.4969,-99.7233,state_centroid
+Zumpango,zumpango,México,19.4969,-99.7233,state_centroid
+54090,,México,19.4969,-99.7233,state_centroid
+Acaponeta,acaponeta,Nayarit,21.7514,-104.8455,state_centroid
+Bahía De Banderas,bahia de banderas,Nayarit,21.7514,-104.8455,state_centroid
+Francisco I Madero/Tepic,francisco i madero tepic,Nayarit,21.7514,-104.8455,state_centroid
+San Pedro Laguinillas,san pedro laguinillas,Nayarit,21.7514,-104.8455,state_centroid
+San Pedro Lagunillas,san pedro lagunillas,Nayarit,21.7514,-104.8455,state_centroid
+Santiago de Ixcuintla,santiago de ixcuintla,Nayarit,21.7514,-104.8455,state_centroid
+Santiago Ixcuintla,santiago ixcuintla,Nayarit,21.7514,-104.8455,state_centroid
+Tepic,tepic,Nayarit,21.5039,-104.8946,municipio_seat
+Villa Hidalgo,villa hidalgo,Nayarit,21.7514,-104.8455,state_centroid
+Allende,allende,Nuevo León,25.5922,-99.9962,state_centroid
+Anáhuac,anahuac,Nuevo León,25.5922,-99.9962,state_centroid
+Apodaca,apodaca,Nuevo León,25.7817,-100.1883,municipio_seat
+Benito Juárez,benito juarez,Nuevo León,25.5922,-99.9962,state_centroid
+Cadereyta,cadereyta,Nuevo León,25.5922,-99.9962,state_centroid
+Cadereyta Jimenez,cadereyta jimenez,Nuevo León,25.589,-100.001,municipio_seat
+Cadereyta Jimenez N.L.,cadereyta jimenez nl,Nuevo León,25.5922,-99.9962,state_centroid
+Cd. Apodaca,cd apodaca,Nuevo León,25.5922,-99.9962,state_centroid
+CD B JUAREZ,cd b juarez,Nuevo León,25.5922,-99.9962,state_centroid
+Cd Benito Juarez,cd benito juarez,Nuevo León,25.5922,-99.9962,state_centroid
+Cerralvo,cerralvo,Nuevo León,25.5922,-99.9962,state_centroid
+China,china,Nuevo León,25.5922,-99.9962,state_centroid
+China Nuevo León,china nuevo leon,Nuevo León,25.5922,-99.9962,state_centroid
+Cienega De Flores,cienega de flores,Nuevo León,25.955,-100.185,municipio_seat
+Ciudad Anahuac,ciudad anahuac,Nuevo León,25.5922,-99.9962,state_centroid
+DOCTOR GONZÁLEZ,doctor gonzalez,Nuevo León,25.5922,-99.9962,state_centroid
+Dr. Gonzalez,dr gonzalez,Nuevo León,25.5922,-99.9962,state_centroid
+El Carmen,el carmen,Nuevo León,25.936,-100.363,municipio_seat
+Escobedo,escobedo,Nuevo León,25.5922,-99.9962,state_centroid
+Galeana,galeana,Nuevo León,25.5922,-99.9962,state_centroid
+Garcia,garcia,Nuevo León,25.7966,-100.584,municipio_seat
+Garza García,garza garcia,Nuevo León,25.5922,-99.9962,state_centroid
+General Bravo,general bravo,Nuevo León,25.5922,-99.9962,state_centroid
+General De Escobedo,general de escobedo,Nuevo León,25.5922,-99.9962,state_centroid
+General Escobedo,general escobedo,Nuevo León,25.7953,-100.3144,municipio_seat
+General Zuazua,general zuazua,Nuevo León,25.5922,-99.9962,state_centroid
+Generel Bravo Y China,generel bravo y china,Nuevo León,25.5922,-99.9962,state_centroid
+Gral Escobedo,gral escobedo,Nuevo León,25.5922,-99.9962,state_centroid
+GRAL. ZUAZUA,gral zuazua,Nuevo León,25.5922,-99.9962,state_centroid
+Guadalupe,guadalupe,Nuevo León,25.6767,-100.256,municipio_seat
+Hidalgo,hidalgo,Nuevo León,25.5922,-99.9962,state_centroid
+Juarez,juarez,Nuevo León,25.5922,-99.9962,state_centroid
+LAMPAZOS DE NARANJO,lampazos de naranjo,Nuevo León,25.5922,-99.9962,state_centroid
+Linares,linares,Nuevo León,25.5922,-99.9962,state_centroid
+Los Ramones,los ramones,Nuevo León,25.5922,-99.9962,state_centroid
+Marín,marin,Nuevo León,25.879,-100.03,municipio_seat
+Mina,mina,Nuevo León,26.001,-100.53,municipio_seat
+Montemorelos,montemorelos,Nuevo León,25.5922,-99.9962,state_centroid
+Monterrey,monterrey,Nuevo León,25.6866,-100.3161,municipio_seat
+Pesquería,pesqueria,Nuevo León,25.785,-100.051,municipio_seat
+Salinas Victoria,salinas victoria,Nuevo León,26.0744,-100.296,municipio_seat
+San Nicolas,san nicolas,Nuevo León,25.5922,-99.9962,state_centroid
+San Nicolas De Los G.,san nicolas de los g,Nuevo León,25.5922,-99.9962,state_centroid
+San Nicolás De Los Garza,san nicolas de los garza,Nuevo León,25.7417,-100.302,municipio_seat
+"San Nicolás De Los Garza, N.L.",san nicolas de los garza nl,Nuevo León,25.5922,-99.9962,state_centroid
+San Pedro,san pedro,Nuevo León,25.5922,-99.9962,state_centroid
+San Pedro Garza Garcia,san pedro garza garcia,Nuevo León,25.657,-100.402,municipio_seat
+Santa Catarina,santa catarina,Nuevo León,25.6732,-100.458,municipio_seat
+Santiago,santiago,Nuevo León,25.5922,-99.9962,state_centroid
+Topo Chico,topo chico,Nuevo León,25.5922,-99.9962,state_centroid
+Villa De Garcia,villa de garcia,Nuevo León,25.5922,-99.9962,state_centroid
+Villaldama,villaldama,Nuevo León,25.5922,-99.9962,state_centroid
+Zuazua,zuazua,Nuevo León,25.9,-100.11,municipio_seat
+Asunción Ixtaltepec,asuncion ixtaltepec,Oaxaca,17.0732,-96.7266,state_centroid
+Ciudad Ixtepec,ciudad ixtepec,Oaxaca,17.0732,-96.7266,state_centroid
+Del Barrio,del barrio,Oaxaca,17.0732,-96.7266,state_centroid
+Ixtaltepec,ixtaltepec,Oaxaca,17.0732,-96.7266,state_centroid
+Ixtepec,ixtepec,Oaxaca,17.0732,-96.7266,state_centroid
+Juchitán De Zaragoza,juchitan de zaragoza,Oaxaca,17.0732,-96.7266,state_centroid
+LOMA BONITA,loma bonita,Oaxaca,17.0732,-96.7266,state_centroid
+Magdalena Apasco,magdalena apasco,Oaxaca,17.0732,-96.7266,state_centroid
+Oaxaca De Juárez,oaxaca de juarez,Oaxaca,17.0732,-96.7266,municipio_seat
+SALINA CRUZ,salina cruz,Oaxaca,17.0732,-96.7266,state_centroid
+San Jose Del Progreso,san jose del progreso,Oaxaca,17.0732,-96.7266,state_centroid
+San Juan Bautista Tuxtepec,san juan bautista tuxtepec,Oaxaca,17.0732,-96.7266,state_centroid
+Santo Domingo Ingenio,santo domingo ingenio,Oaxaca,17.0732,-96.7266,state_centroid
+"Santo Domingo Ingenio , Oaxaca",santo domingo ingenio oaxaca,Oaxaca,17.0732,-96.7266,state_centroid
+Unión Hidalgo,union hidalgo,Oaxaca,17.0732,-96.7266,state_centroid
+Ahuazotepec,ahuazotepec,Puebla,19.0414,-98.2063,state_centroid
+Amozoc,amozoc,Puebla,19.0414,-98.2063,state_centroid
+ATLIXCO,atlixco,Puebla,19.0414,-98.2063,state_centroid
+Atzitzintla,atzitzintla,Puebla,19.0414,-98.2063,state_centroid
+Cañada Morelos,canada morelos,Puebla,19.0414,-98.2063,state_centroid
+Chapulco,chapulco,Puebla,19.0414,-98.2063,state_centroid
+Chignahuapan,chignahuapan,Puebla,19.0414,-98.2063,state_centroid
+Chignautla,chignautla,Puebla,19.0414,-98.2063,state_centroid
+Cuautlancingo,cuautlancingo,Puebla,19.0414,-98.2063,state_centroid
+Cuyoaco,cuyoaco,Puebla,19.601,-97.62,municipio_seat
+Cuyuaco,cuyuaco,Puebla,19.0414,-98.2063,state_centroid
+Esperanza,esperanza,Puebla,19.0414,-98.2063,state_centroid
+Guadalupe Victoria,guadalupe victoria,Puebla,19.0414,-98.2063,state_centroid
+Huauchinango,huauchinango,Puebla,19.0414,-98.2063,state_centroid
+Huejotzingo,huejotzingo,Puebla,19.0414,-98.2063,state_centroid
+Ixtacamaxtitlan,ixtacamaxtitlan,Puebla,19.0414,-98.2063,state_centroid
+LIBRES,libres,Puebla,19.0414,-98.2063,state_centroid
+Nopalucan,nopalucan,Puebla,19.0414,-98.2063,state_centroid
+Nopalucan De La Granja,nopalucan de la granja,Puebla,19.0414,-98.2063,state_centroid
+OCOYUCAN,ocoyucan,Puebla,19.0414,-98.2063,state_centroid
+Oriental,oriental,Puebla,19.0414,-98.2063,state_centroid
+Palmar De Bravo,palmar de bravo,Puebla,19.0414,-98.2063,state_centroid
+"Palmar De Bravo, Esperanza, Cañada Morelos, Chapulco Y Nicolás Bravo",palmar de bravo esperanza canada morelos chapulco y nicolas bravo,Puebla,19.0414,-98.2063,state_centroid
+Puebla,puebla,Puebla,19.0414,-98.2063,municipio_seat
+Puebla De Zaragoza,puebla de zaragoza,Puebla,19.0414,-98.2063,state_centroid
+RAFAEL LARA GRAJALES,rafael lara grajales,Puebla,19.0414,-98.2063,state_centroid
+San Andres Cholula,san andres cholula,Puebla,19.0414,-98.2063,state_centroid
+San Felipe Tepatlán,san felipe tepatlan,Puebla,19.0414,-98.2063,state_centroid
+San Francisco Totimehuacan,san francisco totimehuacan,Puebla,19.0414,-98.2063,state_centroid
+San José Alchichica,san jose alchichica,Puebla,19.0414,-98.2063,state_centroid
+San José Chiapa,san jose chiapa,Puebla,19.0414,-98.2063,state_centroid
+San Jose De Chiapa,san jose de chiapa,Puebla,19.0414,-98.2063,state_centroid
+San Juan Cuautlanciongo,san juan cuautlanciongo,Puebla,19.0414,-98.2063,state_centroid
+San Martín Texmelucan,san martin texmelucan,Puebla,19.0414,-98.2063,state_centroid
+San Mateo Capultitlan,san mateo capultitlan,Puebla,19.0414,-98.2063,state_centroid
+San Miguel Xoxtla,san miguel xoxtla,Puebla,19.0414,-98.2063,state_centroid
+San Nicolar Buenos Aires,san nicolar buenos aires,Puebla,19.0414,-98.2063,state_centroid
+San Nicolás Buenos Aires,san nicolas buenos aires,Puebla,19.0414,-98.2063,state_centroid
+San Pedro,san pedro,Puebla,19.0414,-98.2063,state_centroid
+San Pedro Cholula,san pedro cholula,Puebla,19.0414,-98.2063,state_centroid
+San Salvador El Seco,san salvador el seco,Puebla,19.0414,-98.2063,state_centroid
+Santa Rosa,santa rosa,Puebla,19.0414,-98.2063,state_centroid
+"Sn Mateo Capultitlan,",sn mateo capultitlan,Puebla,19.0414,-98.2063,state_centroid
+Tecali De Herrera,tecali de herrera,Puebla,19.0414,-98.2063,state_centroid
+TECAMACHALCO,tecamachalco,Puebla,19.0414,-98.2063,state_centroid
+Tehuacán,tehuacan,Puebla,19.0414,-98.2063,state_centroid
+TEPANCO DE LOPEZ,tepanco de lopez,Puebla,19.0414,-98.2063,state_centroid
+Tepeaca,tepeaca,Puebla,19.0414,-98.2063,state_centroid
+Tepeyahualco,tepeyahualco,Puebla,19.488,-97.496,municipio_seat
+Teziutlán,teziutlan,Puebla,19.0414,-98.2063,state_centroid
+TLACHICHUCA,tlachichuca,Puebla,19.0414,-98.2063,state_centroid
+TLATLAUQUITEPEC,tlatlauquitepec,Puebla,19.0414,-98.2063,state_centroid
+Tolchtepec,tolchtepec,Puebla,19.0414,-98.2063,state_centroid
+Xochitlan,xochitlan,Puebla,19.0414,-98.2063,state_centroid
+Zacapoaxtla,zacapoaxtla,Puebla,19.0414,-98.2063,state_centroid
+Zacatlán,zacatlan,Puebla,19.0414,-98.2063,state_centroid
+Zoquiapan,zoquiapan,Puebla,19.0414,-98.2063,state_centroid
+Amealco De Bonfil,amealco de bonfil,Querétaro,20.5888,-100.3899,state_centroid
+Cadereyta De Montes,cadereyta de montes,Querétaro,20.5888,-100.3899,state_centroid
+Calamanda,calamanda,Querétaro,20.5888,-100.3899,state_centroid
+Colon,colon,Querétaro,20.783,-100.045,municipio_seat
+Corregidora,corregidora,Querétaro,20.5888,-100.3899,state_centroid
+El Colorado,el colorado,Querétaro,20.5888,-100.3899,state_centroid
+El Marques,el marques,Querétaro,20.624,-100.27,municipio_seat
+El Marquez,el marquez,Querétaro,20.5888,-100.3899,state_centroid
+EZEQUIEL MONTES,ezequiel montes,Querétaro,20.5888,-100.3899,state_centroid
+"Galeras, Colon",galeras colon,Querétaro,20.5888,-100.3899,state_centroid
+Huimilpan,huimilpan,Querétaro,20.37,-100.27,municipio_seat
+Juriquilla,juriquilla,Querétaro,20.5888,-100.3899,state_centroid
+La Penuela,la penuela,Querétaro,20.5888,-100.3899,state_centroid
+Marques,marques,Querétaro,20.5888,-100.3899,state_centroid
+Mompaní,mompani,Querétaro,20.5888,-100.3899,state_centroid
+Pedro Escobedo,pedro escobedo,Querétaro,20.499,-100.14,municipio_seat
+Querétaro,queretaro,Querétaro,20.5888,-100.3899,municipio_seat
+San Juan Del Río,san juan del rio,Querétaro,20.5888,-100.3899,state_centroid
+Santa Rosa Jáuregui,santa rosa jauregui,Querétaro,20.5888,-100.3899,state_centroid
+Santa Rosa Jauregui Queretaro,santa rosa jauregui queretaro,Querétaro,20.5888,-100.3899,state_centroid
+Santiago De Queretaro,santiago de queretaro,Querétaro,20.5888,-100.3899,state_centroid
+Sta Rosa Jauregui,sta rosa jauregui,Querétaro,20.5888,-100.3899,state_centroid
+Sta Rosa Juaregui,sta rosa juaregui,Querétaro,20.5888,-100.3899,state_centroid
+Tolimán,toliman,Querétaro,20.5888,-100.3899,state_centroid
+Villa Corregidora,villa corregidora,Querétaro,20.5888,-100.3899,state_centroid
+Villa De Corregidora,villa de corregidora,Querétaro,20.5888,-100.3899,state_centroid
+Bacalar,bacalar,Quintana Roo,19.1817,-88.4791,state_centroid
+Benito Juarez,benito juarez,Quintana Roo,21.1619,-86.8515,municipio_seat
+Cancun,cancun,Quintana Roo,21.1619,-86.8515,municipio_seat
+"Cancun, Benito Juarez",cancun benito juarez,Quintana Roo,19.1817,-88.4791,state_centroid
+Chetumal,chetumal,Quintana Roo,19.1817,-88.4791,state_centroid
+Cozumel,cozumel,Quintana Roo,19.1817,-88.4791,state_centroid
+Felipe Carrillo Puerto,felipe carrillo puerto,Quintana Roo,19.1817,-88.4791,state_centroid
+Isla Mujeres,isla mujeres,Quintana Roo,19.1817,-88.4791,state_centroid
+Joaquin Zetina Gasca,joaquin zetina gasca,Quintana Roo,19.1817,-88.4791,state_centroid
+José María Morelos,jose maria morelos,Quintana Roo,19.1817,-88.4791,state_centroid
+Lázaro Cárdenas,lazaro cardenas,Quintana Roo,19.1817,-88.4791,state_centroid
+Othon P. Blanco,othon p blanco,Quintana Roo,19.1817,-88.4791,state_centroid
+Othon P Blanco. Chetumal,othon p blanco chetumal,Quintana Roo,19.1817,-88.4791,state_centroid
+Playa Del Carmen,playa del carmen,Quintana Roo,19.1817,-88.4791,state_centroid
+Puerto Morelos,puerto morelos,Quintana Roo,19.1817,-88.4791,state_centroid
+Solidaridad,solidaridad,Quintana Roo,19.1817,-88.4791,state_centroid
+Tulum,tulum,Quintana Roo,19.1817,-88.4791,state_centroid
+Cd Valles,cd valles,San Luis Potosí,22.1565,-100.9855,state_centroid
+CEDRAL,cedral,San Luis Potosí,22.1565,-100.9855,state_centroid
+Cerritos,cerritos,San Luis Potosí,22.1565,-100.9855,state_centroid
+Charcas,charcas,San Luis Potosí,22.1565,-100.9855,state_centroid
+Ciudad Valles,ciudad valles,San Luis Potosí,22.1565,-100.9855,state_centroid
+Delegacion Villa De Pozos,delegacion villa de pozos,San Luis Potosí,22.1565,-100.9855,state_centroid
+GUADALCÁZAR,guadalcazar,San Luis Potosí,22.1565,-100.9855,state_centroid
+Laguna De San Vicente,laguna de san vicente,San Luis Potosí,22.1565,-100.9855,state_centroid
+Matehuala,matehuala,San Luis Potosí,22.1565,-100.9855,state_centroid
+Mexquitic De Carmona,mexquitic de carmona,San Luis Potosí,22.1565,-100.9855,state_centroid
+Moctezuma,moctezuma,San Luis Potosí,22.1565,-100.9855,state_centroid
+Río Verde,rio verde,San Luis Potosí,22.1565,-100.9855,state_centroid
+RIOVERDE,rioverde,San Luis Potosí,22.1565,-100.9855,state_centroid
+San Luis,san luis,San Luis Potosí,22.1565,-100.9855,state_centroid
+San Luis Postosi,san luis postosi,San Luis Potosí,22.1565,-100.9855,state_centroid
+San Luis Potosí,san luis potosi,San Luis Potosí,22.1565,-100.9855,municipio_seat
+San Lus Potosi,san lus potosi,San Luis Potosí,22.1565,-100.9855,state_centroid
+Santa Rita,santa rita,San Luis Potosí,22.1565,-100.9855,state_centroid
+Santo Domingo,santo domingo,San Luis Potosí,22.1565,-100.9855,state_centroid
+Soledad De Graciano,soledad de graciano,San Luis Potosí,22.1565,-100.9855,state_centroid
+Soledad De Graciano Sanchez,soledad de graciano sanchez,San Luis Potosí,22.1565,-100.9855,state_centroid
+Tamazunchale,tamazunchale,San Luis Potosí,21.26,-98.79,municipio_seat
+Tamuin,tamuin,San Luis Potosí,22.1565,-100.9855,state_centroid
+Vanegas,vanegas,San Luis Potosí,22.1565,-100.9855,state_centroid
+Venado,venado,San Luis Potosí,22.1565,-100.9855,state_centroid
+"Venado, San Luis Potosí",venado san luis potosi,San Luis Potosí,22.1565,-100.9855,state_centroid
+Villa De Arista,villa de arista,San Luis Potosí,22.1565,-100.9855,state_centroid
+Villa De Arriaga,villa de arriaga,San Luis Potosí,22.1565,-100.9855,state_centroid
+"Villa De Arriaga, Villa De Reyes",villa de arriaga villa de reyes,San Luis Potosí,22.1565,-100.9855,state_centroid
+VILLA DE LA PAZ,villa de la paz,San Luis Potosí,22.1565,-100.9855,state_centroid
+Villa De Pozos,villa de pozos,San Luis Potosí,22.1565,-100.9855,state_centroid
+Villa De Ramos,villa de ramos,San Luis Potosí,22.1565,-100.9855,state_centroid
+Villa De Ramos Y Santo Domingo,villa de ramos y santo domingo,San Luis Potosí,22.1565,-100.9855,state_centroid
+Villa De Reyes,villa de reyes,San Luis Potosí,21.803,-100.934,municipio_seat
+Villa De Zaragoza,villa de zaragoza,San Luis Potosí,22.1565,-100.9855,state_centroid
+Villa Reyes,villa reyes,San Luis Potosí,21.803,-100.934,municipio_seat
+Zaragoza,zaragoza,San Luis Potosí,22.1565,-100.9855,state_centroid
+Ahome,ahome,Sinaloa,25.1721,-107.4795,state_centroid
+Ahome Los Mochis,ahome los mochis,Sinaloa,25.1721,-107.4795,state_centroid
+Badiraguato,badiraguato,Sinaloa,25.1721,-107.4795,state_centroid
+Concordia,concordia,Sinaloa,25.1721,-107.4795,state_centroid
+Cosalá,cosala,Sinaloa,25.1721,-107.4795,state_centroid
+Cualiacan,cualiacan,Sinaloa,25.1721,-107.4795,state_centroid
+Culiacán,culiacan,Sinaloa,24.8091,-107.394,municipio_seat
+Culican,culican,Sinaloa,25.1721,-107.4795,state_centroid
+"Ejido El Castillo, Mazatlán",ejido el castillo mazatlan,Sinaloa,25.1721,-107.4795,state_centroid
+El Fuerte,el fuerte,Sinaloa,25.1721,-107.4795,state_centroid
+Guamuchil,guamuchil,Sinaloa,25.1721,-107.4795,state_centroid
+Guasave,guasave,Sinaloa,25.1721,-107.4795,state_centroid
+Los Mochis,los mochis,Sinaloa,25.1721,-107.4795,state_centroid
+Mazatlan,mazatlan,Sinaloa,23.2494,-106.4111,municipio_seat
+MAZATLÁN SINALOA,mazatlan sinaloa,Sinaloa,25.1721,-107.4795,state_centroid
+Mocorito,mocorito,Sinaloa,25.1721,-107.4795,state_centroid
+Navolato,navolato,Sinaloa,25.1721,-107.4795,state_centroid
+Rosario,rosario,Sinaloa,25.1721,-107.4795,state_centroid
+Salvador Alvarado,salvador alvarado,Sinaloa,25.1721,-107.4795,state_centroid
+San Blas,san blas,Sinaloa,25.1721,-107.4795,state_centroid
+San Ignacio,san ignacio,Sinaloa,25.1721,-107.4795,state_centroid
+SINALOA,sinaloa,Sinaloa,25.1721,-107.4795,state_centroid
+Sinaloa De Leyva,sinaloa de leyva,Sinaloa,25.1721,-107.4795,state_centroid
+Agua Prieta,agua prieta,Sonora,31.33,-109.548,municipio_seat
+Aguaprieta,aguaprieta,Sonora,29.2972,-110.3309,state_centroid
+Alamos,alamos,Sonora,29.2972,-110.3309,state_centroid
+Bacum,bacum,Sonora,29.2972,-110.3309,state_centroid
+"Bácum, Ciudad Obregón",bacum ciudad obregon,Sonora,29.2972,-110.3309,state_centroid
+"Bacum, Sonora",bacum sonora,Sonora,29.2972,-110.3309,state_centroid
+Benjamín Hill,benjamin hill,Sonora,29.2972,-110.3309,state_centroid
+Caborca,caborca,Sonora,29.2972,-110.3309,state_centroid
+Cajeme,cajeme,Sonora,27.486,-109.931,municipio_seat
+Cajeme - Cd. Obregón,cajeme cd obregon,Sonora,29.2972,-110.3309,state_centroid
+Cananea,cananea,Sonora,29.2972,-110.3309,state_centroid
+Carbo,carbo,Sonora,29.2972,-110.3309,state_centroid
+Cd. Obregón,cd obregon,Sonora,29.2972,-110.3309,state_centroid
+Ciudad Obregón,ciudad obregon,Sonora,29.2972,-110.3309,state_centroid
+CUMPAS,cumpas,Sonora,29.2972,-110.3309,state_centroid
+Ej Juan Alvarez,ej juan alvarez,Sonora,29.2972,-110.3309,state_centroid
+El Novillo,el novillo,Sonora,29.2972,-110.3309,state_centroid
+Empalme,empalme,Sonora,27.961,-110.814,municipio_seat
+Guaymas,guaymas,Sonora,29.2972,-110.3309,state_centroid
+H. Caborca,h caborca,Sonora,29.2972,-110.3309,state_centroid
+Hermosilla,hermosilla,Sonora,29.2972,-110.3309,state_centroid
+Hermosillo,hermosillo,Sonora,29.0729,-110.9559,municipio_seat
+Heroica Caboraca,heroica caboraca,Sonora,29.2972,-110.3309,state_centroid
+Heroica Caborca,heroica caborca,Sonora,29.2972,-110.3309,state_centroid
+Heroica Guaymas,heroica guaymas,Sonora,29.2972,-110.3309,state_centroid
+Huatabampo,huatabampo,Sonora,29.2972,-110.3309,state_centroid
+La Colorada,la colorada,Sonora,29.2972,-110.3309,state_centroid
+Magdalena De Kino,magdalena de kino,Sonora,29.2972,-110.3309,state_centroid
+Municipio De Cajeme,municipio de cajeme,Sonora,29.2972,-110.3309,state_centroid
+Nacozari De Garcia,nacozari de garcia,Sonora,29.2972,-110.3309,state_centroid
+Navojoa,navojoa,Sonora,29.2972,-110.3309,state_centroid
+Nogales,nogales,Sonora,31.3086,-110.9422,municipio_seat
+Pitiquito,pitiquito,Sonora,29.2972,-110.3309,state_centroid
+Pitiquito Comisaria De Puerto De Libertad,pitiquito comisaria de puerto de libertad,Sonora,29.2972,-110.3309,state_centroid
+Pitiquito Comisaria De Puerto Libertad,pitiquito comisaria de puerto libertad,Sonora,29.2972,-110.3309,state_centroid
+"Pueblo Yaqui, Ciudad Obregón",pueblo yaqui ciudad obregon,Sonora,29.2972,-110.3309,state_centroid
+"Puerto Libertad, Pitiquito",puerto libertad pitiquito,Sonora,29.2972,-110.3309,state_centroid
+Puerto Peñasco,puerto penasco,Sonora,31.317,-113.533,municipio_seat
+Sahuaripa,sahuaripa,Sonora,29.2972,-110.3309,state_centroid
+San Ignacio Rio Muerto,san ignacio rio muerto,Sonora,29.2972,-110.3309,state_centroid
+San Luis De Rio Colorado,san luis de rio colorado,Sonora,29.2972,-110.3309,state_centroid
+San Luis Rio Colorado,san luis rio colorado,Sonora,32.454,-114.772,municipio_seat
+Santa Ana,santa ana,Sonora,29.2972,-110.3309,state_centroid
+Santa Cruz,santa cruz,Sonora,29.2972,-110.3309,state_centroid
+SOYOPA,soyopa,Sonora,29.2972,-110.3309,state_centroid
+Trincheras,trincheras,Sonora,29.2972,-110.3309,state_centroid
+Triunfo Santa Rosa,triunfo santa rosa,Sonora,29.2972,-110.3309,state_centroid
+Ures,ures,Sonora,29.2972,-110.3309,state_centroid
+Cárdenas,cardenas,Tabasco,17.8409,-92.6189,state_centroid
+Centro,centro,Tabasco,17.9892,-92.9281,municipio_seat
+Centro (Ciudad Villahermosa),centro ciudad villahermosa,Tabasco,17.8409,-92.6189,state_centroid
+Centro Tabasco,centro tabasco,Tabasco,17.8409,-92.6189,state_centroid
+"Ciudad Pemex, Macuspana",ciudad pemex macuspana,Tabasco,17.8409,-92.6189,state_centroid
+COMALCALCO,comalcalco,Tabasco,17.8409,-92.6189,state_centroid
+Cunduacán,cunduacan,Tabasco,17.8409,-92.6189,state_centroid
+Huimanguillo,huimanguillo,Tabasco,17.8409,-92.6189,state_centroid
+Macuspana,macuspana,Tabasco,17.8409,-92.6189,state_centroid
+Municipio Del Centro,municipio del centro,Tabasco,17.8409,-92.6189,state_centroid
+Paraiso,paraiso,Tabasco,17.8409,-92.6189,state_centroid
+Villahermosa,villahermosa,Tabasco,17.9892,-92.9281,municipio_seat
+Villahermosa Centro,villahermosa centro,Tabasco,17.8409,-92.6189,state_centroid
+Altamira,altamira,Tamaulipas,22.393,-97.938,municipio_seat
+Casas,casas,Tamaulipas,24.2669,-98.8363,state_centroid
+Cd. Victoria,cd victoria,Tamaulipas,24.2669,-98.8363,state_centroid
+Ciudad Madero,ciudad madero,Tamaulipas,24.2669,-98.8363,state_centroid
+Ciudad Mante,ciudad mante,Tamaulipas,24.2669,-98.8363,state_centroid
+Ciudad Victoria,ciudad victoria,Tamaulipas,23.7369,-99.1411,municipio_seat
+Cruillas,cruillas,Tamaulipas,24.2669,-98.8363,state_centroid
+EL MANTE,el mante,Tamaulipas,24.2669,-98.8363,state_centroid
+Gãœemez,ga emez,Tamaulipas,24.2669,-98.8363,state_centroid
+GONZÁLEZ,gonzalez,Tamaulipas,24.2669,-98.8363,state_centroid
+Güémez,guemez,Tamaulipas,24.2669,-98.8363,state_centroid
+H. Matamoros,h matamoros,Tamaulipas,25.869,-97.502,municipio_seat
+JIMÉNEZ,jimenez,Tamaulipas,24.2669,-98.8363,state_centroid
+Llera,llera,Tamaulipas,24.2669,-98.8363,state_centroid
+Llera De Canales,llera de canales,Tamaulipas,24.2669,-98.8363,state_centroid
+Madero,madero,Tamaulipas,24.2669,-98.8363,state_centroid
+Matamoros,matamoros,Tamaulipas,25.869,-97.502,municipio_seat
+Mendez,mendez,Tamaulipas,25.117,-98.587,municipio_seat
+Mier,mier,Tamaulipas,24.2669,-98.8363,state_centroid
+Municipio De Altamira,municipio de altamira,Tamaulipas,24.2669,-98.8363,state_centroid
+Nuevo Laredo,nuevo laredo,Tamaulipas,27.486,-99.507,municipio_seat
+Reynosa,reynosa,Tamaulipas,26.0508,-98.2975,municipio_seat
+Rio Bravo,rio bravo,Tamaulipas,24.2669,-98.8363,state_centroid
+San Carlos,san carlos,Tamaulipas,24.2669,-98.8363,state_centroid
+San Fernando,san fernando,Tamaulipas,24.2669,-98.8363,state_centroid
+Soto La Marina,soto la marina,Tamaulipas,24.2669,-98.8363,state_centroid
+Tampico,tampico,Tamaulipas,22.233,-97.861,municipio_seat
+Valle Hermoso,valle hermoso,Tamaulipas,24.2669,-98.8363,state_centroid
+Victoria,victoria,Tamaulipas,24.2669,-98.8363,state_centroid
+Villagran,villagran,Tamaulipas,24.2669,-98.8363,state_centroid
+Apetatitlán De Antonio Carvajal,apetatitlan de antonio carvajal,Tlaxcala,19.3182,-98.2375,state_centroid
+Atlangatepec,atlangatepec,Tlaxcala,19.3182,-98.2375,state_centroid
+ATLTZAYANCA,atltzayanca,Tlaxcala,19.3182,-98.2375,state_centroid
+Calpulalpan,calpulalpan,Tlaxcala,19.3182,-98.2375,state_centroid
+Coyoacan,coyoacan,Tlaxcala,19.3182,-98.2375,state_centroid
+De La Magdalena Tlatelulco,de la magdalena tlatelulco,Tlaxcala,19.3182,-98.2375,state_centroid
+Huamantla,huamantla,Tlaxcala,19.3182,-98.2375,state_centroid
+Hueyotlipan,hueyotlipan,Tlaxcala,19.47,-98.35,municipio_seat
+Ixtacuixtla De M. De Matamoros,ixtacuixtla de m de matamoros,Tlaxcala,19.3182,-98.2375,state_centroid
+Ixtacuixtla De Mariano Matamoros,ixtacuixtla de mariano matamoros,Tlaxcala,19.3182,-98.2375,state_centroid
+La Magdalena Tlaltelulco,la magdalena tlaltelulco,Tlaxcala,19.3182,-98.2375,state_centroid
+La Magdalena Tlateluco,la magdalena tlateluco,Tlaxcala,19.3182,-98.2375,state_centroid
+La Magdalena Tlatelulco,la magdalena tlatelulco,Tlaxcala,19.3182,-98.2375,state_centroid
+Municipio De Calpulalpan,municipio de calpulalpan,Tlaxcala,19.3182,-98.2375,state_centroid
+Panzacola,panzacola,Tlaxcala,19.3182,-98.2375,state_centroid
+PAPALOTLA DE XICOHTÉNCATL,papalotla de xicohtencatl,Tlaxcala,19.3182,-98.2375,state_centroid
+San Cosme Xalostoc,san cosme xalostoc,Tlaxcala,19.3182,-98.2375,state_centroid
+San Luis Teolocholco,san luis teolocholco,Tlaxcala,19.3182,-98.2375,state_centroid
+SAN MARCOS CONTLA,san marcos contla,Tlaxcala,19.3182,-98.2375,state_centroid
+Santa Isabel Xiloxoxtla,santa isabel xiloxoxtla,Tlaxcala,19.3182,-98.2375,state_centroid
+Santiago Tetla,santiago tetla,Tlaxcala,19.3182,-98.2375,state_centroid
+TEOLOCHOLCO,teolocholco,Tlaxcala,19.3182,-98.2375,state_centroid
+Tepetitla De Lardizábal,tepetitla de lardizabal,Tlaxcala,19.3182,-98.2375,state_centroid
+TERRENATE,terrenate,Tlaxcala,19.3182,-98.2375,state_centroid
+Tetla,tetla,Tlaxcala,19.3182,-98.2375,state_centroid
+Tetla De La Solidaridad,tetla de la solidaridad,Tlaxcala,19.3182,-98.2375,state_centroid
+Tlaxcala,tlaxcala,Tlaxcala,19.3182,-98.2375,municipio_seat
+Tlaxco,tlaxco,Tlaxcala,19.3182,-98.2375,state_centroid
+VILLA ALTA,villa alta,Tlaxcala,19.3182,-98.2375,state_centroid
+Xalostoc,xalostoc,Tlaxcala,19.3182,-98.2375,state_centroid
+Xaloztoc,xaloztoc,Tlaxcala,19.3182,-98.2375,state_centroid
+Xicohtzinco,xicohtzinco,Tlaxcala,19.3182,-98.2375,state_centroid
+Yauhquemehcan,yauhquemehcan,Tlaxcala,19.3182,-98.2375,state_centroid
+Zitlaltepec De Trinidad Sanchez,zitlaltepec de trinidad sanchez,Tlaxcala,19.3182,-98.2375,state_centroid
+Acayucan,acayucan,Veracruz,19.1738,-96.1342,state_centroid
+ÁLAMO TEMAPACHE,alamo temapache,Veracruz,19.1738,-96.1342,state_centroid
+Alvarado,alvarado,Veracruz,19.1738,-96.1342,state_centroid
+AMATLAN DE LOS REYES,amatlan de los reyes,Veracruz,19.1738,-96.1342,state_centroid
+Apazapan,apazapan,Veracruz,19.1738,-96.1342,state_centroid
+Boca Del Rio,boca del rio,Veracruz,19.1738,-96.1342,state_centroid
+Chocaman,chocaman,Veracruz,19.1738,-96.1342,state_centroid
+COATEPEC,coatepec,Veracruz,19.1738,-96.1342,state_centroid
+Coatzacoalcos,coatzacoalcos,Veracruz,18.1342,-94.4589,municipio_seat
+Córdoba,cordoba,Veracruz,19.1738,-96.1342,state_centroid
+Cosamaloapan De Carpio,cosamaloapan de carpio,Veracruz,19.1738,-96.1342,state_centroid
+COTAXTLA,cotaxtla,Veracruz,19.1738,-96.1342,state_centroid
+Cuichapa,cuichapa,Veracruz,19.1738,-96.1342,state_centroid
+Cuitláhuac,cuitlahuac,Veracruz,19.1738,-96.1342,state_centroid
+El Higo,el higo,Veracruz,19.1738,-96.1342,state_centroid
+Fortín,fortin,Veracruz,19.1738,-96.1342,state_centroid
+Fortín De Las Flores,fortin de las flores,Veracruz,19.1738,-96.1342,state_centroid
+Ixhuatlan Del Sureste,ixhuatlan del sureste,Veracruz,19.1738,-96.1342,state_centroid
+Ixtaczoquitlán,ixtaczoquitlan,Veracruz,19.1738,-96.1342,state_centroid
+Jáltipan,jaltipan,Veracruz,19.1738,-96.1342,state_centroid
+LA ANTIGUA,la antigua,Veracruz,19.1738,-96.1342,state_centroid
+Las Choapas,las choapas,Veracruz,19.1738,-96.1342,state_centroid
+LAS MINAS,las minas,Veracruz,19.1738,-96.1342,state_centroid
+MANLIO FABIO ALTAMIRANO,manlio fabio altamirano,Veracruz,19.1738,-96.1342,state_centroid
+Martinez De La Torre,martinez de la torre,Veracruz,19.1738,-96.1342,state_centroid
+Medellín,medellin,Veracruz,19.1738,-96.1342,state_centroid
+Medellín De Bravo,medellin de bravo,Veracruz,19.1738,-96.1342,state_centroid
+Minatilan,minatilan,Veracruz,19.1738,-96.1342,state_centroid
+Minatitlán,minatitlan,Veracruz,19.1738,-96.1342,state_centroid
+Moloacán,moloacan,Veracruz,19.1738,-96.1342,state_centroid
+Nanchital,nanchital,Veracruz,19.1738,-96.1342,state_centroid
+Nanchital De Lázaro Cárdenas,nanchital de lazaro cardenas,Veracruz,19.1738,-96.1342,state_centroid
+OLUTA,oluta,Veracruz,19.1738,-96.1342,state_centroid
+Orizaba,orizaba,Veracruz,19.1738,-96.1342,state_centroid
+Ozuluama De Mascareñas,ozuluama de mascarenas,Veracruz,19.1738,-96.1342,state_centroid
+Panuco,panuco,Veracruz,19.1738,-96.1342,state_centroid
+PAPANTLA,papantla,Veracruz,19.1738,-96.1342,state_centroid
+PARAJE NUEVO,paraje nuevo,Veracruz,19.1738,-96.1342,state_centroid
+Paso De Ovejas,paso de ovejas,Veracruz,19.1738,-96.1342,state_centroid
+Perote,perote,Veracruz,19.1738,-96.1342,state_centroid
+POZA RICA DE HIDALGO,poza rica de hidalgo,Veracruz,19.1738,-96.1342,state_centroid
+PUENTE NACIONAL,puente nacional,Veracruz,19.1738,-96.1342,state_centroid
+RAFAEL DELGADO,rafael delgado,Veracruz,19.1738,-96.1342,state_centroid
+Río Blanco,rio blanco,Veracruz,18.83,-97.156,municipio_seat
+SAN JUAN EVANGELISTA,san juan evangelista,Veracruz,19.1738,-96.1342,state_centroid
+SAYULA DE ALEMÁN,sayula de aleman,Veracruz,19.1738,-96.1342,state_centroid
+SOLEDAD DE DOBLADO,soledad de doblado,Veracruz,19.1738,-96.1342,state_centroid
+Tatatila,tatatila,Veracruz,19.1738,-96.1342,state_centroid
+Tejeria,tejeria,Veracruz,19.1738,-96.1342,state_centroid
+Texistepec,texistepec,Veracruz,19.1738,-96.1342,state_centroid
+Tierra Blanca,tierra blanca,Veracruz,19.1738,-96.1342,state_centroid
+TLALIXCOYAN,tlalixcoyan,Veracruz,19.1738,-96.1342,state_centroid
+Tlapacoyan,tlapacoyan,Veracruz,19.1738,-96.1342,state_centroid
+TRAPICHE MEZA,trapiche meza,Veracruz,19.1738,-96.1342,state_centroid
+Tuxpan,tuxpan,Veracruz,20.957,-97.407,municipio_seat
+Tuxpan De Rodríguez,tuxpan de rodriguez,Veracruz,19.1738,-96.1342,state_centroid
+Tuxpan De Rodriguez Cano,tuxpan de rodriguez cano,Veracruz,20.957,-97.407,municipio_seat
+Venta Parada,venta parada,Veracruz,19.1738,-96.1342,state_centroid
+Veracruz,veracruz,Veracruz,19.1738,-96.1342,municipio_seat
+"Veracruz , Llave",veracruz llave,Veracruz,19.1738,-96.1342,state_centroid
+Xalapa,xalapa,Veracruz,19.5438,-96.9102,municipio_seat
+YANGA,yanga,Veracruz,19.1738,-96.1342,state_centroid
+Zona Industrial Cangrejera,zona industrial cangrejera,Veracruz,19.1738,-96.1342,state_centroid
+ABALÁ,abala,Yucatán,20.7099,-89.0943,state_centroid
+Acancech,acancech,Yucatán,20.7099,-89.0943,state_centroid
+Acanceh,acanceh,Yucatán,20.7099,-89.0943,state_centroid
+Buctzotz,buctzotz,Yucatán,20.7099,-89.0943,state_centroid
+Calotmul,calotmul,Yucatán,20.7099,-89.0943,state_centroid
+Cansahcab,cansahcab,Yucatán,20.7099,-89.0943,state_centroid
+Cenotillo,cenotillo,Yucatán,20.7099,-89.0943,state_centroid
+Chemax,chemax,Yucatán,20.7099,-89.0943,state_centroid
+CHICXULUB PUEBLO,chicxulub pueblo,Yucatán,20.7099,-89.0943,state_centroid
+Conkal,conkal,Yucatán,20.7099,-89.0943,state_centroid
+Cuncunul,cuncunul,Yucatán,20.7099,-89.0943,state_centroid
+Dzidzantun,dzidzantun,Yucatán,20.7099,-89.0943,state_centroid
+Dzilam Bravo Y Dzilam González,dzilam bravo y dzilam gonzalez,Yucatán,20.7099,-89.0943,state_centroid
+Dzilam De Bravo,dzilam de bravo,Yucatán,20.7099,-89.0943,state_centroid
+Dzilam Gonzalez,dzilam gonzalez,Yucatán,20.7099,-89.0943,state_centroid
+Hunucmá,hunucma,Yucatán,20.7099,-89.0943,state_centroid
+Ixil,ixil,Yucatán,20.7099,-89.0943,state_centroid
+Izamal,izamal,Yucatán,20.7099,-89.0943,state_centroid
+Kanasin,kanasin,Yucatán,20.7099,-89.0943,state_centroid
+KOPOMÁ,kopoma,Yucatán,20.7099,-89.0943,state_centroid
+Mérida,merida,Yucatán,20.9674,-89.5926,municipio_seat
+Mocochá,mococha,Yucatán,20.7099,-89.0943,state_centroid
+Motul,motul,Yucatán,20.7099,-89.0943,state_centroid
+Muna,muna,Yucatán,20.7099,-89.0943,state_centroid
+Opichen,opichen,Yucatán,20.7099,-89.0943,state_centroid
+Panabá,panaba,Yucatán,20.7099,-89.0943,state_centroid
+Peto,peto,Yucatán,20.7099,-89.0943,state_centroid
+Progreso,progreso,Yucatán,21.283,-89.662,municipio_seat
+Progreso De Castro,progreso de castro,Yucatán,20.7099,-89.0943,state_centroid
+Río Lagartos,rio lagartos,Yucatán,20.7099,-89.0943,state_centroid
+Sacalum,sacalum,Yucatán,20.7099,-89.0943,state_centroid
+Sucila,sucila,Yucatán,20.7099,-89.0943,state_centroid
+Suma,suma,Yucatán,20.7099,-89.0943,state_centroid
+Tekax,tekax,Yucatán,20.7099,-89.0943,state_centroid
+Temax,temax,Yucatán,20.7099,-89.0943,state_centroid
+Ticul,ticul,Yucatán,20.7099,-89.0943,state_centroid
+Tixmehuac,tixmehuac,Yucatán,20.7099,-89.0943,state_centroid
+Tixpehual,tixpehual,Yucatán,20.7099,-89.0943,state_centroid
+Tizimin,tizimin,Yucatán,20.7099,-89.0943,state_centroid
+Tunkás,tunkas,Yucatán,20.7099,-89.0943,state_centroid
+Uayma,uayma,Yucatán,20.7099,-89.0943,state_centroid
+Ucu,ucu,Yucatán,20.7099,-89.0943,state_centroid
+Uman,uman,Yucatán,20.7099,-89.0943,state_centroid
+Valladolid,valladolid,Yucatán,20.689,-88.202,municipio_seat
+YAXCABÁ,yaxcaba,Yucatán,20.7099,-89.0943,state_centroid
+Calera,calera,Zacatecas,22.7709,-102.5832,state_centroid
+Chalchihuites,chalchihuites,Zacatecas,22.7709,-102.5832,state_centroid
+Concepción Del Oro,concepcion del oro,Zacatecas,22.7709,-102.5832,state_centroid
+Cuauhtemoc,cuauhtemoc,Zacatecas,22.7709,-102.5832,state_centroid
+Fresnillo,fresnillo,Zacatecas,23.175,-102.867,municipio_seat
+GENERAL ENRIQUE ESTRADA,general enrique estrada,Zacatecas,22.7709,-102.5832,state_centroid
+General Pánfilo Natera,general panfilo natera,Zacatecas,22.7709,-102.5832,state_centroid
+Guadalupe,guadalupe,Zacatecas,22.7709,-102.5832,state_centroid
+Mazapil,mazapil,Zacatecas,22.7709,-102.5832,state_centroid
+Morelos,morelos,Zacatecas,22.7709,-102.5832,state_centroid
+Ojo Caliente,ojo caliente,Zacatecas,22.7709,-102.5832,state_centroid
+Ojocaliente,ojocaliente,Zacatecas,22.7709,-102.5832,state_centroid
+Pinos,pinos,Zacatecas,22.7709,-102.5832,state_centroid
+Sain Alto,sain alto,Zacatecas,22.7709,-102.5832,state_centroid
+VETAGRANDE,vetagrande,Zacatecas,22.7709,-102.5832,state_centroid
+Víctor Rosales,victor rosales,Zacatecas,22.7709,-102.5832,state_centroid
+Villa De Cos,villa de cos,Zacatecas,22.7709,-102.5832,state_centroid
+Villa De Coss,villa de coss,Zacatecas,22.7709,-102.5832,state_centroid
+Villa Del Cos,villa del cos,Zacatecas,22.7709,-102.5832,state_centroid
+Villa Gonzalez Ortega,villa gonzalez ortega,Zacatecas,22.7709,-102.5832,state_centroid
+Zacatecas,zacatecas,Zacatecas,22.7709,-102.5832,municipio_seat
+"Zacatecas, Guadalupe, Genaro Codina Y Villanueva",zacatecas guadalupe genaro codina y villanueva,Zacatecas,22.7709,-102.5832,state_centroid
+Acuña,acuna,,,,unlocated
+Altar,altar,,,,unlocated
+Azcapotzalco,azcapotzalco,,,,unlocated
+Baja California,baja california,,,,unlocated
+Brownsville,brownsville,,,,unlocated
+Castaños,castanos,,,,unlocated
+Coahuila De Zaragoza,coahuila de zaragoza,,,,unlocated
+"Guadalupe, Nuevo León",guadalupe nuevo leon,,,,unlocated
+Jocotitlán,jocotitlan,,,,unlocated
+León,leon,,,,unlocated
+Los Cabos Baja California Sur,los cabos baja california sur,,,,unlocated
+San Luis Potosã¬,san luis potosa,,,,unlocated
+San Nicolas De Los Garza,san nicolas de los garza,,,,unlocated
+San Pedro Garza García,san pedro garza garcia,,,,unlocated
+Villa De Reyes,villa de reyes,,,,unlocated

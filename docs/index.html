@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard · CENACE queue net</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="inner">
+    <p class="kicker">William &amp; Mary · GIAS Futures Group · Team 2</p>
+    <h1>Place in line for electricity</h1>
+    <p class="sub">CENACE interconnection and connection queues, Mexico. Diagnostic only.</p>
+    <nav>
+      <a href="index.html" aria-current="page">Dashboard</a>
+      <a href="methods.html">Methods</a>
+      <a href="bibliography.html">Bibliography</a>
+    </nav>
+  </div>
+</header>
+<main class="dash">
+  <p class="caption" id="caption">Relative position in line for electrons, 2026–2036 clock. Not an influence score.</p>
+  <div class="controls">
+    <label>Clock
+      <select id="clock">
+        <option value="latest">Latest snapshot</option>
+        <option value="time">Time series</option>
+      </select>
+    </label>
+    <label>Cola
+      <select id="cola">
+        <option value="all">Generators + load</option>
+        <option value="interconexion">Interconexión (generators)</option>
+        <option value="conexion">Conexión (load)</option>
+      </select>
+    </label>
+    <label>Region
+      <select id="region">
+        <option value="all">All Mexico</option>
+        <option value="nuevo_leon">Nuevo León</option>
+        <option value="bajio">Bajío</option>
+      </select>
+    </label>
+    <label>Unmatched
+      <select id="unmatched">
+        <option value="include">Include unmatched MW</option>
+        <option value="exclude">Classified rows only</option>
+      </select>
+    </label>
+  </div>
+  <div class="stats" id="stats"></div>
+  <div id="charts-latest" class="layout">
+    <div>
+      <div id="map"></div>
+      <p class="legend">
+        <span class="swatch" style="background:#2f5d73"></span>U.S.
+        <span class="swatch" style="background:#8c3a2b"></span>PRC
+        <span class="swatch" style="background:#3d6b4f"></span>Mexico
+        <span class="swatch" style="background:#6b5a3e"></span>Other
+        <span class="swatch" style="background:#8a9096"></span>Unmatched
+        · marker area ∝ MW in the latest cola that is still in queue
+      </p>
+    </div>
+    <div>
+      <section class="panel">
+        <h2>MW in queue by ownership class</h2>
+        <canvas id="chartOwner"></canvas>
+      </section>
+      <section class="panel" style="margin-top:0.75rem">
+        <h2>Study-status mix (MW)</h2>
+        <canvas id="chartStatus"></canvas>
+      </section>
+    </div>
+  </div>
+  <div id="charts-time">
+    <section class="panel">
+      <h2>In-queue MW across snapshots</h2>
+      <canvas id="chartTime"></canvas>
+    </section>
+  </div>
+  <p class="note" id="note"></p>
+</main>
+<footer class="site-footer">
+  <p>No policy recommendations. Unmatched megawatts stay unmatched. Map uses Carto/OSM tiles; no Mapbox token.</p>
+</footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>

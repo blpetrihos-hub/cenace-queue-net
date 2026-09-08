@@ -1,0 +1,20 @@
+# Office lock / temp files
+~$*
+*.tmp
+Thumbs.db
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+.venv/
+venv/
+
+# Intermediate tidy tables (rebuild with process/normalize.py)
+data/processed/
+
+# Local secrets
+.env
+.env.*
