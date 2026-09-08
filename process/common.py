@@ -357,3 +357,71 @@ def classify_status(raw) -> str:
     if k == "cancelada":
         return "cancelled"
     return "other"
+
+
+def tech_family(raw) -> str:
+    k = fold(raw)
+    if any(x in k for x in ("fotovolta", "solar", "fv ")):
+        return "solar"
+    if any(x in k for x in ("eolic", "viento", "wind")):
+        return "wind"
+    if "ciclo combinado" in k or k in {"cc", "ccc"}:
+        return "cc"
+    if any(x in k for x in ("hidraul", "hidro")):
+        return "hydro"
+    if any(x in k for x in ("cogener")):
+        return "cogen"
+    if any(
+        x in k
+        for x in (
+            "termic",
+            "termo",
+            "turbogas",
+            "combust",
+            "vapor",
+            "carbo",
+            "nucle",
+        )
+    ):
+        return "thermal"
+    if k in {"", "nan", "none"}:
+        return "unknown"
+    return "other"
+
+
+def classify_pais(raw) -> str:
+    k = fold(raw)
+    if k in {"estados unidos", "estados unidos de america", "eua", "eu"}:
+        return "us"
+    if k == "china":
+        return "prc"
+    if k in {"mexico", "mex"}:
+        return "mexico"
+    return "other"
+
+
+def extract_muni_from_address(address, estado: str | None) -> str:
+    if not address or str(address) in {"nan", "None"}:
+        return ""
+    text = str(address).replace("\n", ", ")
+    parts = [p.strip() for p in re.split(r"[,;]", text) if p.strip()]
+    if not parts:
+        return ""
+    state_f = fold(estado) if estado else ""
+    for part in reversed(parts):
+        pf = fold(part)
+        if not pf:
+            continue
+        if state_f and (pf == state_f or pf.endswith(state_f)):
+            continue
+        if re.fullmatch(r"c\.?p\.?\s*\d+", pf) or re.fullmatch(r"\d{5}", pf):
+            continue
+        return normalize_muni(part)
+    return normalize_muni(parts[-1])
+
+
+def round_mw(mw, places: int = 1) -> str:
+    try:
+        return f"{round(float(mw), places):.{places}f}"
+    except (TypeError, ValueError):
+        return ""

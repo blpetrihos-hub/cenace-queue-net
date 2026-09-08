@@ -5,13 +5,6 @@ const COLORS = {
   other: "#6b5a3e",
   unmatched: "#8a9096",
 };
-const LABELS = {
-  us: "U.S.",
-  prc: "PRC",
-  mexico: "Mexico",
-  other: "Other",
-  unmatched: "Unmatched",
-};
 const OWNER_ORDER = ["us", "prc", "mexico", "other", "unmatched"];
 
 let DATA = null;
@@ -26,6 +19,11 @@ function $(id) {
   return document.getElementById(id);
 }
 
+function ownerLabel(key) {
+  if (key === "unmatched") return t("unmatchedLabel");
+  return t(key);
+}
+
 function selected() {
   return {
     clock: $("clock").value,
@@ -35,10 +33,11 @@ function selected() {
   };
 }
 
-function filterRows() {
+function filterRows(extra) {
   const s = selected();
+  const cola = extra && extra.cola ? extra.cola : s.cola;
   return ROWS.filter((r) => {
-    if (s.cola !== "all" && r.cola_type !== s.cola) return false;
+    if (cola !== "all" && r.cola_type !== cola) return false;
     if (s.region !== "all" && r.region !== s.region) return false;
     if (s.unmatched === "exclude" && r.owner_class === "unmatched") return false;
     return true;
@@ -51,34 +50,60 @@ function sumMw(rows) {
 
 function fmtMw(n) {
   if (n >= 1000) return (n / 1000).toFixed(1) + " GW";
-  return n.toFixed(0) + " MW";
+  return Math.round(n) + " MW";
+}
+
+function fillTemplate(key, vars) {
+  return t(key).replace(/\{(\w+)\}/g, (_, k) => (vars[k] == null ? "" : String(vars[k])));
 }
 
 function renderStats(rows) {
-  const unmatched = rows.filter((r) => r.owner_class === "unmatched");
-  const classified = rows.filter((r) => r.owner_class !== "unmatched");
+  const unnamed = rows.filter((r) => r.owner_class === "unmatched");
+  const named = rows.filter((r) => r.owner_class !== "unmatched");
   const days = rows.map((r) => r.days_in_queue).filter((d) => d != null).sort((a, b) => a - b);
   const median = days.length ? days[Math.floor(days.length / 2)] : null;
-  const unlocated = rows.filter((r) => r.geo_source === "unlocated" || r.lat == null);
   const html = [
-    ["In-queue MW", fmtMw(sumMw(rows))],
-    ["Requests", String(rows.length)],
-    ["Unmatched MW", fmtMw(sumMw(unmatched))],
-    ["Classified MW", fmtMw(sumMw(classified))],
-    ["Median days in queue", median == null ? "—" : String(median)],
-    ["Unlocated MW", fmtMw(sumMw(unlocated))],
+    [t("statWaiting"), fmtMw(sumMw(rows))],
+    [t("statRequests"), String(rows.length)],
+    [t("statUnnamed"), fmtMw(sumMw(unnamed))],
+    [t("statNamed"), fmtMw(sumMw(named))],
+    [t("statDays"), median == null ? "—" : String(median)],
   ]
     .map(([k, v]) => `<div class="stat"><b>${v}</b><span>${k}</span></div>`)
     .join("");
   $("stats").innerHTML = html;
 }
 
+function scoreCell(key, rows) {
+  const sub = rows.filter((r) => r.owner_class === key);
+  const n = sub.length;
+  const nLabel = fillTemplate("scoreN", { n });
+  return (
+    `<div class="score ${key}">` +
+    `<b>${fmtMw(sumMw(sub))}</b>` +
+    `<span>${ownerLabel(key)}</span>` +
+    `<small>${nLabel}</small>` +
+    `</div>`
+  );
+}
+
+function renderScoreboard() {
+  const s = selected();
+  const plants = filterRows({ cola: "interconexion" });
+  const factories = filterRows({ cola: "conexion" });
+  const keys = s.unmatched === "exclude" ? OWNER_ORDER.filter((k) => k !== "unmatched") : OWNER_ORDER;
+  $("scorePlants").innerHTML = keys.map((k) => scoreCell(k, plants)).join("");
+  $("scoreLoad").innerHTML = keys.map((k) => scoreCell(k, factories)).join("");
+  $("scorePlantsWrap").hidden = s.clock === "time" || s.cola === "conexion";
+  $("scoreLoadWrap").hidden = s.clock === "time" || s.cola === "interconexion";
+}
+
 function ownerCounts(rows) {
   return OWNER_ORDER.map((k) => ({
     key: k,
-    label: LABELS[k],
+    label: ownerLabel(k),
     mw: sumMw(rows.filter((r) => r.owner_class === k)),
-  }));
+  })).filter((c) => selected().unmatched === "include" || c.key !== "unmatched");
 }
 
 function destroyChart(c) {
@@ -103,7 +128,7 @@ function renderOwner(rows) {
     options: {
       indexAxis: "y",
       plugins: { legend: { display: false } },
-      scales: { x: { title: { display: true, text: "MW in queue" } } },
+      scales: { x: { title: { display: true, text: t("xMw") } } },
     },
   });
 }
@@ -132,16 +157,16 @@ function renderStatus(rows) {
 function renderTime() {
   const s = selected();
   const ts = DATA.timeseries || [];
-  const labels = ts.map((t) => t.snapshot_date);
+  const labels = ts.map((row) => row.snapshot_date);
   let dataset;
   if (s.cola === "interconexion") {
-    dataset = { label: "Interconexión in queue", data: ts.map((t) => t.interconexion_in_queue_mw) };
+    dataset = { label: t("timeGen"), data: ts.map((row) => row.interconexion_in_queue_mw) };
   } else if (s.cola === "conexion") {
-    dataset = { label: "Conexión in queue", data: ts.map((t) => t.conexion_in_queue_mw) };
+    dataset = { label: t("timeLoad"), data: ts.map((row) => row.conexion_in_queue_mw) };
   } else {
     dataset = {
-      label: "In-queue MW",
-      data: ts.map((t) => t.interconexion_in_queue_mw + t.conexion_in_queue_mw),
+      label: t("timeAll"),
+      data: ts.map((row) => row.interconexion_in_queue_mw + row.conexion_in_queue_mw),
     };
   }
   destroyChart(chartTime);
@@ -161,7 +186,7 @@ function renderTime() {
     },
     options: {
       plugins: { legend: { display: false } },
-      scales: { y: { title: { display: true, text: "MW" } } },
+      scales: { y: { title: { display: true, text: t("xMw") } } },
     },
   });
 }
@@ -221,8 +246,8 @@ function renderMap(rows) {
     });
     m.bindPopup(
       `<strong>${g.municipio || "—"}, ${g.estado || "—"}</strong><br>` +
-        `${fmtMw(g.mw)} in queue · ${g.n} request(s)<br>` +
-        OWNER_ORDER.map((k) => `${LABELS[k]}: ${g.owners[k].toFixed(1)} MW`).join("<br>")
+        `${fmtMw(g.mw)} ${t("popupWaiting")} · ${g.n} ${t("popupRequests")}<br>` +
+        OWNER_ORDER.map((k) => `${ownerLabel(k)}: ${g.owners[k].toFixed(1)} MW`).join("<br>")
     );
     layer.addLayer(m);
   });
@@ -230,14 +255,15 @@ function renderMap(rows) {
 }
 
 function render() {
+  if (!DATA || !ROWS) return;
   const s = selected();
   $("charts-latest").style.display = s.clock === "latest" ? "" : "none";
   $("charts-time").style.display = s.clock === "time" ? "block" : "none";
+  renderScoreboard();
   if (s.clock === "time") {
     renderTime();
     renderStats(filterRows());
-    $("note").textContent =
-      "Time series is total in-queue MW by snapshot (outliers ≥ 5,000 MW excluded). Ownership coloring is only on the latest snapshot, where the codebook is applied.";
+    $("note").textContent = t("noteTime");
     return;
   }
   const rows = filterRows();
@@ -248,25 +274,27 @@ function render() {
   if (map) {
     setTimeout(() => map.invalidateSize(), 80);
   }
-  const snap = DATA.latest_snapshot;
-  $("note").textContent =
-    `Latest snapshot ${snap}. ${rows.length} in-queue rows under current filters. ` +
-    `Most megawatts are unmatched because CENACE does not publish the applicant.`;
+  $("note").textContent = fillTemplate("noteLatest", {
+    snap: DATA.latest_snapshot,
+    n: rows.length,
+  });
 }
 
 async function boot() {
+  initLang();
+  window.onLangChange = render;
   const [dash, rows] = await Promise.all([
     fetch("data/dashboard.json").then((r) => r.json()),
     fetch("data/open_rows.json").then((r) => r.json()),
   ]);
   DATA = dash;
   ROWS = rows;
-  $("caption").textContent = dash.caption;
   ["clock", "cola", "region", "unmatched"].forEach((id) => $(id).addEventListener("change", render));
   render();
 }
 
 boot().catch((err) => {
-  $("note").textContent = "Could not load data/dashboard.json. Rebuild with process/build_site_data.py.";
+  initLang();
+  $("note").textContent = t("loadFail");
   console.error(err);
 });

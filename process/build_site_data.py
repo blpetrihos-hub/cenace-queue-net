@@ -17,6 +17,7 @@ from process.common import BAJIO_FOCUS, NL_FOCUS
 ROWS = ROOT / "data" / "processed" / "rows.csv"
 GAZ = ROOT / "data" / "gazetteer" / "nodes.csv"
 CODE = ROOT / "data" / "codebook" / "ownership.csv"
+CNE_JOIN = ROOT / "data" / "processed" / "cne_join.csv"
 OUT = ROOT / "docs" / "data"
 
 OWNER_ORDER = ["us", "prc", "mexico", "other", "unmatched"]
@@ -25,7 +26,7 @@ OWNER_LABEL = {
     "prc": "PRC",
     "mexico": "Mexico",
     "other": "Other",
-    "unmatched": "Unmatched",
+    "unmatched": "Unnamed",
 }
 
 
@@ -43,16 +44,52 @@ def load() -> pd.DataFrame:
     df = df.merge(gaz, on=["municipio_key", "estado"], how="left", suffixes=("", "_gaz"))
     if "municipio_gaz" in df.columns:
         df["municipio"] = df["municipio"].fillna(df["municipio_gaz"])
+    df["match_source"] = ""
+    df["owner_class"] = "unmatched"
+    df["confidence"] = "unmatched"
+    df["owner_name"] = ""
+    df["source_id"] = ""
+
+    if CNE_JOIN.exists():
+        cne = pd.read_csv(CNE_JOIN, dtype=str).fillna("")
+        cne["registro_id"] = cne["registro_id"].str.strip()
+        cne = cne[cne["registro_id"] != ""].drop_duplicates(["registro_id", "cola_type"])
+        keep = [
+            "registro_id",
+            "cola_type",
+            "owner_class",
+            "owner_name",
+            "confidence",
+            "source_id",
+            "match_source",
+        ]
+        df = df.merge(cne[keep], on=["registro_id", "cola_type"], how="left", suffixes=("", "_cne"))
+        for col in ("owner_class", "owner_name", "confidence", "source_id", "match_source"):
+            cne_col = f"{col}_cne"
+            if cne_col in df.columns:
+                fill = df[cne_col].notna() & df[cne_col].astype(str).ne("")
+                df.loc[fill, col] = df.loc[fill, cne_col]
+                df.drop(columns=[cne_col], inplace=True)
+
     code = pd.read_csv(CODE, dtype=str).fillna("")
     code["registro_id"] = code["registro_id"].str.strip()
     code = code[code["registro_id"] != ""].drop_duplicates(["registro_id", "cola_type"])
     keep = code[["registro_id", "cola_type", "owner_class", "owner_name", "confidence", "source_id"]]
-    df = df.merge(keep, on=["registro_id", "cola_type"], how="left")
+    df = df.merge(keep, on=["registro_id", "cola_type"], how="left", suffixes=("", "_code"))
+    for col in ("owner_class", "owner_name", "confidence", "source_id"):
+        code_col = f"{col}_code"
+        if code_col in df.columns:
+            fill = df[code_col].notna() & df[code_col].astype(str).ne("")
+            df.loc[fill, col] = df.loc[fill, code_col]
+            df.loc[fill, "match_source"] = "codebook"
+            df.drop(columns=[code_col], inplace=True)
+
     df["owner_class"] = df["owner_class"].fillna("unmatched")
+    df.loc[df["owner_class"].eq(""), "owner_class"] = "unmatched"
     df["confidence"] = df["confidence"].fillna("unmatched")
     df["owner_name"] = df["owner_name"].fillna("")
     df["source_id"] = df["source_id"].fillna("")
-    df.loc[df["owner_class"].eq(""), "owner_class"] = "unmatched"
+    df["match_source"] = df["match_source"].fillna("")
     return df
 
 
@@ -194,6 +231,7 @@ def open_rows(latest: pd.DataFrame) -> list[dict]:
                 "owner_name": r.owner_name if isinstance(r.owner_name, str) else "",
                 "confidence": r.confidence,
                 "source_id": r.source_id if isinstance(r.source_id, str) else "",
+                "match_source": r.match_source if isinstance(r.match_source, str) else "",
                 "geo_source": r.geo_source if isinstance(r.geo_source, str) else "",
                 "lat": None if pd.isna(getattr(r, "lat", None)) else float(r.lat),
                 "lon": None if pd.isna(getattr(r, "lon", None)) else float(r.lon),
@@ -214,15 +252,14 @@ def main() -> None:
         "generated_from": "CENACE public colas",
         "latest_snapshot": snap,
         "caption": (
-            "Relative position in line for electrons, 2026–2036 clock. "
-            "Not an influence score. Unmatched megawatts stay unmatched."
+            "Who is waiting for Mexico’s grid, in megawatts and days. "
+            "U.S. vs PRC vs Mexico vs other vs unnamed. Not an influence score."
         ),
         "meta": {
             "n_latest": int(len(latest)),
             "n_latest_in_queue": int(latest["in_queue"].sum()),
-            "n_codebook_matched": int(
-                (latest["owner_class"] != "unmatched").sum()
-            ),
+            "n_codebook_matched": int((latest["match_source"] == "codebook").sum()),
+            "n_cne_joined": int((latest["match_source"] == "cne_join").sum()),
             "outlier_mw_excluded": 5000,
         },
         "all": chart_block(latest),

@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import html
+import json
 import sys
 from pathlib import Path
 
@@ -15,16 +16,29 @@ SRC = ROOT / "sources" / "bibliography.yml"
 OUT = ROOT / "docs" / "bibliography.html"
 JSON_OUT = ROOT / "docs" / "data" / "bibliography.json"
 
+TYPE_ES = {
+    "official": "oficial",
+    "journalism": "prensa",
+    "academic": "académico",
+}
+
 NAV = """
 <header class="site-header">
   <div class="inner">
-    <p class="kicker">William &amp; Mary · GIAS Futures Group · Team 2</p>
-    <h1>Place in line for electricity</h1>
-    <p class="sub">CENACE interconnection and connection queues, Mexico. Diagnostic only.</p>
+    <div class="header-row">
+      <p class="kicker" data-i18n="kicker">William &amp; Mary · GIAS Futures Group · Team 2</p>
+      <div class="lang-toggle" role="group" aria-label="Language">
+        <button type="button" data-lang-btn="en">EN</button>
+        <span class="lang-sep">|</span>
+        <button type="button" data-lang-btn="es">ES</button>
+      </div>
+    </div>
+    <h1 data-i18n="title">Who is waiting for Mexico’s grid</h1>
+    <p class="sub" data-i18n="sub">U.S. vs PRC vs Mexico, in megawatts and days. Diagnostic only — no policy advice.</p>
     <nav>
-      <a href="index.html">Dashboard</a>
-      <a href="methods.html">Methods</a>
-      <a href="bibliography.html" aria-current="page">Bibliography</a>
+      <a href="index.html" data-i18n="navDash">Dashboard</a>
+      <a href="methods.html" data-i18n="navMethods">Methods</a>
+      <a href="bibliography.html" aria-current="page" data-i18n="navBib">Bibliography</a>
     </nav>
   </div>
 </header>
@@ -32,8 +46,10 @@ NAV = """
 
 FOOT = """
 <footer class="site-footer">
-  <p>No policy recommendations. Unmatched megawatts stay unmatched.</p>
+  <p data-i18n="footer">No policy recommendations. Unnamed megawatts stay unnamed. Map: Carto / OpenStreetMap.</p>
 </footer>
+<script src="js/i18n.js"></script>
+<script>initLang();</script>
 """
 
 
@@ -46,7 +62,7 @@ def page(body: str, title: str) -> str:
   <title>{html.escape(title)}</title>
   <link rel="stylesheet" href="css/site.css">
 </head>
-<body>
+<body data-page-title="pageTitleBib">
 {NAV}
 <main class="page">
 {body}
@@ -67,15 +83,21 @@ def render_entry(e: dict) -> str:
     supports = e.get("supports") or []
     if supports:
         sup = ", ".join(html.escape(str(s)) for s in supports)
-        sup_html = f'<p class="bib-supports">Supports: {sup}</p>'
+        sup_html = (
+            f'<p class="bib-supports"><span data-i18n="bibSupports">Supports</span>: {sup}</p>'
+        )
     else:
-        sup_html = '<p class="bib-supports">No codebook row. Context only.</p>'
+        sup_html = '<p class="bib-supports" data-i18n="bibContext">No codebook row. Context only.</p>'
+    typ = e.get("type", "")
+    typ_es = TYPE_ES.get(typ, typ)
+    ann_es = e.get("annotation_es") or e.get("annotation") or ""
     return f"""
 <article class="bib-entry" id="{html.escape(e["id"])}">
-  <p class="bib-type">{html.escape(e.get("type", ""))} · <code>{html.escape(e["id"])}</code></p>
+  <p class="bib-type"><span class="lang-en">{html.escape(typ)}</span><span class="lang-es" hidden>{html.escape(typ_es)}</span> · <code>{html.escape(e["id"])}</code></p>
   <p class="bib-chicago">{html.escape(e.get("chicago", ""))}</p>
   {link}
-  <p class="bib-ann">{html.escape(e.get("annotation", ""))}</p>
+  <p class="bib-ann lang-en">{html.escape(e.get("annotation", ""))}</p>
+  <p class="bib-ann lang-es" hidden>{html.escape(ann_es)}</p>
   {sup_html}
 </article>
 """
@@ -84,30 +106,33 @@ def render_entry(e: dict) -> str:
 def main() -> None:
     entries = yaml.safe_load(SRC.read_text(encoding="utf-8"))
     JSON_OUT.parent.mkdir(parents=True, exist_ok=True)
-    import json
-
     JSON_OUT.write_text(json.dumps(entries, indent=2, ensure_ascii=False), encoding="utf-8")
     blocks = [
-        "<h2>Annotated bibliography</h2>",
-        "<p>Reputable sources only: official gazettes and operators, named academic/think-tank publishers for context, and established outlets for named-plant matches. Generated from <code>sources/bibliography.yml</code> so this page cannot drift from the codebook.</p>",
-        "<p>Excluded: World Population Review, anonymous blogs, SOUTHCOM advocacy treated as finding, AMP-style clips.</p>",
+        '<h2 data-i18n="bibH2">Annotated bibliography</h2>',
+        '<p data-i18n="bibLead">Official sources, named academic publishers for context, and established outlets for named factory matches. Built from sources/bibliography.yml so this page cannot drift.</p>',
+        '<p data-i18n="bibExclude">Excluded: World Population Review, anonymous blogs, SOUTHCOM advocacy as finding, AMP-style clips.</p>',
     ]
     order = ["official", "journalism", "academic"]
     labels = {
+        "official": "bibOfficial",
+        "journalism": "bibJournalism",
+        "academic": "bibAcademic",
+    }
+    fallback = {
         "official": "Official",
-        "journalism": "Journalism (named-plant matches)",
+        "journalism": "Journalism (named factory matches)",
         "academic": "Academic / practitioner (context, not the queue)",
     }
     by = {}
     for e in entries:
         by.setdefault(e.get("type", "other"), []).append(e)
-    for t in order:
-        if t not in by:
+    for kind in order:
+        if kind not in by:
             continue
-        blocks.append(f"<h3>{labels[t]}</h3>")
-        for e in by[t]:
+        blocks.append(f'<h3 data-i18n="{labels[kind]}">{fallback[kind]}</h3>')
+        for e in by[kind]:
             blocks.append(render_entry(e))
-    OUT.write_text(page("\n".join(blocks), "Bibliography · CENACE queue net"), encoding="utf-8")
+    OUT.write_text(page("\n".join(blocks), "Bibliography · Who is waiting for Mexico’s grid"), encoding="utf-8")
     print("WROTE", OUT, "n=", len(entries))
 
 
