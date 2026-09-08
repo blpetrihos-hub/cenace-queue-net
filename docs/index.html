@@ -7,65 +7,58 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
   <link rel="stylesheet" href="css/site.css">
 </head>
-<body data-page-title="pageTitleDash">
+<body>
 <header class="site-header">
   <div class="inner">
-    <div class="header-row">
-      <p class="kicker" data-i18n="kicker">William &amp; Mary · GIAS Futures Group · Team 2</p>
-      <div class="lang-toggle" role="group" aria-label="Language">
-        <button type="button" data-lang-btn="en">EN</button>
-        <span class="lang-sep">|</span>
-        <button type="button" data-lang-btn="es">ES</button>
-      </div>
-    </div>
-    <h1 data-i18n="title">Who is waiting for Mexico’s grid</h1>
-    <p class="sub" data-i18n="sub">U.S. vs PRC vs Mexico, in megawatts and days. Diagnostic only — no policy advice.</p>
+    <p class="kicker">William &amp; Mary · GIAS Futures Group · Team 2</p>
+    <h1>Who is waiting for Mexico’s grid</h1>
+    <p class="sub">U.S. vs PRC vs Mexico, in megawatts and days. Diagnostic only — no policy advice.</p>
     <nav>
-      <a href="index.html" aria-current="page" data-i18n="navDash">Dashboard</a>
-      <a href="methods.html" data-i18n="navMethods">Methods</a>
-      <a href="bibliography.html" data-i18n="navBib">Bibliography</a>
+      <a href="index.html" aria-current="page">Dashboard</a>
+      <a href="methods.html">Methods</a>
+      <a href="bibliography.html">Bibliography</a>
     </nav>
   </div>
 </header>
 <main class="dash">
-  <p class="caption" data-i18n="caption">This counts place in line for electricity. Power plants (generation) are named from CNE permits when the match is unique. Factories (load) are mostly unnamed because CENACE does not publish the applicant.</p>
+  <p class="caption">This counts place in line for electricity. Power plants (generation) are named from CNE permits when the match is unique. Factories (load) are mostly unnamed because CENACE does not publish the applicant.</p>
   <div class="controls">
-    <label><span data-i18n="clock">When</span>
+    <label>When
       <select id="clock">
-        <option value="latest" data-i18n="clockLatest">Latest snapshot</option>
-        <option value="time" data-i18n="clockTime">Over time</option>
+        <option value="latest">Latest snapshot</option>
+        <option value="time">Over time</option>
       </select>
     </label>
-    <label><span data-i18n="cola">What</span>
+    <label>What
       <select id="cola">
-        <option value="all" data-i18n="colaAll">Power plants + factories</option>
-        <option value="interconexion" data-i18n="colaGen">Power plants (generation)</option>
-        <option value="conexion" data-i18n="colaLoad">Factories (load)</option>
+        <option value="all">Power plants + factories</option>
+        <option value="interconexion">Power plants (generation)</option>
+        <option value="conexion">Factories (load)</option>
       </select>
     </label>
-    <label><span data-i18n="region">Where</span>
+    <label>Where
       <select id="region">
-        <option value="all" data-i18n="regionAll">All Mexico</option>
-        <option value="nuevo_leon" data-i18n="regionNL">Nuevo León</option>
-        <option value="bajio" data-i18n="regionBajio">Bajío</option>
+        <option value="all">All Mexico</option>
+        <option value="nuevo_leon">Nuevo Leon</option>
+        <option value="bajio">Bajio</option>
       </select>
     </label>
-    <label><span data-i18n="unmatched">Unnamed</span>
+    <label>Unnamed
       <select id="unmatched">
-        <option value="include" data-i18n="unmatchedInc">Show unnamed megawatts</option>
-        <option value="exclude" data-i18n="unmatchedExc">Named rows only</option>
+        <option value="include">Show unnamed megawatts</option>
+        <option value="exclude">Named rows only</option>
       </select>
     </label>
   </div>
 
   <section class="scoreboard" id="scorePlantsWrap">
-    <h2 data-i18n="scorePlants">Power plants still in line</h2>
-    <p class="score-note" data-i18n="scorePlantsNote">Country comes from CNE’s official “país de origen” on a unique match of state + megawatts + technology. Mixed or blank labels are Other. PRC behind a Mexican company stays Mexico or unnamed — we do not guess.</p>
+    <h2>Power plants still in line</h2>
+    <p class="score-note">Country comes from CNE’s official country-of-origin field on a unique match of state + megawatts + technology. Mixed or blank labels are Other. PRC behind a Mexican company stays Mexico or unnamed — we do not guess.</p>
     <div class="score-row" id="scorePlants"></div>
   </section>
   <section class="scoreboard scoreboard-small" id="scoreLoadWrap">
-    <h2 data-i18n="scoreLoad">Factories still in line</h2>
-    <p class="score-note" data-i18n="scoreLoadNote">CENACE does not name factories. Only a few cited matches (Tesla, LGMG). The rest stay unnamed.</p>
+    <h2>Factories still in line</h2>
+    <p class="score-note">CENACE does not name factories. Only a few cited matches (Tesla, LGMG). The rest stay unnamed.</p>
     <div class="score-row" id="scoreLoad"></div>
   </section>
 
@@ -74,39 +67,38 @@
     <div>
       <div id="map"></div>
       <p class="legend">
-        <span class="swatch" style="background:#2f5d73"></span><span data-i18n="us">U.S.</span>
-        <span class="swatch" style="background:#8c3a2b"></span><span data-i18n="prc">PRC</span>
-        <span class="swatch" style="background:#3d6b4f"></span><span data-i18n="mexico">Mexico</span>
-        <span class="swatch" style="background:#6b5a3e"></span><span data-i18n="other">Other</span>
-        <span class="swatch" style="background:#8a9096"></span><span data-i18n="unmatchedLabel">Unnamed</span>
-        · <span data-i18n="legendNote">Dot size is megawatts still waiting. Color is country when named.</span>
+        <span class="swatch" style="background:#2f5d73"></span>U.S.
+        <span class="swatch" style="background:#8c3a2b"></span>PRC
+        <span class="swatch" style="background:#3d6b4f"></span>Mexico
+        <span class="swatch" style="background:#6b5a3e"></span>Other
+        <span class="swatch" style="background:#8a9096"></span>Unnamed
+        · Dot size is megawatts still waiting. Color is country when named.
       </p>
     </div>
     <div>
       <section class="panel">
-        <h2 data-i18n="chartOwner">Megawatts waiting, by country</h2>
+        <h2>Megawatts waiting, by country</h2>
         <canvas id="chartOwner"></canvas>
       </section>
       <section class="panel" style="margin-top:0.75rem">
-        <h2 data-i18n="chartStatus">Study status</h2>
+        <h2>Study status</h2>
         <canvas id="chartStatus"></canvas>
       </section>
     </div>
   </div>
   <div id="charts-time">
     <section class="panel">
-      <h2 data-i18n="chartTime">Megawatts waiting, over time</h2>
+      <h2>Megawatts waiting, over time</h2>
       <canvas id="chartTime"></canvas>
     </section>
   </div>
   <p class="note" id="note"></p>
 </main>
 <footer class="site-footer">
-  <p data-i18n="footer">No policy recommendations. Unnamed megawatts stay unnamed. Map: Carto / OpenStreetMap.</p>
+  <p>No policy recommendations. Unnamed megawatts stay unnamed. Map: Carto / OpenStreetMap.</p>
 </footer>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
-<script src="js/i18n.js"></script>
 <script src="js/dashboard.js"></script>
 </body>
 </html>

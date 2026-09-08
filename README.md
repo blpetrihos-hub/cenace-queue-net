@@ -1,12 +1,12 @@
 # CENACE queue net
 
-Diagnostic dashboard of **who is waiting for Mexico’s grid**, in megawatts and days: U.S. vs PRC vs Mexico vs other vs unnamed. CENACE still does not name the applicant. CNE names generation permit-holders (`país de origen`); unique fingerprint joins onto in-queue plants are the scoreboard. Factories (load) stay mostly unnamed.
+Diagnostic dashboard of **who is waiting for Mexico’s grid**, in megawatts and days: U.S. vs PRC vs Mexico vs other vs unnamed. CENACE still does not name the applicant. CNE names generation permit-holders (country of origin); unique fingerprint joins onto in-queue plants are the scoreboard. Factories (load) stay mostly unnamed.
 
-No policy recommendations. Unnamed megawatts stay unnamed. Mixed CNE labels (e.g. “Canadá y China”) are Other, not PRC. A Mexican company can hide PRC capital; that hole stays on Mexico or unnamed bars.
+No policy recommendations. Unnamed megawatts stay unnamed. Mixed CNE labels (for example Canada and China) are Other, not PRC. A Mexican company can hide PRC capital; that hole stays on Mexico or unnamed bars.
 
 **Live site:** [https://blpetrihos-hub.github.io/cenace-queue-net/](https://blpetrihos-hub.github.io/cenace-queue-net/)
 
-The dashboard is bilingual (EN | ES). Preview locally from `docs/`:
+Preview locally from `docs/`:
 
 ```
 python -m http.server 8765
@@ -16,9 +16,9 @@ Then open `http://127.0.0.1:8765/`.
 
 ## What the public files actually contain
 
-CENACE 2021–2026 workbooks list registro (SICE / SCCC), dates, status, MW, technology, **municipio**, **entidad federativa**, and GCR. They do **not** list company name or a substation “punto de interconexión.” Mapping is municipal, not bus-level.
+CENACE 2021–2026 workbooks list registry id (SICE / SCCC), dates, status, MW, technology, **municipality**, **state**, and regional control office. They do **not** list company name or a substation interconnection point. Mapping is municipal, not bus-level.
 
-CNE’s [Permisos de generación vigentes por modalidad](https://www.cne.gob.mx/da/PermisosdeGeneracionVigentesporModalidad.csv) names permisionario, MW, technology, state, address, *empresa líder*, and *país de origen*. Join is unique-only: state + rounded MW + tech family, unique in both the queue and the permit book.
+CNE’s [generation permits in force, by modality](https://www.cne.gob.mx/da/PermisosdeGeneracionVigentesporModalidad.csv) names permit-holder, MW, technology, state, address, lead company, and country of origin. Join is unique-only: state + rounded MW + tech family, unique in both the queue and the permit book.
 
 Latest CENACE snapshot used here: 28 February 2026. Directory indexes on cenace.gob.mx return 403; the scraper follows the ASP.NET year dropdown.
 
@@ -48,4 +48,4 @@ If GitHub Actions cannot reach CENACE or CNE, run the scrape locally. Committed 
 | `process/geocode_nodes.py` | Municipio gazetteer |
 | `process/join_cne.py` | Unique fingerprint join onto in-queue generators |
 | `data/codebook/ownership.csv` | Cited matches (wins over CNE on the same registro) |
-| `docs/` | GitHub Pages (Leaflet + Chart.js, EN/ES toggle) |
+| `docs/` | GitHub Pages (Leaflet + Chart.js) |

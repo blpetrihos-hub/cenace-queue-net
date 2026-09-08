@@ -6,192 +6,168 @@
   <title>Bibliography · Who is waiting for Mexico’s grid</title>
   <link rel="stylesheet" href="css/site.css">
 </head>
-<body data-page-title="pageTitleBib">
+<body>
 
 <header class="site-header">
   <div class="inner">
-    <div class="header-row">
-      <p class="kicker" data-i18n="kicker">William &amp; Mary · GIAS Futures Group · Team 2</p>
-      <div class="lang-toggle" role="group" aria-label="Language">
-        <button type="button" data-lang-btn="en">EN</button>
-        <span class="lang-sep">|</span>
-        <button type="button" data-lang-btn="es">ES</button>
-      </div>
-    </div>
-    <h1 data-i18n="title">Who is waiting for Mexico’s grid</h1>
-    <p class="sub" data-i18n="sub">U.S. vs PRC vs Mexico, in megawatts and days. Diagnostic only — no policy advice.</p>
+    <p class="kicker">William &amp; Mary · GIAS Futures Group · Team 2</p>
+    <h1>Who is waiting for Mexico’s grid</h1>
+    <p class="sub">U.S. vs PRC vs Mexico, in megawatts and days. Diagnostic only — no policy advice.</p>
     <nav>
-      <a href="index.html" data-i18n="navDash">Dashboard</a>
-      <a href="methods.html" data-i18n="navMethods">Methods</a>
-      <a href="bibliography.html" aria-current="page" data-i18n="navBib">Bibliography</a>
+      <a href="index.html">Dashboard</a>
+      <a href="methods.html">Methods</a>
+      <a href="bibliography.html" aria-current="page">Bibliography</a>
     </nav>
   </div>
 </header>
 
 <main class="page">
-<h2 data-i18n="bibH2">Annotated bibliography</h2>
-<p data-i18n="bibLead">Official sources, named academic publishers for context, and established outlets for named factory matches. Built from sources/bibliography.yml so this page cannot drift.</p>
-<p data-i18n="bibExclude">Excluded: World Population Review, anonymous blogs, SOUTHCOM advocacy as finding, AMP-style clips.</p>
-<h3 data-i18n="bibOfficial">Official</h3>
+<h2>Annotated bibliography</h2>
+<p>Official sources, named academic publishers for context, and established outlets for named factory matches. Built from <code>sources/bibliography.yml</code> so this page cannot drift.</p>
+<p>Excluded: World Population Review, anonymous blogs, SOUTHCOM advocacy as finding, AMP-style clips.</p>
+<h3>Official</h3>
 
 <article class="bib-entry" id="cenace_colas">
-  <p class="bib-type"><span class="lang-en">official</span><span class="lang-es" hidden>oficial</span> · <code>cenace_colas</code></p>
+  <p class="bib-type">official · <code>cenace_colas</code></p>
   <p class="bib-chicago">Centro Nacional de Control de Energía (CENACE). “Solicitud de Conexión e Interconexión.” Public interconnection and connection queues (CSV/XLS posted by year). Mexico City: CENACE.</p>
   <p class="bib-url"><a href="https://www.cenace.gob.mx/Paginas/SIM/SolicitudConexion.aspx" rel="noopener">https://www.cenace.gob.mx/Paginas/SIM/SolicitudConexion.aspx</a></p>
-  <p class="bib-ann lang-en">Primary data. CENACE is required to post, at least every two months, capacity, technology, location, estimated COD, request date, and study status. Company name is not in that mandated list. This project scrapes the year tabs 2021–2026 for both Interconexión (generators) and Conexión (load). Snapshot date is the title-row “Información actualizada al,” not file mtime.</p>
-  <p class="bib-ann lang-es" hidden>Dato primario. CENACE debe publicar, al menos cada dos meses, capacidad, tecnología, ubicación, fecha estimada de operación, fecha de solicitud y estatus del estudio. El nombre de la empresa no está en esa lista. Este proyecto descarga las pestañas de año 2021–2026 de Interconexión (centrales) y Conexión (carga). La fecha de actualización se lee del renglón “Información actualizada al”, no de la fecha del archivo.</p>
-  <p class="bib-supports"><span data-i18n="bibSupports">Supports</span>: queue</p>
+  <p class="bib-ann">Primary data. CENACE is required to post, at least every two months, capacity, technology, location, estimated COD, request date, and study status. Company name is not in that mandated list. This project scrapes the year tabs 2021–2026 for both interconnection (generators) and connection (load). Snapshot date is the title-row update date, not file mtime.</p>
+  <p class="bib-supports">Supports: queue</p>
 </article>
 
 
 <article class="bib-entry" id="cne_permisos_csv">
-  <p class="bib-type"><span class="lang-en">official</span><span class="lang-es" hidden>oficial</span> · <code>cne_permisos_csv</code></p>
+  <p class="bib-type">official · <code>cne_permisos_csv</code></p>
   <p class="bib-chicago">Comisión Nacional de Energía (CNE). “Permisos de generación vigentes por modalidad.” CSV. Mexico City: CNE.</p>
   <p class="bib-url"><a href="https://www.cne.gob.mx/da/PermisosdeGeneracionVigentesporModalidad.csv" rel="noopener">https://www.cne.gob.mx/da/PermisosdeGeneracionVigentesporModalidad.csv</a></p>
-  <p class="bib-ann lang-en">Named-owner source for generators. Lists permisionario, authorized MW, technology, state, address, empresa líder, and país de origen. Joined onto in-queue SICE rows only when state + MW rounded to one decimal + technology family is unique on both sides; a tighter key adds municipality when both sides have it. Mixed labels such as “Canadá y China” are Other, not PRC. País de origen can hide PRC capital behind a Mexican company; that hole stays on Mexico or unnamed bars. Load (SCCC) is not in this file.</p>
-  <p class="bib-ann lang-es" hidden>Fuente con nombre para centrales. Lista permisionario, MW autorizados, tecnología, estado, domicilio, empresa líder y país de origen. Se cruza con las filas SICE aún en cola solo cuando estado + MW redondeado a un decimal + familia tecnológica es único en ambos lados; una clave más estricta añade municipio cuando ambos lo tienen. Etiquetas mixtas como “Canadá y China” van a Otros, no a RPC. El país de origen puede ocultar capital de la RPC detrás de una empresa mexicana; ese hueco se queda en México o sin nombre. La carga (SCCC) no está en este archivo.</p>
-  <p class="bib-supports"><span data-i18n="bibSupports">Supports</span>: queue</p>
+  <p class="bib-ann">Named-owner source for generators. Lists permit-holder, authorized MW, technology, state, address, lead company, and country of origin. Joined onto in-queue SICE rows only when state + MW rounded to one decimal + technology family is unique on both sides; a tighter key adds municipality when both sides have it. Mixed labels such as Canada and China are Other, not PRC. Country of origin can hide PRC capital behind a Mexican company; that hole stays on Mexico or unnamed bars. Load (SCCC) is not in this file.</p>
+  <p class="bib-supports">Supports: queue</p>
 </article>
 
 
 <article class="bib-entry" id="ley_sector_electrico_2025">
-  <p class="bib-type"><span class="lang-en">official</span><span class="lang-es" hidden>oficial</span> · <code>ley_sector_electrico_2025</code></p>
+  <p class="bib-type">official · <code>ley_sector_electrico_2025</code></p>
   <p class="bib-chicago">México. Ley del Sector Eléctrico. Diario Oficial de la Federación, 18 March 2025.</p>
   <p class="bib-url"><a href="https://www.diputados.gob.mx/LeyesBiblio/ref/lse.htm" rel="noopener">https://www.diputados.gob.mx/LeyesBiblio/ref/lse.htm</a></p>
-  <p class="bib-ann lang-en">In force. Replaces the Ley de la Industria Eléctrica as the statute for the national electric system, CENACE’s control function, and interconnection/connection procedures. Cited for what the queue is, not as a count of megawatts.</p>
-  <p class="bib-ann lang-es" hidden>Vigente. Sustituye a la Ley de la Industria Eléctrica como estatuto del sistema eléctrico nacional, de la función de control de CENACE y de los procedimientos de interconexión y conexión. Se cita para decir qué es la cola, no como un conteo de megawatts.</p>
-  <p class="bib-supports"><span data-i18n="bibSupports">Supports</span>: methods</p>
+  <p class="bib-ann">In force. Replaces the Electric Industry Law as the statute for the national electric system, CENACE’s control function, and interconnection/connection procedures. Cited for what the queue is, not as a count of megawatts.</p>
+  <p class="bib-supports">Supports: methods</p>
 </article>
 
 
 <article class="bib-entry" id="ley_industria_electrica">
-  <p class="bib-type"><span class="lang-en">official</span><span class="lang-es" hidden>oficial</span> · <code>ley_industria_electrica</code></p>
+  <p class="bib-type">official · <code>ley_industria_electrica</code></p>
   <p class="bib-chicago">México. Ley de la Industria Eléctrica (abrogated). Diario Oficial de la Federación, 11 August 2014; abrogated 18 March 2025.</p>
   <p class="bib-url"><a href="https://www.diputados.gob.mx/LeyesBiblio/abro/lielec.htm" rel="noopener">https://www.diputados.gob.mx/LeyesBiblio/abro/lielec.htm</a></p>
-  <p class="bib-ann lang-en">The statute that created the public cola obligation for the snapshots scraped here through 2025. Kept so a reader can see the legal clock; we do not treat the abrogated text as current procedure.</p>
-  <p class="bib-ann lang-es" hidden>El estatuto que creó la obligación de publicar la cola para las actualizaciones descargadas aquí hasta 2025. Se conserva para que se vea el reloj legal; no se trata el texto abrogado como procedimiento vigente.</p>
-  <p class="bib-supports"><span data-i18n="bibSupports">Supports</span>: methods</p>
+  <p class="bib-ann">The statute that created the public queue obligation for the snapshots scraped here through 2025. Kept so a reader can see the legal clock; we do not treat the abrogated text as current procedure.</p>
+  <p class="bib-supports">Supports: methods</p>
 </article>
 
 
 <article class="bib-entry" id="sener_convocatoria_2025_10">
-  <p class="bib-type"><span class="lang-en">official</span><span class="lang-es" hidden>oficial</span> · <code>sener_convocatoria_2025_10</code></p>
+  <p class="bib-type">official · <code>sener_convocatoria_2025_10</code></p>
   <p class="bib-chicago">Secretaría de Energía. “Convocatoria para la atención prioritaria de solicitudes de permisos de generación eléctrica e interconexión al Sistema Eléctrico Nacional, alineados a la planeación vinculante.” Diario Oficial de la Federación, 17 October 2025 (evening edition).</p>
   <p class="bib-url"><a href="https://www.dof.gob.mx/" rel="noopener">https://www.dof.gob.mx/</a></p>
-  <p class="bib-ann lang-en">Official clock on who gets preferred attention at CNE/CENACE after October 2025. Context for why the cola and the convocatoria are not the same list. We do not scrape convocatoria winners as if they were the queue.</p>
-  <p class="bib-ann lang-es" hidden>Reloj oficial de quién recibe atención preferente en CNE/CENACE después de octubre de 2025. Contexto de por qué la cola y la convocatoria no son la misma lista. No se tratan los ganadores de la convocatoria como si fueran la cola.</p>
-  <p class="bib-supports"><span data-i18n="bibSupports">Supports</span>: methods</p>
+  <p class="bib-ann">Official clock on who gets preferred attention at CNE/CENACE after October 2025. Context for why the queue and this call for projects are not the same list. We do not scrape call winners as if they were the queue.</p>
+  <p class="bib-supports">Supports: methods</p>
 </article>
 
 
 <article class="bib-entry" id="sener_mod_2025_10">
-  <p class="bib-type"><span class="lang-en">official</span><span class="lang-es" hidden>oficial</span> · <code>sener_mod_2025_10</code></p>
+  <p class="bib-type">official · <code>sener_mod_2025_10</code></p>
   <p class="bib-chicago">Secretaría de Energía. “Acuerdo por el que se emite la modificación a la Convocatoria para la atención prioritaria de solicitudes de permisos de generación eléctrica e interconexión al Sistema Eléctrico Nacional, alineados a la planeación vinculante.” Diario Oficial de la Federación, 24 October 2025.</p>
   <p class="bib-url"><a href="https://sidof.segob.gob.mx/notas/docFuente/5774850" rel="noopener">https://sidof.segob.gob.mx/notas/docFuente/5774850</a></p>
-  <p class="bib-ann lang-en">Calendar modification of the October 2025 convocatoria. Used only to date the official process, not as ownership evidence.</p>
-  <p class="bib-ann lang-es" hidden>Modificación de calendario de la convocatoria de octubre de 2025. Solo se usa para fechar el proceso oficial, no como prueba de titularidad.</p>
-  <p class="bib-supports"><span data-i18n="bibSupports">Supports</span>: methods</p>
+  <p class="bib-ann">Calendar modification of the October 2025 call. Used only to date the official process, not as ownership evidence.</p>
+  <p class="bib-supports">Supports: methods</p>
 </article>
 
 
 <article class="bib-entry" id="sener_convocatoria_2026_05">
-  <p class="bib-type"><span class="lang-en">official</span><span class="lang-es" hidden>oficial</span> · <code>sener_convocatoria_2026_05</code></p>
+  <p class="bib-type">official · <code>sener_convocatoria_2026_05</code></p>
   <p class="bib-chicago">Secretaría de Energía. “Convocatoria para la atención de proyectos estratégicos de generación y almacenamiento de energía eléctrica, alineados a la planeación vinculante.” Diario Oficial de la Federación, 15 May 2026.</p>
   <p class="bib-url"><a href="https://www.dof.gob.mx/" rel="noopener">https://www.dof.gob.mx/</a></p>
-  <p class="bib-ann lang-en">Second official window (May 2026) for strategic generation and storage, including interconnection/connection studies. Cited as the state process running in parallel with the public cola. Modified 26 May 2026 and again 10 July 2026; those acuerdos change calendars, not our MW counts.</p>
-  <p class="bib-ann lang-es" hidden>Segunda ventana oficial (mayo de 2026) para generación y almacenamiento estratégicos, incluidos estudios de interconexión y conexión. Se cita como el proceso estatal paralelo a la cola pública. Se modificó el 26 de mayo de 2026 y otra vez el 10 de julio de 2026; esos acuerdos cambian calendarios, no nuestros conteos de MW.</p>
-  <p class="bib-supports"><span data-i18n="bibSupports">Supports</span>: methods</p>
+  <p class="bib-ann">Second official window (May 2026) for strategic generation and storage, including interconnection/connection studies. Cited as the state process running in parallel with the public queue. Modified 26 May 2026 and again 10 July 2026; those orders change calendars, not our MW counts.</p>
+  <p class="bib-supports">Supports: methods</p>
 </article>
 
 
 <article class="bib-entry" id="cfe_programa_desarrollo_2026">
-  <p class="bib-type"><span class="lang-en">official</span><span class="lang-es" hidden>oficial</span> · <code>cfe_programa_desarrollo_2026</code></p>
+  <p class="bib-type">official · <code>cfe_programa_desarrollo_2026</code></p>
   <p class="bib-chicago">Comisión Federal de Electricidad. Programa de Desarrollo / plan documents posted under Finanzas (including ProgramaDesarrollo-26). Mexico City: CFE.</p>
   <p class="bib-url"><a href="https://www.cfe.gob.mx/finanzas/Documents/ProgramaDesarrollo-26.pdf" rel="noopener">https://www.cfe.gob.mx/finanzas/Documents/ProgramaDesarrollo-26.pdf</a></p>
-  <p class="bib-ann lang-en">Official CFE build list (combined-cycle names and MW). Used as context for state-owned generation. We still require a cola row match before coloring a map point Mexico; the PDF is not a substitute for the queue.</p>
-  <p class="bib-ann lang-es" hidden>Lista oficial de obra de CFE (nombres de ciclo combinado y MW). Se usa como contexto de generación estatal. Sigue haciendo falta un cruce con una fila de la cola antes de pintar un punto como México; el PDF no sustituye a la cola.</p>
-  <p class="bib-supports"><span data-i18n="bibSupports">Supports</span>: methods</p>
+  <p class="bib-ann">Official CFE build list (combined-cycle names and MW). Used as context for state-owned generation. We still require a queue-row match before coloring a map point Mexico; the PDF is not a substitute for the queue.</p>
+  <p class="bib-supports">Supports: methods</p>
 </article>
 
 
 <article class="bib-entry" id="nl_gob_lgmg_marin">
-  <p class="bib-type"><span class="lang-en">official</span><span class="lang-es" hidden>oficial</span> · <code>nl_gob_lgmg_marin</code></p>
+  <p class="bib-type">official · <code>nl_gob_lgmg_marin</code></p>
   <p class="bib-chicago">Gobierno del Estado de Nuevo León. “Inauguran primera planta de LGMG en NL y México; creará hasta 7,000 empleos.” Official bulletin. Marín, Nuevo León, December 2023.</p>
   <p class="bib-url"><a href="https://www.nl.gob.mx/es/boletines/inauguran-primera-planta-de-lgmg-en-nl-y-mexico-creara-hasta-7000-empleos" rel="noopener">https://www.nl.gob.mx/es/boletines/inauguran-primera-planta-de-lgmg-en-nl-y-mexico-creara-hasta-7000-empleos</a></p>
-  <p class="bib-ann lang-en">Official state source that names Marín as the LGMG plant municipality. Together with Reuters, this is why the single public load-queue row in Marín is coded probable PRC, not confirmed.</p>
-  <p class="bib-ann lang-es" hidden>Fuente oficial estatal que nombra a Marín como municipio de la planta LGMG. Junto con Reuters, por eso la única fila pública de carga en Marín se codifica como RPC probable, no confirmada.</p>
-  <p class="bib-supports"><span data-i18n="bibSupports">Supports</span>: SCCC-00892-2024</p>
+  <p class="bib-ann">Official state source that names Marin as the LGMG plant municipality. Together with Reuters, this is why the single public load-queue row in Marin is coded probable PRC, not confirmed.</p>
+  <p class="bib-supports">Supports: SCCC-00892-2024</p>
 </article>
 
-<h3 data-i18n="bibJournalism">Journalism (named factory matches)</h3>
+<h3>Journalism (named factory matches)</h3>
 
 <article class="bib-entry" id="reuters_tesla_permits_2023">
-  <p class="bib-type"><span class="lang-en">journalism</span><span class="lang-es" hidden>prensa</span> · <code>reuters_tesla_permits_2023</code></p>
+  <p class="bib-type">journalism · <code>reuters_tesla_permits_2023</code></p>
   <p class="bib-chicago">Madry, Kylie. “Mexico gives Tesla land-use permits for gigafactory, says state government.” Reuters, 13 December 2023.</p>
   <p class="bib-url"><a href="https://www.reuters.com/business/autos-transportation/mexico-gives-tesla-land-use-permits-gigafactory-says-state-government-2023-12-13/" rel="noopener">https://www.reuters.com/business/autos-transportation/mexico-gives-tesla-land-use-permits-gigafactory-says-state-government-2023-12-13/</a></p>
-  <p class="bib-ann lang-en">Supports codebook rows SCCC-01119-2023 and SCCC-01107-2023 (probable, U.S.). Reuters reports federal land-use permits and ~261 ha in Nuevo León. It does not publish megawatts or a CENACE registro. Dashboard MW is CENACE’s figure.</p>
-  <p class="bib-ann lang-es" hidden>Sustenta las filas de cruces citados SCCC-01119-2023 y SCCC-01107-2023 (probable, EE. UU.). Reuters reporta permisos federales de uso de suelo y ~261 ha en Nuevo León. No publica megawatts ni un registro de CENACE. El MW del tablero es la cifra de CENACE.</p>
-  <p class="bib-supports"><span data-i18n="bibSupports">Supports</span>: SCCC-01119-2023, SCCC-01107-2023</p>
+  <p class="bib-ann">Supports codebook rows SCCC-01119-2023 and SCCC-01107-2023 (probable, U.S.). Reuters reports federal land-use permits and ~261 ha in Nuevo Leon. It does not publish megawatts or a CENACE registry id. Dashboard MW is CENACE’s figure.</p>
+  <p class="bib-supports">Supports: SCCC-01119-2023, SCCC-01107-2023</p>
 </article>
 
 
 <article class="bib-entry" id="elnorte_tesla_cfe_2023">
-  <p class="bib-type"><span class="lang-en">journalism</span><span class="lang-es" hidden>prensa</span> · <code>elnorte_tesla_cfe_2023</code></p>
+  <p class="bib-type">journalism · <code>elnorte_tesla_cfe_2023</code></p>
   <p class="bib-chicago">El Norte staff. “Peligra por CFE llegada de Tesla.” El Norte (Monterrey), 1 February 2023.</p>
   <p class="bib-url"><a href="https://www.elnorte.com/peligra-por-cfe-llegada-de-tesla/ar2545505" rel="noopener">https://www.elnorte.com/peligra-por-cfe-llegada-de-tesla/ar2545505</a></p>
-  <p class="bib-ann lang-en">Supports the Tesla codebook rows by placing the site between Santa Catarina and García and stating CFE supply as a constraint. No MW. Used only as location corroboration.</p>
-  <p class="bib-ann lang-es" hidden>Sustenta las filas de Tesla al situar el predio entre Santa Catarina y García y al señalar el abasto de CFE como restricción. Sin MW. Solo se usa como corroboración de ubicación.</p>
-  <p class="bib-supports"><span data-i18n="bibSupports">Supports</span>: SCCC-01119-2023, SCCC-01107-2023</p>
+  <p class="bib-ann">Supports the Tesla codebook rows by placing the site between Santa Catarina and Garcia and stating CFE supply as a constraint. No MW. Used only as location corroboration.</p>
+  <p class="bib-supports">Supports: SCCC-01119-2023, SCCC-01107-2023</p>
 </article>
 
 
 <article class="bib-entry" id="reuters_lgmg_2023">
-  <p class="bib-type"><span class="lang-en">journalism</span><span class="lang-es" hidden>prensa</span> · <code>reuters_lgmg_2023</code></p>
+  <p class="bib-type">journalism · <code>reuters_lgmg_2023</code></p>
   <p class="bib-chicago">Reuters. “China’s Lingong Mexico plant to generate $5 billion in investment.” Reuters, 16 October 2023.</p>
   <p class="bib-url"><a href="https://www.reuters.com/business/chinas-lingong-mexico-plant-generate-5-billion-investment-2023-10-16/" rel="noopener">https://www.reuters.com/business/chinas-lingong-mexico-plant-generate-5-billion-investment-2023-10-16/</a></p>
-  <p class="bib-ann lang-en">Supports codebook row SCCC-00892-2024 (probable, PRC). Reuters names LGMG’s Nuevo León industrial-park plan. It does not publish MW. Municipality Marín is from the Nuevo León government bulletin, not from Reuters.</p>
-  <p class="bib-ann lang-es" hidden>Sustenta la fila de cruces citados SCCC-00892-2024 (probable, RPC). Reuters nombra el plan de parque industrial de LGMG en Nuevo León. No publica MW. El municipio Marín sale del boletín del gobierno de Nuevo León, no de Reuters.</p>
-  <p class="bib-supports"><span data-i18n="bibSupports">Supports</span>: SCCC-00892-2024</p>
+  <p class="bib-ann">Supports codebook row SCCC-00892-2024 (probable, PRC). Reuters names LGMG’s Nuevo Leon industrial-park plan. It does not publish MW. Municipality Marin is from the Nuevo Leon government bulletin, not from Reuters.</p>
+  <p class="bib-supports">Supports: SCCC-00892-2024</p>
 </article>
 
 
 <article class="bib-entry" id="bnamericas_cfe_tuxpan_2026">
-  <p class="bib-type"><span class="lang-en">journalism</span><span class="lang-es" hidden>prensa</span> · <code>bnamericas_cfe_tuxpan_2026</code></p>
+  <p class="bib-type">journalism · <code>bnamericas_cfe_tuxpan_2026</code></p>
   <p class="bib-chicago">BNamericas. “CFE posterga planta de US$780 millones en Tuxpan hasta 2027.” BNamericas, 2 April 2026.</p>
   <p class="bib-url"><a href="https://www.bnamericas.com/es/noticias/la-cfe-de-mexico-retrasa-a-2027-la-planta-de-tuxpan-de-us780-millones" rel="noopener">https://www.bnamericas.com/es/noticias/la-cfe-de-mexico-retrasa-a-2027-la-planta-de-tuxpan-de-us780-millones</a></p>
-  <p class="bib-ann lang-en">Supports codebook row SICE-00034-2020 (confirmed, Mexico). Reports, citing a CNE permit extension, that a 2.1 GW plant has operated at Tuxpan since 1991 (CFE Adolfo López Mateos) and that a separate ~1.1 GW CFE combined-cycle (Tuxpan Fase I) was delayed. We match the 2100 MW cola row to the existing CFE complex, not to Fase I.</p>
-  <p class="bib-ann lang-es" hidden>Sustenta la fila de cruces citados SICE-00034-2020 (confirmada, México). Reporta, citando una prórroga de permiso de la CNE, que una planta de 2.1 GW opera en Tuxpan desde 1991 (CFE Adolfo López Mateos) y que un ciclo combinado aparte de ~1.1 GW (Tuxpan Fase I) se retrasó. El cruce de 2100 MW es con el complejo existente de CFE, no con la Fase I.</p>
-  <p class="bib-supports"><span data-i18n="bibSupports">Supports</span>: SICE-00034-2020</p>
+  <p class="bib-ann">Supports codebook row SICE-00034-2020 (confirmed, Mexico). Reports, citing a CNE permit extension, that a 2.1 GW plant has operated at Tuxpan since 1991 (CFE Adolfo Lopez Mateos) and that a separate ~1.1 GW CFE combined-cycle (Tuxpan Phase I) was delayed. We match the 2100 MW queue row to the existing CFE complex, not to Phase I.</p>
+  <p class="bib-supports">Supports: SICE-00034-2020</p>
 </article>
 
 
 <article class="bib-entry" id="eleconomista_hofusan_2024">
-  <p class="bib-type"><span class="lang-en">journalism</span><span class="lang-es" hidden>prensa</span> · <code>eleconomista_hofusan_2024</code></p>
+  <p class="bib-type">journalism · <code>eleconomista_hofusan_2024</code></p>
   <p class="bib-chicago">El Economista. “Hofusan Industrial Park proyecta inversiones por más de 1,000 millones de dólares en NL.” El Economista, 28 September 2024.</p>
   <p class="bib-url"><a href="https://www.eleconomista.com.mx/estados/hofusan-industrial-park-proyecta-inversiones-1-000-millones-dolares-nl-20240928-727864.html" rel="noopener">https://www.eleconomista.com.mx/estados/hofusan-industrial-park-proyecta-inversiones-1-000-millones-dolares-nl-20240928-727864.html</a></p>
-  <p class="bib-ann lang-en">Names Hofusan as a Holley/Futong (PRC) plus Santos family park in Salinas Victoria, Nuevo León. No megawatts and no CENACE registro. We do not assign Salinas Victoria queue MW to Hofusan. Kept so the PRC comparison is not silently filled from a park announcement.</p>
-  <p class="bib-ann lang-es" hidden>Nombra a Hofusan como parque de Holley/Futong (RPC) más la familia Santos en Salinas Victoria, Nuevo León. Sin megawatts y sin registro de CENACE. No se asignan los MW de la cola de Salinas Victoria a Hofusan. Se conserva para que la comparación con la RPC no se rellene en silencio con un anuncio de parque.</p>
-  <p class="bib-supports" data-i18n="bibContext">No codebook row. Context only.</p>
+  <p class="bib-ann">Names Hofusan as a Holley/Futong (PRC) plus Santos family park in Salinas Victoria, Nuevo Leon. No megawatts and no CENACE registry id. We do not assign Salinas Victoria queue MW to Hofusan. Kept so the PRC comparison is not silently filled from a park announcement.</p>
+  <p class="bib-supports">No codebook row. Context only.</p>
 </article>
 
-<h3 data-i18n="bibAcademic">Academic / practitioner (context, not the queue)</h3>
+<h3>Academic / practitioner (context, not the queue)</h3>
 
 <article class="bib-entry" id="brookings_nearshoring_usmca">
-  <p class="bib-type"><span class="lang-en">academic</span><span class="lang-es" hidden>académico</span> · <code>brookings_nearshoring_usmca</code></p>
+  <p class="bib-type">academic · <code>brookings_nearshoring_usmca</code></p>
   <p class="bib-chicago">Brookings Institution. “Mexico at the crossroads: The golden opportunity of nearshoring and energy policy as its Achilles’ heel under USMCA.” Brookings, 2023.</p>
   <p class="bib-url"><a href="https://www.brookings.edu/articles/mexico-at-the-crossroads-the-golden-opportunity-of-nearshoring-and-energy-policy-as-its-achilles-heel-under-usmca/" rel="noopener">https://www.brookings.edu/articles/mexico-at-the-crossroads-the-golden-opportunity-of-nearshoring-and-energy-policy-as-its-achilles-heel-under-usmca/</a></p>
-  <p class="bib-ann lang-en">Crowded nearshoring file. Named publisher, useful as policy-community context. We do not use this as the queue, as ownership evidence, or as a MW count.</p>
-  <p class="bib-ann lang-es" hidden>Expediente saturado de nearshoring. Editorial con nombre, útil como contexto de la comunidad de política. No se usa como cola, como prueba de titularidad ni como conteo de MW.</p>
-  <p class="bib-supports" data-i18n="bibContext">No codebook row. Context only.</p>
+  <p class="bib-ann">Crowded nearshoring file. Named publisher, useful as policy-community context. We do not use this as the queue, as ownership evidence, or as a MW count.</p>
+  <p class="bib-supports">No codebook row. Context only.</p>
 </article>
 
 </main>
 
 <footer class="site-footer">
-  <p data-i18n="footer">No policy recommendations. Unnamed megawatts stay unnamed. Map: Carto / OpenStreetMap.</p>
+  <p>No policy recommendations. Unnamed megawatts stay unnamed. Map: Carto / OpenStreetMap.</p>
 </footer>
-<script src="js/i18n.js"></script>
-<script>initLang();</script>
 
 </body>
 </html>

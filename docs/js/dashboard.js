@@ -5,6 +5,13 @@ const COLORS = {
   other: "#6b5a3e",
   unmatched: "#8a9096",
 };
+const LABELS = {
+  us: "U.S.",
+  prc: "PRC",
+  mexico: "Mexico",
+  other: "Other",
+  unmatched: "Unnamed",
+};
 const OWNER_ORDER = ["us", "prc", "mexico", "other", "unmatched"];
 
 let DATA = null;
@@ -17,11 +24,6 @@ let chartTime = null;
 
 function $(id) {
   return document.getElementById(id);
-}
-
-function ownerLabel(key) {
-  if (key === "unmatched") return t("unmatchedLabel");
-  return t(key);
 }
 
 function selected() {
@@ -53,21 +55,17 @@ function fmtMw(n) {
   return Math.round(n) + " MW";
 }
 
-function fillTemplate(key, vars) {
-  return t(key).replace(/\{(\w+)\}/g, (_, k) => (vars[k] == null ? "" : String(vars[k])));
-}
-
 function renderStats(rows) {
   const unnamed = rows.filter((r) => r.owner_class === "unmatched");
   const named = rows.filter((r) => r.owner_class !== "unmatched");
   const days = rows.map((r) => r.days_in_queue).filter((d) => d != null).sort((a, b) => a - b);
   const median = days.length ? days[Math.floor(days.length / 2)] : null;
   const html = [
-    [t("statWaiting"), fmtMw(sumMw(rows))],
-    [t("statRequests"), String(rows.length)],
-    [t("statUnnamed"), fmtMw(sumMw(unnamed))],
-    [t("statNamed"), fmtMw(sumMw(named))],
-    [t("statDays"), median == null ? "—" : String(median)],
+    ["Waiting", fmtMw(sumMw(rows))],
+    ["Requests", String(rows.length)],
+    ["Unnamed", fmtMw(sumMw(unnamed))],
+    ["Named", fmtMw(sumMw(named))],
+    ["Median days waiting", median == null ? "—" : String(median)],
   ]
     .map(([k, v]) => `<div class="stat"><b>${v}</b><span>${k}</span></div>`)
     .join("");
@@ -76,13 +74,11 @@ function renderStats(rows) {
 
 function scoreCell(key, rows) {
   const sub = rows.filter((r) => r.owner_class === key);
-  const n = sub.length;
-  const nLabel = fillTemplate("scoreN", { n });
   return (
     `<div class="score ${key}">` +
     `<b>${fmtMw(sumMw(sub))}</b>` +
-    `<span>${ownerLabel(key)}</span>` +
-    `<small>${nLabel}</small>` +
+    `<span>${LABELS[key]}</span>` +
+    `<small>${sub.length} requests</small>` +
     `</div>`
   );
 }
@@ -101,7 +97,7 @@ function renderScoreboard() {
 function ownerCounts(rows) {
   return OWNER_ORDER.map((k) => ({
     key: k,
-    label: ownerLabel(k),
+    label: LABELS[k],
     mw: sumMw(rows.filter((r) => r.owner_class === k)),
   })).filter((c) => selected().unmatched === "include" || c.key !== "unmatched");
 }
@@ -128,15 +124,31 @@ function renderOwner(rows) {
     options: {
       indexAxis: "y",
       plugins: { legend: { display: false } },
-      scales: { x: { title: { display: true, text: t("xMw") } } },
+      scales: { x: { title: { display: true, text: "MW waiting" } } },
     },
   });
+}
+
+function englishStatus(raw) {
+  const k = String(raw || "")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .trim();
+  if (k.includes("recepcion")) return "Received / under review";
+  if (k === "aceptada") return "Accepted";
+  if (k === "observada") return "Observations";
+  if (k === "atendida") return "Attended";
+  if (k === "cancelada") return "Cancelled";
+  if (k === "revision") return "Under review";
+  if (!k) return "—";
+  return "Other";
 }
 
 function renderStatus(rows) {
   const by = {};
   rows.forEach((r) => {
-    const k = r.estatus || "—";
+    const k = englishStatus(r.estatus);
     by[k] = (by[k] || 0) + r.mw;
   });
   const labels = Object.keys(by);
@@ -160,12 +172,12 @@ function renderTime() {
   const labels = ts.map((row) => row.snapshot_date);
   let dataset;
   if (s.cola === "interconexion") {
-    dataset = { label: t("timeGen"), data: ts.map((row) => row.interconexion_in_queue_mw) };
+    dataset = { label: "Power plants waiting", data: ts.map((row) => row.interconexion_in_queue_mw) };
   } else if (s.cola === "conexion") {
-    dataset = { label: t("timeLoad"), data: ts.map((row) => row.conexion_in_queue_mw) };
+    dataset = { label: "Factories waiting", data: ts.map((row) => row.conexion_in_queue_mw) };
   } else {
     dataset = {
-      label: t("timeAll"),
+      label: "Power plants + factories",
       data: ts.map((row) => row.interconexion_in_queue_mw + row.conexion_in_queue_mw),
     };
   }
@@ -186,7 +198,7 @@ function renderTime() {
     },
     options: {
       plugins: { legend: { display: false } },
-      scales: { y: { title: { display: true, text: t("xMw") } } },
+      scales: { y: { title: { display: true, text: "MW waiting" } } },
     },
   });
 }
@@ -246,8 +258,8 @@ function renderMap(rows) {
     });
     m.bindPopup(
       `<strong>${g.municipio || "—"}, ${g.estado || "—"}</strong><br>` +
-        `${fmtMw(g.mw)} ${t("popupWaiting")} · ${g.n} ${t("popupRequests")}<br>` +
-        OWNER_ORDER.map((k) => `${ownerLabel(k)}: ${g.owners[k].toFixed(1)} MW`).join("<br>")
+        `${fmtMw(g.mw)} waiting · ${g.n} request(s)<br>` +
+        OWNER_ORDER.map((k) => `${LABELS[k]}: ${g.owners[k].toFixed(1)} MW`).join("<br>")
     );
     layer.addLayer(m);
   });
@@ -263,7 +275,8 @@ function render() {
   if (s.clock === "time") {
     renderTime();
     renderStats(filterRows());
-    $("note").textContent = t("noteTime");
+    $("note").textContent =
+      "Line chart is total megawatts waiting at each snapshot. Country colors apply to the latest snapshot only.";
     return;
   }
   const rows = filterRows();
@@ -274,15 +287,11 @@ function render() {
   if (map) {
     setTimeout(() => map.invalidateSize(), 80);
   }
-  $("note").textContent = fillTemplate("noteLatest", {
-    snap: DATA.latest_snapshot,
-    n: rows.length,
-  });
+  $("note").textContent =
+    `Snapshot ${DATA.latest_snapshot}. ${rows.length} requests in line with current filters.`;
 }
 
 async function boot() {
-  initLang();
-  window.onLangChange = render;
   const [dash, rows] = await Promise.all([
     fetch("data/dashboard.json").then((r) => r.json()),
     fetch("data/open_rows.json").then((r) => r.json()),
@@ -294,7 +303,6 @@ async function boot() {
 }
 
 boot().catch((err) => {
-  initLang();
-  $("note").textContent = t("loadFail");
+  $("note").textContent = "Could not load the data files. Rebuild with process/build_site_data.py.";
   console.error(err);
 });

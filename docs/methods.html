@@ -6,28 +6,20 @@
   <title>Methods · Who is waiting for Mexico’s grid</title>
   <link rel="stylesheet" href="css/site.css">
 </head>
-<body data-page-title="pageTitleMethods">
+<body>
 <header class="site-header">
   <div class="inner">
-    <div class="header-row">
-      <p class="kicker" data-i18n="kicker">William &amp; Mary · GIAS Futures Group · Team 2</p>
-      <div class="lang-toggle" role="group" aria-label="Language">
-        <button type="button" data-lang-btn="en">EN</button>
-        <span class="lang-sep">|</span>
-        <button type="button" data-lang-btn="es">ES</button>
-      </div>
-    </div>
-    <h1 data-i18n="title">Who is waiting for Mexico’s grid</h1>
-    <p class="sub" data-i18n="sub">U.S. vs PRC vs Mexico, in megawatts and days. Diagnostic only — no policy advice.</p>
+    <p class="kicker">William &amp; Mary · GIAS Futures Group · Team 2</p>
+    <h1>Who is waiting for Mexico’s grid</h1>
+    <p class="sub">U.S. vs PRC vs Mexico, in megawatts and days. Diagnostic only — no policy advice.</p>
     <nav>
-      <a href="index.html" data-i18n="navDash">Dashboard</a>
-      <a href="methods.html" aria-current="page" data-i18n="navMethods">Methods</a>
-      <a href="bibliography.html" data-i18n="navBib">Bibliography</a>
+      <a href="index.html">Dashboard</a>
+      <a href="methods.html" aria-current="page">Methods</a>
+      <a href="bibliography.html">Bibliography</a>
     </nav>
   </div>
 </header>
 <main class="page">
-<article class="lang-en">
   <h2>What this measures</h2>
   <p>
     U.S. and PRC-tied projects in Mexico compete for the same grid. What you can count is
@@ -38,53 +30,54 @@
   </p>
   <p>
     CENACE still does not name the applicant. CNE names generation permit-holders, including
-    <em>país de origen</em>. Unique matches of that permit book onto plants still in line
+    country of origin. Unique matches of that permit book onto plants still in line
     are the U.S. vs PRC scoreboard. Factories stay mostly unnamed.
   </p>
 
   <h2>What CENACE publishes</h2>
   <p>
-    CENACE posts workbooks of the interconnection queue (generators, registro prefix SICE)
+    CENACE posts workbooks of the interconnection queue (generators, registry prefix SICE)
     and the connection queue (load, prefix SCCC). The live listing is the year dropdown on
-    <a href="https://www.cenace.gob.mx/Paginas/SIM/SolicitudConexion.aspx">Solicitud de Conexión e Interconexión</a>.
+    CENACE’s
+    <a href="https://www.cenace.gob.mx/Paginas/SIM/SolicitudConexion.aspx">connection and interconnection request page</a>.
     Directory indexes return 403; files are retrieved from the ASP.NET listing. Filenames
-    use accented <em>Interconexión</em> / <em>Conexión</em>.
+    use the accented Spanish words for interconnection and connection.
   </p>
   <p>
-    Columns in the 2021–2026 workbooks: número de registro, fecha de registro, estatus,
-    fecha de estado, fecha estimada de operación normal, capacidad (MW), tecnología,
-    municipio, entidad federativa, GCR.
+    Columns in the 2021–2026 workbooks: registry number, request date, status,
+    status date, estimated normal-operation date, capacity (MW), technology,
+    municipality, state, and regional control office.
     <strong>Company name is not in that list.</strong> There is also no substation
-    “punto de interconexión.” Geography on the map is the municipality of record, not a bus name.
+    interconnection-point field. Geography on the map is the municipality of record, not a bus name.
   </p>
   <p>
-    Study-status values observed: <em>Recepción y revisión</em>, <em>Aceptada</em>,
-    <em>Observada</em>, <em>Atendida</em>, <em>Cancelada</em>, and (in older files)
-    <em>Revisión</em>. “Still in line” on this site means the first three plus Revisión.
-    <em>Atendida</em> is already processed. <em>Cancelada</em> is cancelled.
+    Study-status values observed, shown in English on the dashboard: received / under review,
+    accepted, observations, attended, cancelled, and (in older files) under review.
+    “Still in line” on this site means the first three plus under review.
+    Attended is already processed. Cancelled is cancelled.
   </p>
 
   <h2>CNE permit join (power plants)</h2>
   <p>
     The public file
-    <a href="https://www.cne.gob.mx/da/PermisosdeGeneracionVigentesporModalidad.csv">Permisos de generación vigentes por modalidad</a>
-    names permisionario, authorized MW, technology, state, address, <em>empresa líder</em>,
-    and <em>país de origen</em>. We join that book onto in-queue SICE rows only when the
+    <a href="https://www.cne.gob.mx/da/PermisosdeGeneracionVigentesporModalidad.csv">generation permits in force, by modality</a>
+    names the permit-holder, authorized MW, technology, state, address, lead company,
+    and country of origin. We join that book onto in-queue SICE rows only when the
     fingerprint is unique on both sides.
   </p>
   <ul>
     <li>Key: state + MW rounded to one decimal + technology family (solar/PV, wind, combined cycle, hydro, thermal, other).</li>
     <li>A tighter key adds municipality when both sides have it.</li>
     <li>Collisions stay unnamed. We do not pick the “closest” permit.</li>
-    <li>Country coding: <em>Estados Unidos</em> / EUA → U.S.; <em>China</em> → PRC; <em>México</em> → Mexico. Mixed labels such as “Canadá y China” are Other, not PRC.</li>
-    <li>The hand codebook wins on the same registro. Load (SCCC) is codebook-only.</li>
+    <li>Country coding: United States → U.S.; China → PRC; Mexico → Mexico. Mixed labels such as Canada and China are Other, not PRC.</li>
+    <li>The hand codebook wins on the same registry id. Load (SCCC) is codebook-only.</li>
   </ul>
   <p>
     Queue MW often does not equal authorized permit MW, so most plants stay unnamed.
     Zero PRC unique matches is a finding of this rule, not a fill-in.
   </p>
   <p>
-    <strong>Special-purpose vehicle hole:</strong> <em>país de origen</em> can hide PRC
+    <strong>Special-purpose vehicle hole:</strong> country of origin can hide PRC
     (or U.S.) capital behind a Mexican company. That hole stays on the Mexico or unnamed
     bars. We do not guess beneficial owners from park announcements.
   </p>
@@ -92,16 +85,17 @@
   <h2>Factories (load)</h2>
   <p>
     CENACE does not name factories. Only cited codebook rows are colored: Tesla in Santa Catarina
-    (probable U.S.) and LGMG in Marín (probable PRC). Hofusan in Salinas Victoria is in the
-    bibliography and not in the codebook: El Economista names the park, not megawatts or a registro.
+    (probable U.S.) and LGMG in Marin (probable PRC). Hofusan in Salinas Victoria is in the
+    bibliography and not in the codebook: El Economista names the park, not megawatts or a registry id.
     The rest of load megawatts stay unnamed.
   </p>
 
   <h2>Days waiting</h2>
   <p>
     For each row, days waiting is snapshot date minus request date (floored at zero).
-    Snapshot date is parsed from the title row (“Información actualizada al: 28 de febrero de 2026”),
-    not from file mtime. Rows with MW ≥ 5,000 are dropped from totals as unit or digit errors.
+    Snapshot date is parsed from the title row that states the update date
+    (for example 28 February 2026), not from file mtime. Rows with MW ≥ 5,000 are dropped
+    from totals as unit or digit errors.
   </p>
 
   <h2>Geography</h2>
@@ -114,7 +108,7 @@
   <ul>
     <li>The queue does not bind: studies are not the constraint on who energizes, so place in line is the wrong clock.</li>
     <li>The unique fingerprint is too strict or too loose: if CNE MW and queue MW are not comparable, the named scoreboard is a small non-random slice.</li>
-    <li>Mexican SPVs hide the real country of origin at scale; the Mexico and unnamed bars then mix U.S. and PRC capital.</li>
+    <li>Mexican special-purpose vehicles hide the real country of origin at scale; the Mexico and unnamed bars then mix U.S. and PRC capital.</li>
     <li>Off-list CFE or private deals energize without appearing in these workbooks.</li>
   </ul>
 
@@ -129,119 +123,9 @@
     <code>python process/render_bibliography.py</code>.
     Raw CENACE and CNE files are committed under <code>data/raw</code>.
   </p>
-</article>
-
-<article class="lang-es" hidden>
-  <h2>Qué se mide</h2>
-  <p>
-    Los proyectos ligados a Estados Unidos y a la República Popular China compiten por la misma
-    red en México. Lo que se puede contar es
-    <strong>quién espera, en megawatts y días</strong>: el lugar en la cola pública de
-    interconexión de CENACE (centrales) y en la cola de conexión (fábricas). No son anuncios
-    de parques industriales, ni relojes IMMEX, ni títulos de agua. El horizonte es 2026–2036.
-    Nada de esto es un puntaje de influencia, y nada de esto es una recomendación.
-  </p>
-  <p>
-    CENACE sigue sin nombrar al solicitante. La CNE sí nombra a los permisionarios de generación,
-    incluido el <em>país de origen</em>. Los cruces únicos de ese padrón con las centrales aún
-    en fila son el marcador EE. UU. frente a RPC. Las fábricas siguen, en su mayoría, sin nombre.
-  </p>
-
-  <h2>Qué publica CENACE</h2>
-  <p>
-    CENACE publica libros de la cola de interconexión (generadores, prefijo SICE) y de la cola
-    de conexión (carga, prefijo SCCC). El listado vivo es el menú de año en
-    <a href="https://www.cenace.gob.mx/Paginas/SIM/SolicitudConexion.aspx">Solicitud de Conexión e Interconexión</a>.
-    Los índices de directorio responden 403; los archivos se obtienen del listado ASP.NET.
-    Los nombres de archivo usan <em>Interconexión</em> / <em>Conexión</em> con acento.
-  </p>
-  <p>
-    Columnas en los libros 2021–2026: número de registro, fecha de registro, estatus,
-    fecha de estado, fecha estimada de operación normal, capacidad (MW), tecnología,
-    municipio, entidad federativa, GCR.
-    <strong>El nombre de la empresa no está en esa lista.</strong> Tampoco hay “punto de
-    interconexión” de subestación. La geografía del mapa es el municipio registrado, no un nodo.
-  </p>
-  <p>
-    Estatus observados: <em>Recepción y revisión</em>, <em>Aceptada</em>,
-    <em>Observada</em>, <em>Atendida</em>, <em>Cancelada</em> y (en archivos viejos)
-    <em>Revisión</em>. “Aún en la fila” en este sitio son los tres primeros más Revisión.
-    <em>Atendida</em> ya se procesó. <em>Cancelada</em> está cancelada.
-  </p>
-
-  <h2>Cruce con permisos de la CNE (centrales)</h2>
-  <p>
-    El archivo público
-    <a href="https://www.cne.gob.mx/da/PermisosdeGeneracionVigentesporModalidad.csv">Permisos de generación vigentes por modalidad</a>
-    nombra permisionario, MW autorizados, tecnología, estado, domicilio, <em>empresa líder</em>
-    y <em>país de origen</em>. Ese padrón se cruza con las filas SICE aún en cola solo cuando
-    la huella es única en ambos lados.
-  </p>
-  <ul>
-    <li>Clave: estado + MW redondeado a un decimal + familia tecnológica (solar/FV, eólica, ciclo combinado, hidro, térmica, otra).</li>
-    <li>Una clave más estricta añade municipio cuando ambos lados lo tienen.</li>
-    <li>Los choques quedan sin nombre. No se elige el permiso “más cercano”.</li>
-    <li>País: <em>Estados Unidos</em> / EUA → EE. UU.; <em>China</em> → RPC; <em>México</em> → México. Etiquetas mixtas como “Canadá y China” van a Otros, no a RPC.</li>
-    <li>La tabla de cruces citados gana sobre el mismo registro. La carga (SCCC) solo entra por esa tabla.</li>
-  </ul>
-  <p>
-    El MW de la cola a menudo no coincide con el MW autorizado del permiso, así que la mayoría
-    de las centrales queda sin nombre. Cero cruces únicos de RPC es un resultado de esta regla,
-    no un relleno.
-  </p>
-  <p>
-    <strong>Hueco de sociedad vehículo:</strong> el <em>país de origen</em> puede ocultar capital
-    de la RPC (o de EE. UU.) detrás de una empresa mexicana. Ese hueco se queda en las barras de
-    México o sin nombre. No se adivina el beneficiario final a partir de anuncios de parques.
-  </p>
-
-  <h2>Fábricas (carga)</h2>
-  <p>
-    CENACE no nombra fábricas. Solo se colorean filas citadas de la tabla de cruces: Tesla en Santa Catarina
-    (probable EE. UU.) y LGMG en Marín (probable RPC). Hofusan en Salinas Victoria está en la
-    bibliografía y no en esa tabla: El Economista nombra el parque, no megawatts ni un registro.
-    El resto de megawatts de carga queda sin nombre.
-  </p>
-
-  <h2>Días de espera</h2>
-  <p>
-    En cada fila, los días de espera son la fecha de actualización menos la fecha de solicitud
-    (sin números negativos). La fecha de actualización se lee del renglón de título
-    (“Información actualizada al: 28 de febrero de 2026”), no de la fecha del archivo.
-    Filas con MW ≥ 5,000 se excluyen de los totales por error de unidad o de dígitos.
-  </p>
-
-  <h2>Geografía</h2>
-  <p>
-    Las cabeceras municipales están en un gazetero versionado. El resto cae al centroide
-    estatal. Las filas cuyo estado no se puede leer quedan fuera del mapa.
-  </p>
-
-  <h2>Qué falsificaría el argumento</h2>
-  <ul>
-    <li>La cola no ata: los estudios no son el cuello de botella de quién se energiza, así que el lugar en la fila es el reloj equivocado.</li>
-    <li>La huella única es demasiado estricta o demasiado laxa: si el MW de la CNE y el de la cola no son comparables, el marcador con nombre es un recorte pequeño y no aleatorio.</li>
-    <li>Las sociedades mexicanas ocultan a gran escala el país real; entonces las barras de México y sin nombre mezclan capital de EE. UU. y de la RPC.</li>
-    <li>Tratos de CFE o privados fuera de lista se energizan sin aparecer en estos libros.</li>
-  </ul>
-
-  <h2>Cómo reconstruir</h2>
-  <p>
-    <code>python scrape/fetch_colas.py</code> y luego
-    <code>python scrape/fetch_cne_permits.py</code>,
-    <code>python process/normalize.py</code>,
-    <code>python process/geocode_nodes.py</code>,
-    <code>python process/join_cne.py</code>,
-    <code>python process/build_site_data.py</code>,
-    <code>python process/render_bibliography.py</code>.
-    Los archivos crudos de CENACE y de la CNE están en <code>data/raw</code>.
-  </p>
-</article>
 </main>
 <footer class="site-footer">
-  <p data-i18n="footer">No policy recommendations. Unnamed megawatts stay unnamed. Map: Carto / OpenStreetMap.</p>
+  <p>No policy recommendations. Unnamed megawatts stay unnamed. Map: Carto / OpenStreetMap.</p>
 </footer>
-<script src="js/i18n.js"></script>
-<script>initLang();</script>
 </body>
 </html>
