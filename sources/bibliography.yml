@@ -85,6 +85,20 @@
   annotation: "Official state source that names Marin as the LGMG plant municipality. Together with Reuters, this is why the single public load-queue row in Marin is coded probable PRC, not confirmed."
   supports: ["SCCC-00892-2024"]
 
+- id: quadratin_aws_qro_2024
+  type: journalism
+  chicago: "Quadratín Querétaro. “Centro de datos de Amazon estará en Pedro Escobedo, Colón y El Marqués.” Quadratín, 27 February 2024."
+  url: "https://queretaro.quadratin.com.mx/centro-de-datos-de-amazon-estara-en-pedro-escobedo-colon-y-el-marques/"
+  annotation: "Supports codebook row SCCC-00144-2025 (probable, U.S.). Quotes SEDESU that AWS buildings would sit in Pedro Escobedo, Colón, and El Marqués. Does not publish megawatts or a CENACE registry id. Only Pedro Escobedo is unique in the load queue, so only that row is coded. Dashboard MW is CENACE’s figure."
+  supports: ["SCCC-00144-2025"]
+
+- id: eluniversal_aws_qro_2024
+  type: journalism
+  chicago: "Pérez, Estrella. “Colón, Pedro Escobedo y El Marqués se beneficiarán con inversión de Amazon.” El Universal Querétaro, 18 March 2024."
+  url: "https://www.eluniversalqueretaro.mx/cartera/colon-pedro-escobedo-y-el-marques-se-beneficiaran-con-inversion-de-amazon/"
+  annotation: "Corroborates the three-municipio AWS footprint (Canacintra, not SEDESU). The article’s regional 700 MW projection is not written onto the map. Used as location corroboration for SCCC-00144-2025, the same way El Norte is used for Tesla."
+  supports: ["SCCC-00144-2025"]
+
 - id: bnamericas_cfe_tuxpan_2026
   type: journalism
   chicago: "BNamericas. “CFE posterga planta de US$780 millones en Tuxpan hasta 2027.” BNamericas, 2 April 2026."

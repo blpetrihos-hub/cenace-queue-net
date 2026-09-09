@@ -1,0 +1,29 @@
+{
+  "official_bulk_mia_table": false,
+  "reason": "SEMARNAT publishes Gaceta Ecológica as weekly PDF listings and a per-clue 'Consulta tu trámite' lookup. There is no official CSV of promoter + MW + municipio comparable to CNE's generation-permit file. Third-party GitHub scrapes are not an official table and are not joined.",
+  "automate_join": false,
+  "use_mia_as": "citation inside Method 1 codebook notes, one PDF at a time",
+  "probes": {
+    "gaceta": {
+      "url": "https://www.gob.mx/semarnat/acciones-y-programas/gaceta-ecologica",
+      "ok": true,
+      "status": 200,
+      "content_type": "text/html",
+      "note": "reached"
+    },
+    "consulta": {
+      "url": "http://tramites.semarnat.gob.mx/index.php/consulta-tu-tramite",
+      "ok": false,
+      "status": null,
+      "content_type": "",
+      "note": "URLError: <urlopen error [Errno 11001] getaddrinfo failed>"
+    },
+    "cne_csv_control": {
+      "url": "https://www.cne.gob.mx/da/PermisosdeGeneracionVigentesporModalidad.csv",
+      "ok": true,
+      "status": 200,
+      "content_type": "text/csv",
+      "note": "reached"
+    }
+  }
+}

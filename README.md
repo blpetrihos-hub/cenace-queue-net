@@ -30,6 +30,9 @@ python scrape/fetch_cne_permits.py
 python process/normalize.py
 python process/geocode_nodes.py
 python process/join_cne.py
+python process/propose_from_seeds.py
+python process/rank_unnamed.py
+python process/mia_spike.py
 python process/build_site_data.py
 python process/render_bibliography.py
 ```
@@ -47,5 +50,9 @@ If GitHub Actions cannot reach CENACE or CNE, run the scrape locally. Committed 
 | `process/normalize.py` | Standardize columns; `mw_days`; flag MW ≥ 5,000 |
 | `process/geocode_nodes.py` | Municipio gazetteer |
 | `process/join_cne.py` | Unique fingerprint join onto in-queue generators |
+| `process/propose_from_seeds.py` | Announcement → unique load-row candidates (does not color the map) |
+| `process/rank_unnamed.py` | Query URLs for leftover unnamed rows (does not color the map) |
+| `process/mia_spike.py` | Confirms SEMARNAT MIA has no official bulk table to join |
+| `data/seeds/announcements.csv` | Dated plant seeds (municipio + country class + URL) |
 | `data/codebook/ownership.csv` | Cited matches (wins over CNE on the same registro) |
 | `docs/` | GitHub Pages (Leaflet + Chart.js) |

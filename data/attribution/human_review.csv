@@ -1,0 +1,6 @@
+registro_id,seed_id,decision,reason
+SCCC-00892-2024,lgmg_marin_2023,already_in_codebook,Existing probable PRC codebook row. Engine reproduced the unique Marin match.
+SCCC-00144-2025,aws_pedro_escobedo_2024,promote,Only in-queue load row in Pedro Escobedo. Quadratín 27 Feb 2024 names AWS buildings in that municipio. CENACE MW 71. Not a confirmed UBO.
+SCCC-00427-2024,cloudhq_colon_2023,hold,Window uniqueness hit a 28.5 MW row; seed/press figure is 190.26 MW. Colón has other load rows outside the window. Campus story is not a unique factory.
+SCCC-00816-2024,borgwarner_slp_2023,hold,San Luis Potosí capital has several in-queue loads. One row in the window is not the same as a unique plant. WTC 2 is not a municipio.
+SCCC-00140-2026,odata_el_marques_2025,hold,El Marqués hosts several named operators. One queue row is not enough to pick ODATA over AWS/Google/Microsoft/CloudHQ. Reported 200 MW vs CENACE 150 MW.

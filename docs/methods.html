@@ -85,9 +85,21 @@
   <h2>Factories (load)</h2>
   <p>
     CENACE does not name factories. Only cited codebook rows are colored: Tesla in Santa Catarina
-    (probable U.S.) and LGMG in Marin (probable PRC). Hofusan in Salinas Victoria is in the
-    bibliography and not in the codebook: El Economista names the park, not megawatts or a registry id.
-    The rest of load megawatts stay unnamed.
+    (probable U.S.), LGMG in Marin (probable PRC), and AWS in Pedro Escobedo (probable U.S.).
+    Hofusan in Salinas Victoria is in the bibliography and not in the codebook: El Economista names
+    the park, not megawatts or a registry id. The rest of load megawatts stay unnamed.
+  </p>
+  <p>
+    Announcement seeds in <code>data/seeds/announcements.csv</code> are matched to in-queue load
+    rows only when the municipio has a single filing inside a −90 / +540 day window
+    (<code>process/propose_from_seeds.py</code>). One row is a <em>probable</em> candidate; two or
+    more are contested; zero stay unnamed. Candidates do not color the map until a human writes a
+    codebook row with a Chicago source. Dashboard megawatts stay CENACE’s even when the press
+    reports a different figure. Industrial parks are a search prior, not an owner.
+    SEMARNAT MIA (Gaceta Ecológica) is weekly PDFs and a per-clue lookup, not a CNE-style
+    table of promoter plus MW plus municipio, so it is not auto-joined. Ranked search
+    queries for leftover unnamed rows are stored for review; they never write the codebook.
+    The unnamed residual is the comparison.
   </p>
 
   <h2>Days waiting</h2>

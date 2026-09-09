@@ -1,0 +1,19 @@
+{
+  "registro_id": "SCCC-00892-2024",
+  "seed_id": "lgmg_marin_2023",
+  "gate": "probable",
+  "snapshot": "2026-02-28",
+  "operator": "LGMG (Lingong Machinery Group)",
+  "owner_class": "prc",
+  "municipio": "Marín",
+  "estado": "Nuevo León",
+  "announce_date": "2023-10-16",
+  "cenace_mw": 28.5,
+  "reported_mw": null,
+  "url": "https://www.reuters.com/business/chinas-lingong-mexico-plant-generate-5-billion-investment-2023-10-16/",
+  "source_id": "reuters_lgmg_2023",
+  "window_days": {
+    "before": 90,
+    "after": 540
+  }
+}

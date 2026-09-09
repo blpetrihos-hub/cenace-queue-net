@@ -1,0 +1,19 @@
+{
+  "registro_id": "SCCC-00144-2025",
+  "seed_id": "aws_pedro_escobedo_2024",
+  "gate": "probable",
+  "snapshot": "2026-02-28",
+  "operator": "Amazon Web Services (AWS)",
+  "owner_class": "us",
+  "municipio": "Pedro Escobedo",
+  "estado": "Querétaro",
+  "announce_date": "2024-02-27",
+  "cenace_mw": 71.0,
+  "reported_mw": null,
+  "url": "https://queretaro.quadratin.com.mx/centro-de-datos-de-amazon-estara-en-pedro-escobedo-colon-y-el-marques/",
+  "source_id": "quadratin_aws_qro_2024",
+  "window_days": {
+    "before": 90,
+    "after": 540
+  }
+}
