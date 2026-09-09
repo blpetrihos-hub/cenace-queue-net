@@ -106,6 +106,13 @@
   annotation: "Supports codebook row SICE-00034-2020 (confirmed, Mexico). Reports, citing a CNE permit extension, that a 2.1 GW plant has operated at Tuxpan since 1991 (CFE Adolfo Lopez Mateos) and that a separate ~1.1 GW CFE combined-cycle (Tuxpan Phase I) was delayed. We match the 2100 MW queue row to the existing CFE complex, not to Phase I."
   supports: ["SICE-00034-2020"]
 
+- id: presidencia_fermaca_durango_2025
+  type: official
+  chicago: "Presidencia de la República. “Presidenta anuncia inversión de 3 mil 700 mdd de Fermaca Dreams para construcción de centro de datos y planta de fertilizantes en Durango.” 20 March 2025."
+  url: "https://www.gob.mx/presidencia/prensa/presidenta-anuncia-inversion-de-3-mil-700-mdd-de-fermaca-dreams-para-construccion-de-centro-de-datos-y-planta-de-fertlizantes-en-durango"
+  annotation: "Supports codebook row SCCC-00556-2025 (probable, Mexico). The Durango governor names Fermachem’s fertilizer plant in Lerdo. The same bulletin places Fermaca Digital City in Durango capital, so that campus is not this queue row. No megawatts and no CENACE registry id. Dashboard MW is CENACE’s figure."
+  supports: ["SCCC-00556-2025"]
+
 - id: eleconomista_hofusan_2024
   type: journalism
   chicago: "El Economista. “Hofusan Industrial Park proyecta inversiones por más de 1,000 millones de dólares en NL.” El Economista, 28 September 2024."

@@ -10,7 +10,7 @@ const LABELS = {
   prc: "PRC",
   mexico: "Mexico",
   other: "Other",
-  unmatched: "Unnamed",
+  unmatched: "Non-attributed",
 };
 const OWNER_ORDER = ["us", "prc", "mexico", "other", "unmatched"];
 const CARTO_BASEMAP_KEY = "cb1_32m3_1_44dc754e68375e8ab5208497";
@@ -61,16 +61,18 @@ function renderStats(rows) {
   const named = rows.filter((r) => r.owner_class !== "unmatched");
   const days = rows.map((r) => r.days_in_queue).filter((d) => d != null).sort((a, b) => a - b);
   const median = days.length ? days[Math.floor(days.length / 2)] : null;
-  const html = [
+  const cells = [
     ["Waiting", fmtMw(sumMw(rows))],
     ["Requests", String(rows.length)],
-    ["Unnamed", fmtMw(sumMw(unnamed))],
-    ["Named", fmtMw(sumMw(named))],
-    ["Median days waiting", median == null ? "—" : String(median)],
-  ]
+  ];
+  if (selected().unmatched === "include") {
+    cells.push(["Non-attributed", fmtMw(sumMw(unnamed))]);
+    cells.push(["Attributed", fmtMw(sumMw(named))]);
+  }
+  cells.push(["Median days waiting", median == null ? "—" : String(median)]);
+  $("stats").innerHTML = cells
     .map(([k, v]) => `<div class="stat"><b>${v}</b><span>${k}</span></div>`)
     .join("");
-  $("stats").innerHTML = html;
 }
 
 function scoreCell(key, rows) {

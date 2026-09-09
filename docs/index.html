@@ -21,7 +21,7 @@
   </div>
 </header>
 <main class="dash">
-  <p class="caption">This counts place in line for electricity. Power plants (generation) are named from CNE permits when the match is unique. Factories (load) are mostly unnamed because CENACE does not publish the applicant.</p>
+  <p class="caption">This counts place in line for electricity. Power plants (generation) are attributed from CNE permits when the match is unique. Factories (load) are mostly non-attributed because CENACE does not publish the applicant.</p>
   <div class="controls">
     <label>When
       <select id="clock">
@@ -43,22 +43,22 @@
         <option value="bajio">Bajio</option>
       </select>
     </label>
-    <label>Unnamed
-      <select id="unmatched">
-        <option value="include">Show unnamed megawatts</option>
-        <option value="exclude">Named rows only</option>
+    <label class="bare">
+      <select id="unmatched" aria-label="Attribution">
+        <option value="include">Attributed and non-attributed data</option>
+        <option value="exclude">Attributed data only</option>
       </select>
     </label>
   </div>
 
   <section class="scoreboard" id="scorePlantsWrap">
     <h2>Power plants still in line</h2>
-    <p class="score-note">Country comes from CNE’s official country-of-origin field on a unique match of state + megawatts + technology. Mixed or blank labels are Other. PRC behind a Mexican company stays Mexico or unnamed — we do not guess.</p>
+    <p class="score-note">Country comes from CNE’s official country-of-origin field on a unique match of state + megawatts + technology. Mixed or blank labels are Other. PRC behind a Mexican company stays Mexico or non-attributed — we do not guess.</p>
     <div class="score-row" id="scorePlants"></div>
   </section>
   <section class="scoreboard scoreboard-small" id="scoreLoadWrap">
     <h2>Factories still in line</h2>
-    <p class="score-note">CENACE does not name factories. Only a few cited matches (Tesla, LGMG). The rest stay unnamed.</p>
+    <p class="score-note">CENACE does not name factories. Only a few cited matches (Tesla, LGMG, AWS, Fermachem). The rest stay non-attributed.</p>
     <div class="score-row" id="scoreLoad"></div>
   </section>
 
@@ -71,8 +71,8 @@
         <span class="swatch" style="background:#8c3a2b"></span>PRC
         <span class="swatch" style="background:#3d6b4f"></span>Mexico
         <span class="swatch" style="background:#6b5a3e"></span>Other
-        <span class="swatch" style="background:#8a9096"></span>Unnamed
-        · Dot size is megawatts still waiting. Color is country when named.
+        <span class="swatch" style="background:#8a9096"></span>Non-attributed
+        · Dot size is megawatts still waiting. Color is country when attributed.
       </p>
     </div>
     <div>

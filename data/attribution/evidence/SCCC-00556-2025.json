@@ -1,0 +1,19 @@
+{
+  "registro_id": "SCCC-00556-2025",
+  "seed_id": "fermachem_lerdo_2025",
+  "gate": "probable",
+  "snapshot": "2026-02-28",
+  "operator": "Fermachem (Fermaca Dreams)",
+  "owner_class": "mexico",
+  "municipio": "Lerdo",
+  "estado": "Durango",
+  "announce_date": "2025-03-20",
+  "cenace_mw": 150.0,
+  "reported_mw": null,
+  "url": "https://www.gob.mx/presidencia/prensa/presidenta-anuncia-inversion-de-3-mil-700-mdd-de-fermaca-dreams-para-construccion-de-centro-de-datos-y-planta-de-fertlizantes-en-durango",
+  "source_id": "presidencia_fermaca_durango_2025",
+  "window_days": {
+    "before": 90,
+    "after": 540
+  }
+}

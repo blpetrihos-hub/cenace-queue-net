@@ -4,3 +4,6 @@ SCCC-00144-2025,aws_pedro_escobedo_2024,promote,Only in-queue load row in Pedro 
 SCCC-00427-2024,cloudhq_colon_2023,hold,Window uniqueness hit a 28.5 MW row; seed/press figure is 190.26 MW. Colón has other load rows outside the window. Campus story is not a unique factory.
 SCCC-00816-2024,borgwarner_slp_2023,hold,San Luis Potosí capital has several in-queue loads. One row in the window is not the same as a unique plant. WTC 2 is not a municipio.
 SCCC-00140-2026,odata_el_marques_2025,hold,El Marqués hosts several named operators. One queue row is not enough to pick ODATA over AWS/Google/Microsoft/CloudHQ. Reported 200 MW vs CENACE 150 MW.
+SCCC-00556-2025,fermachem_lerdo_2025,promote,Only in-queue load row in Lerdo. Presidencia 20 Mar 2025 and the Durango governor name Fermachem in that municipio. Data-center campus is Durango capital, not this row. CENACE MW 150. Mexican operator as announced. Not a confirmed UBO.
+SCCC-00570-2025,huimilpan_lookup_2026,hold,Huimilpan has one 349 MW load row but SEDESU describes a park receiving many data centers. No unique named operator. Park-level story is not assigned megawatts.
+SCCC-00148-2024,cadereyta_lookup_2026,hold,Cadereyta Jiménez has one 200 MW load row. No dated factory announcement names an operator for that row. PEMEX refinery presence is not a unique queue match.
