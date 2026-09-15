@@ -4,7 +4,7 @@
     "path": "data/raw/cne/PermisosdeGeneracionVigentesporModalidad.csv",
     "status": 200,
     "bytes": 371285,
-    "fetched_at": "2026-09-08T21:18:28.282127+00:00",
+    "fetched_at": "2026-09-15T18:03:38.656299+00:00",
     "sha256": "da93d7280f7ef4116862180309358f2491c77f607aff7d6ff251bfa6ad14828d",
     "content_type": "text/csv",
     "ok": true
