@@ -78,6 +78,7 @@ Ciudad Delicias,ciudad delicias,Chihuahua,28.633,-106.0691,state_centroid
 Ciudad Jimenez,ciudad jimenez,Chihuahua,28.633,-106.0691,state_centroid
 Ciudad Juarez,ciudad juarez,Chihuahua,28.633,-106.0691,state_centroid
 Cuauhtémoc,cuauhtemoc,Chihuahua,28.633,-106.0691,state_centroid
+Cusihuiriachi,cusihuiriachi,Chihuahua,28.633,-106.0691,state_centroid
 Cusihuriachi,cusihuriachi,Chihuahua,28.633,-106.0691,state_centroid
 Delicias,delicias,Chihuahua,28.19,-105.47,municipio_seat
 Galeana,galeana,Chihuahua,28.633,-106.0691,state_centroid
@@ -134,6 +135,7 @@ Cd. Acuña,cd acuna,Coahuila,27.0587,-101.7068,state_centroid
 Cd. Frontera,cd frontera,Coahuila,27.0587,-101.7068,state_centroid
 Ejido El Calabacillal,ejido el calabacillal,Coahuila,27.0587,-101.7068,state_centroid
 Escobedo,escobedo,Coahuila,27.0587,-101.7068,state_centroid
+Fco I Madero,fco i madero,Coahuila,27.0587,-101.7068,state_centroid
 Francisco I. Madero,francisco i madero,Coahuila,27.0587,-101.7068,state_centroid
 Frontera,frontera,Coahuila,26.928,-101.452,municipio_seat
 General Cepeda,general cepeda,Coahuila,27.0587,-101.7068,state_centroid
@@ -171,6 +173,7 @@ CUAUHTÉMOC,cuauhtemoc,Colima,19.2452,-103.7242,state_centroid
 Manzanillo,manzanillo,Colima,19.1136,-104.3421,municipio_seat
 Minatitlán,minatitlan,Colima,19.2452,-103.7242,state_centroid
 Tecomán,tecoman,Colima,19.2452,-103.7242,state_centroid
+Villa De Álvarez,villa de alvarez,Colima,19.2452,-103.7242,state_centroid
 Canatlan,canatlan,Durango,24.0277,-104.6532,state_centroid
 Carretera Federal 40 Durango-Torreón,carretera federal 40 durango torreon,Durango,24.0277,-104.6532,state_centroid
 Cuencame,cuencame,Durango,24.0277,-104.6532,state_centroid
@@ -358,6 +361,7 @@ Zacoalco De Torres,zacoalco de torres,Jalisco,20.6595,-103.3494,state_centroid
 Zapopan,zapopan,Jalisco,20.7214,-103.3918,municipio_seat
 "Zapopan, Guadalajara Y Tlaquepaque",zapopan guadalajara y tlaquepaque,Jalisco,20.6595,-103.3494,state_centroid
 ZAPOTILTIC,zapotiltic,Jalisco,20.6595,-103.3494,state_centroid
+Zapotlán El Grande,zapotlan el grande,Jalisco,20.6595,-103.3494,state_centroid
 Zapotlanejo,zapotlanejo,Jalisco,20.6595,-103.3494,state_centroid
 Zocoalco De Torres,zocoalco de torres,Jalisco,20.6595,-103.3494,state_centroid
 Ciudad Hidalgo,ciudad hidalgo,Michoacán,19.5665,-101.7068,state_centroid
@@ -471,6 +475,7 @@ San Pedro Laguinillas,san pedro laguinillas,Nayarit,21.7514,-104.8455,state_cent
 San Pedro Lagunillas,san pedro lagunillas,Nayarit,21.7514,-104.8455,state_centroid
 Santiago de Ixcuintla,santiago de ixcuintla,Nayarit,21.7514,-104.8455,state_centroid
 Santiago Ixcuintla,santiago ixcuintla,Nayarit,21.7514,-104.8455,state_centroid
+Tecuala,tecuala,Nayarit,21.7514,-104.8455,state_centroid
 Tepic,tepic,Nayarit,21.5039,-104.8946,municipio_seat
 Villa Hidalgo,villa hidalgo,Nayarit,21.7514,-104.8455,state_centroid
 Allende,allende,Nuevo León,25.5922,-99.9962,state_centroid
@@ -538,6 +543,7 @@ Oaxaca De Juárez,oaxaca de juarez,Oaxaca,17.0732,-96.7266,municipio_seat
 SALINA CRUZ,salina cruz,Oaxaca,17.0732,-96.7266,state_centroid
 San Jose Del Progreso,san jose del progreso,Oaxaca,17.0732,-96.7266,state_centroid
 San Juan Bautista Tuxtepec,san juan bautista tuxtepec,Oaxaca,17.0732,-96.7266,state_centroid
+San Pablo Etla,san pablo etla,Oaxaca,17.0732,-96.7266,state_centroid
 Santo Domingo Ingenio,santo domingo ingenio,Oaxaca,17.0732,-96.7266,state_centroid
 "Santo Domingo Ingenio , Oaxaca",santo domingo ingenio oaxaca,Oaxaca,17.0732,-96.7266,state_centroid
 Unión Hidalgo,union hidalgo,Oaxaca,17.0732,-96.7266,state_centroid
@@ -609,6 +615,7 @@ El Marquez,el marquez,Querétaro,20.5888,-100.3899,state_centroid
 EZEQUIEL MONTES,ezequiel montes,Querétaro,20.5888,-100.3899,state_centroid
 "Galeras, Colon",galeras colon,Querétaro,20.5888,-100.3899,state_centroid
 Huimilpan,huimilpan,Querétaro,20.37,-100.27,municipio_seat
+Jalpan De Serra,jalpan de serra,Querétaro,20.5888,-100.3899,state_centroid
 Juriquilla,juriquilla,Querétaro,20.5888,-100.3899,state_centroid
 La Penuela,la penuela,Querétaro,20.5888,-100.3899,state_centroid
 Marques,marques,Querétaro,20.5888,-100.3899,state_centroid
@@ -733,6 +740,7 @@ Municipio De Cajeme,municipio de cajeme,Sonora,29.2972,-110.3309,state_centroid
 Nacozari De Garcia,nacozari de garcia,Sonora,29.2972,-110.3309,state_centroid
 Navojoa,navojoa,Sonora,29.2972,-110.3309,state_centroid
 Nogales,nogales,Sonora,31.3086,-110.9422,municipio_seat
+Piedras Verdes,piedras verdes,Sonora,29.2972,-110.3309,state_centroid
 Pitiquito,pitiquito,Sonora,29.2972,-110.3309,state_centroid
 Pitiquito Comisaria De Puerto De Libertad,pitiquito comisaria de puerto de libertad,Sonora,29.2972,-110.3309,state_centroid
 Pitiquito Comisaria De Puerto Libertad,pitiquito comisaria de puerto libertad,Sonora,29.2972,-110.3309,state_centroid
@@ -858,6 +866,7 @@ Minatitlán,minatitlan,Veracruz,19.1738,-96.1342,state_centroid
 Moloacán,moloacan,Veracruz,19.1738,-96.1342,state_centroid
 Nanchital,nanchital,Veracruz,19.1738,-96.1342,state_centroid
 Nanchital De Lázaro Cárdenas,nanchital de lazaro cardenas,Veracruz,19.1738,-96.1342,state_centroid
+Nanchital De Lázaro Cárdenas Del Río,nanchital de lazaro cardenas del rio,Veracruz,19.1738,-96.1342,state_centroid
 OLUTA,oluta,Veracruz,19.1738,-96.1342,state_centroid
 Orizaba,orizaba,Veracruz,19.1738,-96.1342,state_centroid
 Ozuluama De Mascareñas,ozuluama de mascarenas,Veracruz,19.1738,-96.1342,state_centroid
@@ -876,10 +885,12 @@ SOLEDAD DE DOBLADO,soledad de doblado,Veracruz,19.1738,-96.1342,state_centroid
 Tatatila,tatatila,Veracruz,19.1738,-96.1342,state_centroid
 Tejeria,tejeria,Veracruz,19.1738,-96.1342,state_centroid
 Texistepec,texistepec,Veracruz,19.1738,-96.1342,state_centroid
+Tezonapa,tezonapa,Veracruz,19.1738,-96.1342,state_centroid
 Tierra Blanca,tierra blanca,Veracruz,19.1738,-96.1342,state_centroid
 TLALIXCOYAN,tlalixcoyan,Veracruz,19.1738,-96.1342,state_centroid
 Tlapacoyan,tlapacoyan,Veracruz,19.1738,-96.1342,state_centroid
 TRAPICHE MEZA,trapiche meza,Veracruz,19.1738,-96.1342,state_centroid
+Tres Valles,tres valles,Veracruz,19.1738,-96.1342,state_centroid
 Tuxpan,tuxpan,Veracruz,20.957,-97.407,municipio_seat
 Tuxpan De Rodríguez,tuxpan de rodriguez,Veracruz,19.1738,-96.1342,state_centroid
 Tuxpan De Rodriguez Cano,tuxpan de rodriguez cano,Veracruz,20.957,-97.407,municipio_seat
