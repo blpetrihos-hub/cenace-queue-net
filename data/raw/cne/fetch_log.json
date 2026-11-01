@@ -2,11 +2,11 @@
   {
     "url": "https://www.cne.gob.mx/da/PermisosdeGeneracionVigentesporModalidad.csv",
     "path": "data/raw/cne/PermisosdeGeneracionVigentesporModalidad.csv",
-    "status": 200,
-    "bytes": 371285,
-    "fetched_at": "2026-10-15T18:08:07.151131+00:00",
-    "sha256": "da93d7280f7ef4116862180309358f2491c77f607aff7d6ff251bfa6ad14828d",
-    "content_type": "text/csv",
-    "ok": true
+    "status": 404,
+    "bytes": 5091,
+    "fetched_at": "2026-11-01T18:48:33.628854+00:00",
+    "sha256": null,
+    "content_type": "text/html",
+    "ok": false
   }
 ]
